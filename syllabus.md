@@ -81,8 +81,8 @@ Over the course of the semester, you will be
 
 Each homework is worth only a nominal portion of the final grade. As such, 
 instead of viewing them as evaluative tools used by the instructor to assign 
-grades, they should be viewed as low-stakes opportunities to develop one's data science 
-toolbox and receive feedback on the progress of one's learning. 
+grades, they should be viewed as low-stakes opportunities to develop one's data
+science toolbox and receive feedback on the progress of one's learning.
 
 Furthermore, collaboration on the homeworks is **highly** encouraged as in 
 practice learning in many situations is best done in groups, especially when it
