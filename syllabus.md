@@ -69,7 +69,7 @@ open-source and freely available materials on the web.
 #### 2) Computing and Software
 
 We will chiefly be using R via the RStudio integrated development
-environment (IDE). Please see [Some Link]({% post-url 2016-09-12-getting-started %})
+environment (IDE). Please see [Some Link]({% post_url 2016-09-12-getting-started %})
 
 
 
