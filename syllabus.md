@@ -13,7 +13,7 @@ permalink: /syllabus/
 * **Class Location/Time:**
     + MWF 9:05-9:55 in Warner 506.
     + Davis Library 105A (downstairs on the right) on the following days: Wed 10/12, Wed 10/26, Wed 11/9, Mon 11/28.
-    + You do not need to inform me of absenses. Please consult your peers for what you missed.
+    + You do not need to inform me of absences. Please consult your peers for what you missed.
 * **Office Hours:** Warner 310 or the math lounge just outside. Feel free to come to the [MATH 116](https://rudeboybert.github.io/MATH116/) office hours as well, but those students get priority then. 
     + M 1:00-2:30 and W 2:30-4:00
     + MATH 116: M 2:30-4:00 and W 1:00-2:30
@@ -82,7 +82,7 @@ and the final project.
 
 #### 1) Homeworks 10%
 
-The 5 homeworks in this class should be viewed as low-stakes opportunities to 
+The five homeworks in this class should be viewed as low-stakes opportunities to 
 develop one's data science toolbox and receive feedback on the progress of one's
 learning, instead of evaluative tools used by the instructor to assign grades. 
 To reinforce this thinking, each homework is worth only a nominal portion of the
@@ -100,12 +100,12 @@ The typical homework workflow is:
 1. Homework assigned on a Wednesday.
 1. One week later: Pre-submission due.
 1. Two weeks later: Homework due. 
-1. Three weeks later: Post-submission due. Mini-presentation and group discussion in Library 105A.
+1. Three weeks later: Post-submission due. Mini-presentations and group discussion in Library 105A.
 
 Click
 [here](https://docs.google.com/spreadsheets/d/1EVgkh3wgIWZCxzCKAEDie7f8YmKQ9FhYdKVIO4Fwm0E/edit#gid=0)
-for a visualization. Since this is a college-writing course, instructor feedback on student work and writing
-is an essential component. Thus
+for a visualization of this timetable. Since this is a college-writing course, instructor feedback on student work and writing
+is an essential component, thus
 
 * Everyone must submit work on the homework due date.
 * You must complete either the pre-submission or the post-submission, but not both. 
@@ -128,7 +128,7 @@ fine. Notes:
 
 #### 3) Engagement 10%
 
-It is difficult to explicity codify what constitutes "an engaged student", so 
+It is difficult to explicit codify what constitutes "an engaged student", so 
 instead I present the following rough principle I will follow: **you'll only get
 out of this class as much as you put in**. Some examples of behavior counter to this
 principle:
@@ -148,7 +148,7 @@ Much of this course is a build up to the final project, which is a capstone
 experience synthesizing everything you've learned over the course of the
 semester. There are 3 components that sum to 60%:
 
-* Project proposal: Due Fri 11/4
+* Project proposal: Due Fri 10/28
 * Write-up 40%: Due on Fri 12/16 at 2pm
 * Oral presentation 15%: 10 minute presentations during the last 4 lectures with
 the presentation order determined at random a few weeks before.
