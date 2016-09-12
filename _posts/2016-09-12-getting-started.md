@@ -2,7 +2,7 @@
 layout: post
 title:  "Getting Started"
 subtitle: "We go over the syllabus and the software/accounts to set up for the course."
-date:   2016-09-12 10:10:45
+date:   2016-09-12 10:00:00
 categories: jekyll update
 ---
 
@@ -11,7 +11,8 @@ categories: jekyll update
 
 ## 1. Syllabus
 
-In class discussion.
+* Discuss syllabus
+* Slides: <a href = "{{ site.baseurl }}/assets/intro/intro.html" target = "_blank">What is data science?</a>
 
 
 ## 2. Setting Up
@@ -95,13 +96,12 @@ GitHub is a web-based Git repository hosting system.
 * In the RStudio menu bar, go to *File* -> *New Project...* -> If prompted, don't save current workspace -> *New Directory* -> *Empty Project*
 * Check the "Create a git repository" box.
 * Give it the project an arbitrary directory name and save it any place you choose -> *Create Project*
-* Follow the steps on [RStudio and
-GitHub](http://www.r-bloggers.com/rstudio-and-github/) up to and including the
-step, **however** replace `mail@ewenharrison.com` with your `@middlebury.edu` email and `ewenharrison` with your GitHub login.
+* Follow all the steps on this [link](http://www.r-bloggers.com/rstudio-and-github/) before the section
+"Create New project AND git", **however** in the final step replace
+    + `mail@ewenharrison.com` with your `@middlebury.edu` email
+    + `ewenharrison` with your GitHub login.
 
-```
-git config --global user.email "mail@ewenharrison.com"
-git config --global user.name "ewenharrison"
-```
+
+
 
 
