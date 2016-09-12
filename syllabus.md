@@ -12,8 +12,7 @@ permalink: /syllabus/
     + Please only email me with administrative and briefer questions as I prefer addressing more substantive questions in person.
 * **Class Location/Time:**
     + MWF 9:05-9:55 in Warner 506.
-    + Davis Library 105A (downstairs on the right) on the following days:  
-    Wed 10/12, Wed 10/26, Wed 11/9, Mon 11/28.
+    + Davis Library 105A (downstairs on the right) on the following days: Wed 10/12, Wed 10/26, Wed 11/9, Mon 11/28.
     + You do not need to inform me of absenses. Please consult your peers for what you missed.
 * **Office Hours:** Warner 310 or the math lounge just outside. Feel free to come to the [MATH 116](https://rudeboybert.github.io/MATH116/) office hours as well, but those students get priority then. 
     + M 1:00-2:30 and W 2:30-4:00
@@ -68,8 +67,9 @@ open-source and freely available materials on the web.
 
 #### 2) Computing and Software
 
-We will chiefly be using R via the RStudio integrated development
-environment (IDE). Please see [Some Link]({% post_url 2016-09-12-getting-started %})
+We will chiefly be using R via the RStudio integrated development environment
+(IDE). Please see [Setting Up]({{ site.baseurl }}{% post_url 2016-09-12-getting-started %}) 
+for all the software and accounts we will be using.
 
 
 
@@ -77,28 +77,41 @@ environment (IDE). Please see [Some Link]({% post_url 2016-09-12-getting-started
 
 ## Evaluation
 
-There are four components to your final grade: homeworks, quizzes, engagement, and the final project.
+There are four components to your final grade: homeworks, quizzes, engagement,
+and the final project.
 
 #### 1) Homeworks 10%
 
-Over the course of the semester, you will be 
+The 5 homeworks in this class should be viewed as low-stakes opportunities to 
+develop one's data science toolbox and receive feedback on the progress of one's
+learning, instead of evaluative tools used by the instructor to assign grades. 
+To reinforce this thinking, each homework is worth only a nominal portion of the
+final grade. However, not making an honest effort on the homeworks will
+ultimately hurt you for your (individual) final project.
 
-Each homework is worth only a nominal portion of the final grade. As such, 
-instead of viewing them as evaluative tools used by the instructor to assign 
-grades, they should be viewed as low-stakes opportunities to develop one's data
-science toolbox and receive feedback on the progress of one's learning.
+Collaboration on the homeworks is highly encouraged as in many situations
+learning is best done in groups, especially when it comes to coding. However you
+must submit your own answers and not simple rewordings of another's work.
+Furthermore, **all collaborations must be explicitly acknowledged at the top of
+your submissions**.
 
-Furthermore, collaboration on the homeworks is **highly** encouraged as in 
-practice learning in many situations is best done in groups, especially when it
-comes to coding. However, collaboration taken too far is copying. Not making an
-honest effort on the homeworks will ultimately hurt you for your (individual) 
-final project.
+The typical homework workflow is:
 
-Details:
+1. Homework assigned on a Wednesday.
+1. One week later: Pre-submission due.
+1. Two weeks later: Homework due. 
+1. Three weeks later: Post-submission due. Mini-presentation and group discussion in Library 105A.
 
-* Due on GitHub at 9am on the relevant Wednesday.
-* **Honor code**: All collaborations must be explicity acknowledged at the beginning of your submissions.
-* Practice question
+Click
+[here](https://docs.google.com/spreadsheets/d/1EVgkh3wgIWZCxzCKAEDie7f8YmKQ9FhYdKVIO4Fwm0E/edit#gid=0)
+for a visualization. Since this is a college-writing course, instructor feedback on student work and writing
+is an essential component. Thus
+
+* Everyone must submit work on the homework due date.
+* You must complete either the pre-submission or the post-submission, but not both. 
+That being said, feel free to complete both!
+* You must incorporate any feedback given for the earlier submission in the later submission.
+
 
 
 #### 2) Quizzes 20%
@@ -133,24 +146,15 @@ to be graded on.
 
 Much of this course is a build up to the final project, which is a capstone
 experience synthesizing everything you've learned over the course of the
-semester. There are 3 components to the total 50%
+semester. There are 3 components that sum to 60%:
 
-* Project proposal due Friday 11/4
-* Write-up 40%: Due on XXX
-* Approximately 10 min oral presentation 15%: During the last 4 lectures with the presentation order determined at random a few weeks before. 
-* Evaluation of your peers' final presentations 5%: You will be giving (anonymized) feedback on all presentations, on which you'll be graded
-on the quality of your feedback.  
-
-
-
-
-
-## Schedule
-
-You can subscribe to the following calendar by adding the following URL in Google Calendar/iCal:
-https://calendar.google.com/calendar/ical/aqigocv44as1nknf281es4oh1o%40group.calendar.google.com/public/basic.ics
-
-<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showDate=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=aqigocv44as1nknf281es4oh1o%40group.calendar.google.com&amp;color=%23853104&amp;ctz=America%2FToronto" style="border-width:0" width="700" height="600" frameborder="0" scrolling="no"></iframe>
+* Project proposal: Due Fri 11/4
+* Write-up 40%: Due on Fri 12/16 at 2pm
+* Oral presentation 15%: 10 minute presentations during the last 4 lectures with
+the presentation order determined at random a few weeks before.
+* Evaluation of final presentations 5%: You will be giving
+(anonymized) feedback on your peers' presentations, on which you'll be graded on the
+quality of your feedback.
 
 
 

@@ -11,13 +11,12 @@ collaborations must be explicitly acknowledged at the top of your submissions**.
 
 ## Homework 0
 
-* Assigned Fri 9/16
-* Due Fri 9/23
+Homework 0 will not involve any content, it will merely be a practice run of the 
+Homework submissions process on GitHub.
 
+* Assigned Wed 9/14
+* Due Wed 9/21
 
-## Final Project Info
-
-Forthcoming.
 
 
 ## Important Dates
