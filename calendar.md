@@ -4,11 +4,6 @@ title: Calendar
 permalink: /calendar/
 ---
 
-
-While I encourage you to discuss homeworks with your peers, you must submit your
-own answers and not simple rewordings of another's work. Furthermore, **all
-collaborations must be explicitly acknowledged at the top of your submissions**.
-
 ## Homework 0
 
 Homework 0 will not involve any content, it will merely be a practice run of the 
