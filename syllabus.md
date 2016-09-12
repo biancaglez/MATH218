@@ -6,15 +6,16 @@ permalink: /syllabus/
 
 ## MATH 216: Fall 2016
 
-* **Instructor:** [Albert Y. Kim](http://community.middlebury.edu/~aykim/) - Assistant Professor of Statistics
+* **Instructor:** [Albert Y. Kim](https://rudeboybert.github.io/) - Assistant Professor of Statistics
 * **Email:** [aykim@middlebury.edu](aykim@middlebury.edu)
     + I will respond to emails within 24h, but not during weekends.
     + Please only email me with administrative and briefer questions as I prefer addressing more substantive questions in person.
 * **Class Location/Time:**
     + MWF 9:05-9:55 in Warner 506.
-    + We meet in the Wilson Media Lab in the rear of the first floor of Davis Library on the following days: Wed 10/12, Wed 10/26, Wed 11/9, Mon 11/28.
+    + Davis Library 105A (downstairs on the right) on the following days:  
+    Wed 10/12, Wed 10/26, Wed 11/9, Mon 11/28.
     + You do not need to inform me of absenses. Please consult your peers for what you missed.
-* **Office Hours:** Warner 310 or the math lounge just outside. Feel free to come to the [MATH 116]({{ BASE_PATH }}/pages/teaching/courses/MATH116/2016-09.html) office hours as well, but those students get priority then. 
+* **Office Hours:** Warner 310 or the math lounge just outside. Feel free to come to the [MATH 116](https://rudeboybert.github.io/MATH116/) office hours as well, but those students get priority then. 
     + M 1:00-2:30 and W 2:30-4:00
     + MATH 116: M 2:30-4:00 and W 1:00-2:30
     + Or by appointment
@@ -25,19 +26,34 @@ permalink: /syllabus/
 
 ## Course Description and Objectives
 
-In this course students will gain exposure to the entire data science pipeline:
-forming a statistical question, collecting and cleaning data sets, performing
-exploratory data analyses, identifying appropriate statistical techniques, and
-communicating the results, all the while leaning heavily on open source
-computational tools, in particular the R statistical software language. We will
-focus on analyzing real, messy, and large data sets, requiring the use of
-advanced data manipulation/wrangling and data visualization packages. Students
-will be required to bring their own laptops as many lectures will involve
+<!--#### Description-->
+
+In this course students will gain exposure to the entire data science pipeline: 
+forming a statistical question, collecting and cleaning data sets, performing 
+exploratory data analyses, identifying appropriate statistical techniques, and 
+communicating the results, all the while leaning heavily on open source 
+computational tools, in particular the R statistical software language. We will 
+focus on analyzing real, messy, and large data sets, requiring the use of 
+advanced data manipulation/wrangling and data visualization packages. Students 
+will be required to bring their own laptops as many lectures will involve 
 in-class computational activities.
 
-* College Writing
-* Align how learning is done in practice.
-* Differs from traditional stats, tacit knowledge, no right/wrong answers, only feedback
+<!--#### Objectives-->
+
+
+
+
+
+## Topics
+
+Roughly speaking we will cover the following topics (a more detailed outline can be found
+[here](https://docs.google.com/spreadsheets/d/1msrQOV0zFjc5VUamFhRltz8GhS-uF010_rfaSwtTVXU/edit#gid=0)):
+
+1. Data manipulation and visualization
+1. Regression
+1. Dates and times
+1. Maps and spatial data
+1. Text data
 
 
 
@@ -47,25 +63,13 @@ in-class computational activities.
 
 #### 1) Textbook
 
-There is no textbook to purchase; as much as possible, we will rely on
+There is no textbook to purchase; as much as possible, we will rely on 
 open-source and freely available materials on the web.
 
 #### 2) Computing and Software
 
-As stated in the course description, you must bring a laptop to each lecture. If you 
-do not have access to a laptop, please let me know.
-
-Instead of a local desktop version of the RStudio integrated development
-environment (IDE) for R, we will be using the cloud-based RStudio Server
-interface, which you can access via 
-[`go/rstudio`](https://rstudio.middlebury.edu/). Note if you are off-campus you 
-must first log into the [Middlebury
-VPN](http://mediawiki.middlebury.edu/wiki/LIS/Off-campus_Access).
-
-You are free to work with a local desktop version of RStudio, but you are 
-responsible for installing all necessary packages and extensions on your own as
-I will not be offering technical support during the semester. If you have such
-questions after the semester is over, feel free to ask.
+We will chiefly be using R via the RStudio integrated development
+environment (IDE). Please see [Some Link]({% post-url 2016-09-12-getting-started %})
 
 
 

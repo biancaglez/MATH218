@@ -26,16 +26,16 @@ speak to me after class or during office hours.
 
 1. Install the following software. If you already have R & RStudio installed,
 please re-install both.
-    * LaTeX:
-      + [MacTeX](https://tug.org/mactex/downloading.html) for Mac (2.5GB)
-      + [MiKTeX](http://miktex.org/download) for Windows (176MB)
     * [R](https://cran.r-project.org/) programming language and software
     environment for statistical computing and graphics
     * [RStudio (preview
     version)](https://www.rstudio.com/products/rstudio/download/preview/)
     integrated development environment (IDE) for R.
-      * On Macs, when prompted to install command line developper tools, select "Install"
-      * On Windows, you should get a similar prompt.
+        * On Macs, when prompted to install command line developper tools, select "Install"
+        * On Windows, you should get a similar prompt.
+    * LaTeX:
+      + [MacTeX](https://tug.org/mactex/downloading.html) for Mac (2.5GB)
+      + [MiKTeX](http://miktex.org/download) for Windows (176MB)
     * [Git](https://git-scm.com/) open source distributed version control system
 1. Ensure you can login to RStudio Server from your browser at
 [`go/rstudio`](https://rstudio.middlebury.edu). If you are off-campus you must first log into the
@@ -100,8 +100,3 @@ GitHub is a web-based Git repository hosting system.
 "Create New project AND git", **however** in the final step replace
     + `mail@ewenharrison.com` with your `@middlebury.edu` email
     + `ewenharrison` with your GitHub login.
-
-
-
-
-
