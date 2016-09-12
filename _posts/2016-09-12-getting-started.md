@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Getting Started"
-subtitle: "We go over the syllabus and the software/accounts to set up for the course."
+subtitle: "We go over the syllabus, discuss what data science is, and set up the software/accounts for the course."
 date:   2016-09-12 10:00:00
 categories: jekyll update
 ---
@@ -11,14 +11,17 @@ categories: jekyll update
 
 ## 1. Syllabus
 
-* Discuss syllabus
-* Slides: <a href = "{{ site.baseurl }}/assets/intro/intro.html" target = "_blank">What is data science?</a>
+* Click the syllabus link above.
+
+## 2. What is Data Science?
+
+* <a href = "{{ site.baseurl }}/assets/intro/intro.html" target = "_blank">Slides</a>
 
 
-## 2. Setting Up
+## 3. Setting Up
 
 Please complete the following steps before the next lecture to get set up for
-this class. This should take approximately an hour. If you get stuck, please
+this class. This should take between 60-90 minutes. If you get stuck, please
 speak to me after class or during office hours.
 
 
