@@ -82,10 +82,8 @@ only need to do this once (unfortunately I don’t know how to do this on Window
 
 <h3 id="after-class-updates">After-Class Updates</h3>
 
-<ul>
-  <li>Connor pointed out an error with lines 134-136 in the original <a href="https://github.com/2016-09-Middlebury-Data-Science/Topics/blob/master/Lec01%20Data%20Manipulation%20with%20dplyr/Lec01.R">Lec01.R</a>
-file. The command <code class="highlighter-rouge">add_rownames()</code> has been deprecated i.e. dropped.  Replace these lines with the following, which uses the function <code class="highlighter-rouge">rownames_to_column()</code> from the <code class="highlighter-rouge">tibble</code> package:</li>
-</ul>
+<p>Connor pointed out an error with lines 134-136 in the original <a href="https://github.com/2016-09-Middlebury-Data-Science/Topics/blob/master/Lec01%20Data%20Manipulation%20with%20dplyr/Lec01.R">Lec01.R</a>
+file. The command <code class="highlighter-rouge">add_rownames()</code> has been deprecated i.e. dropped.  Replace these lines with the following, which uses the function <code class="highlighter-rouge">rownames_to_column()</code> from the <code class="highlighter-rouge">tibble</code> package:</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>mtcars &lt;- mtcars %&gt;% 
   tibble::rownames_to_column() %&gt;% 
