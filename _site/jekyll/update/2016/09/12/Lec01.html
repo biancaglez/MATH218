@@ -80,6 +80,33 @@ only need to do this once (unfortunately I don’t know how to do this on Window
   <li>Under <em>Open with:</em> select RStudio and click <em>Change All…</em></li>
 </ul>
 
+<h3 id="after-class-updates">After-Class Updates</h3>
+
+<ul>
+  <li>Connor pointed out an error with lines 134-136 in the original <a href="https://github.com/2016-09-Middlebury-Data-Science/Topics/blob/master/Lec01%20Data%20Manipulation%20with%20dplyr/Lec01.R">Lec01.R</a>
+file. The command <code class="highlighter-rouge">add_rownames()</code> has been deprecated i.e. dropped.  Replace these lines with the following, which uses the function <code class="highlighter-rouge">rownames_to_column()</code> from the <code class="highlighter-rouge">tibble</code> package:</li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>mtcars &lt;- mtcars %&gt;% 
+  tibble::rownames_to_column() %&gt;% 
+  rename("make_model"=rowname)
+</code></pre>
+</div>
+
+<p>The <code class="highlighter-rouge">::</code> in <code class="highlighter-rouge">tibble::</code> serves two functions:</p>
+
+<ul>
+  <li>Sometimes two packages can have the same function name, like <code class="highlighter-rouge">filter()</code> exists in multiple packages. The <code class="highlighter-rouge">::</code> disambiguates which package.</li>
+  <li>You can use a function from a package without loading the package itself using <code class="highlighter-rouge">library()</code>. So the above code block is identical in function to:</li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>library(tibble)
+
+mtcars &lt;- mtcars %&gt;% 
+  rownames_to_column() %&gt;% 
+  rename("make_model"=rowname)
+</code></pre>
+</div>
 
   </article>
 
