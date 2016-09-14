@@ -6,11 +6,14 @@ permalink: /calendar/
 
 ## Homework 0
 
-Homework 0 will not involve any content, it will merely be a practice run of the 
-Homework submissions process on GitHub.
+Homework 0 is posted
+[here](https://github.com/2016-09-Middlebury-Data-Science/HW-0). It does not
+involve any content; it will merely be a practice run of the homework submission
+process for the semester. I expect there to be some hiccups this first go round.
+As such, I suggest you start early. Do not spin your wheels if stuck, please speak to me. 
 
-* Assigned Wed 9/14
-* Due Wed 9/21
+* Assigned 9am Wed 9/14
+* Due 9am Wed 9/21
 
 
 
