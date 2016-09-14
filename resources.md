@@ -12,20 +12,20 @@ Markdown](https://ismayc.github.io/rbasics-book/).
 ## R
 
 * [Datacamp: Intro to R Course](https://www.datacamp.com/courses/free-introduction-to-r): 
-online platform for learning all dimensions of R.
-
-
-## R Markdown
-
-* [Reproducibility Guide](http://ropensci.github.io/reproducibility-guide/)
+online platform for learning all dimensions of R
 
 
 ## Data Science
 
 * [The Elements of Data Analytic Style](https://leanpub.com/datastyle) by Leek
-* [R for Data Science](http://r4ds.had.co.nz/) by Grolemund and Wickham.
+* [R for Data Science](http://r4ds.had.co.nz/) by Grolemund and Wickham
 
 
 ## Git and GitHub
 
 * [Happy Git and GitHub for the useR](http://happygitwithr.com/)
+
+
+## Reproducible Research
+
+* [Reproducibility Guide](http://ropensci.github.io/reproducibility-guide/)
