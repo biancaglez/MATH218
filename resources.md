@@ -15,6 +15,11 @@ Markdown](https://ismayc.github.io/rbasics-book/).
 online platform for learning all dimensions of R
 
 
+## R Markdown
+
+* R Markdown [debugging sheet](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/edit): these steps solve about 85% of problems.
+
+
 ## Data Science
 
 * [The Elements of Data Analytic Style](https://leanpub.com/datastyle) by Leek
