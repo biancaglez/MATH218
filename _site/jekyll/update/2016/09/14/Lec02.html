@@ -51,7 +51,7 @@ of R Markdown.</li>
 such as minor bugs I didn’t notice, I will always post them in the section 
 titled <strong>After-Class Updates</strong>. For example, in Lec01 I added a note on the use
 of <code class="highlighter-rouge">::</code> in <code class="highlighter-rouge">PACKAGE_NAME::FUNCTION_NAME()</code>.</li>
-  <li>Go over solutions to <code class="highlighter-rouge">Lec01.R</code>, which are at the beginning of <code class="highlighter-rouge">Lec02.R</code></li>
+  <li>Go over solutions to <code class="highlighter-rouge">Lec01.R</code>, which are at the beginning of <code class="highlighter-rouge">Lec02.R</code>.</li>
 </ul>
 
 <h3 id="in-class">In-Class</h3>
@@ -69,9 +69,31 @@ An example involving R’s webscraping abilities to collect data</li>
 
 <h3 id="after-class-updates">After-Class Updates</h3>
 
-<ul>
-  <li></li>
-</ul>
+<p>There seems to be some differences in how R reads in webscraped data between Windows and Mac. Windows users
+will have a problem with the <code class="highlighter-rouge">wp_data$p_need_grant</code> variable, which gets read as a character vector and not a numerical variable.</p>
+
+<p>The solution is to replace lines 122-126 in <code class="highlighter-rouge">Lec02.R</code> from</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>wp_data &lt;- wp_data %&gt;%
+  mutate(
+    comp_fee = currency_to_numeric(comp_fee),
+    ave_no_need_grant = currency_to_numeric(ave_no_need_grant)
+  )
+</code></pre>
+</div>
+
+<p>to</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>wp_data &lt;- wp_data %&gt;%
+  mutate(
+    comp_fee = currency_to_numeric(comp_fee),
+    ave_no_need_grant = currency_to_numeric(ave_no_need_grant),
+    p_need_grant = currency_to_numeric(ave_no_need_grant)
+  )
+</code></pre>
+</div>
+
+<p>i.e. use the <code class="highlighter-rouge">currency_to_numeric()</code> function to convert on <code class="highlighter-rouge">p_need_grant</code> as well. <code class="highlighter-rouge">Lec02.R</code> on GitHub has now been updated to reflect this change.</p>
 
   </article>
 
