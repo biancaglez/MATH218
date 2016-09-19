@@ -15,7 +15,7 @@ In reverse chronological order. A more detailed outline can be found [here](http
 <ul>
   {% for post in site.posts %}
     {% assign current_date = post.date | date: "%m %-d %H" %}
-    {% if "09 11 07" <= current_date and current_date <= "09 18 12" %}
+    {% if "09 11 07" <= current_date and current_date <= "09 19 12" %}
     <li>
       {{ post.date | date: "%a %b %-d" }} -  
       <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>:
