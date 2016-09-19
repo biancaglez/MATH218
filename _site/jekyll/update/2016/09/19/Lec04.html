@@ -42,14 +42,27 @@
   </header>
 
   <article class="post-content">
-    <h3 id="still-a-work-in-progress">STILL A WORK IN PROGRESS</h3>
-
-<h3 id="announcements">Announcements</h3>
+    <h3 id="announcements">Announcements</h3>
 
 <ul>
   <li>Quiz 1</li>
-  <li>After-Class Update from Lec02</li>
+  <li>Consider the following example in R:</li>
 </ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>library(dplyr)
+example &lt;- data_frame(
+  num = c(0, 0, 0, 1, 1),
+  char = c("0", "0", "0", "1", "1"),
+  factor = factor(c(0, 0, 0, 1, 1))
+  )
+View(example)
+</code></pre>
+</div>
+
+<p>Whoa whoa? How do we tell the difference between these values? (Note: a factor
+is how R codes a categorical variable.)</p>
+
+<p>Use <code class="highlighter-rouge">str(example)</code> (for “structure”) or <code class="highlighter-rouge">dplyr::glimpse(example)</code></p>
 
 <h3 id="in-class">In-Class</h3>
 
