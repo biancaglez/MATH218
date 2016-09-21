@@ -17,10 +17,11 @@ Homework 1 will be posted shortly.
   
 **Notes**:
 
-1. You must submit either the pre-submission or the post-submission, having
+1. You must submit the submission step due on Wed 10/5.
+1. You must submit either the pre-submission (Wed 9/28) or the post-submission (Wed 10/12) step, having
 incorporated any feedback from earlier submissions.
-2. Feel free to submit all three if you want extra feedback.
-3. All submissions are due at 9am.
+1. Feel free to submit all three steps if you want extra feedback.
+1. All submissions are due at 9am.
 
 
 
