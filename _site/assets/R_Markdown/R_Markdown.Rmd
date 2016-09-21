@@ -1,0 +1,65 @@
+<style>
+h2 { 
+ color: #3399ff;		
+}
+h3 { 
+ color: #3399ff;		
+}
+slides > slide.backdrop {
+  background: white;
+}
+</style>
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(dplyr)
+```
+
+
+
+
+## What is R Markdown?
+
+**R Markdown = R + Markdown**
+
+* **R Markdown** is an authoring format that enables easy creation of dynamic
+documents, presentations, and reports from R.
+* **Markdown** is a text-to-HTML conversion tool to write quick HTML code
+
+
+
+
+## Flow
+
+Here is the input/output flow
+
+1. R Markdown `.Rmd` file. R runs all code and generates all outputs, yielding an internally generated
+1. Markdown `.md` file. All Markdown code is formatted, yielding
+1. Either a
+    1. HTML file
+    1. PDF file
+    1. Word file (yuck)
+
+
+
+
+## Example of Markdown
+
+The most common example of a `.md` Markdown file is the `README.md` intro page to any GitHub repo. For example, the NY Times' iOS photo viewer:
+
+* Go to the repo [page](https://github.com/NYTimes/NYTPhotoViewer) and look at the page
+* Click on `README.md`
+* Then click on RAW to see the Mardown source code
+
+
+
+
+## Resources
+
+* Markdown Reference: Menu bar -> Help -> Markdown Quick Reference
+* [R Markdown Debugging](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/edit?usp=sharing)
+
+
+
