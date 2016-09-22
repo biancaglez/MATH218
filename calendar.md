@@ -8,7 +8,8 @@ permalink: /calendar/
 
 <!--Homework 1 is posted [here](https://github.com/2016-09-Middlebury-Data-Science/HW-1).-->
 
-Homework 1 will be posted shortly.
+Homework 1 is posted
+[here](https://github.com/2016-09-Middlebury-Data-Science/HW-1).
 
 * Assigned Wed 9/21
 * Pre-submission due Wed 9/28
