@@ -3,3 +3,4 @@
 .RData
 .Ruserdata
 .sass-cache/*
+_site/*
