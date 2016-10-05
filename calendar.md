@@ -56,7 +56,7 @@ https://calendar.google.com/calendar/ical/aqigocv44as1nknf281es4oh1o%40group.cal
 
 ## Homework 2
 
-Homework 2 will be posted
+Homework 2 is posted
 [here](https://github.com/2016-09-Middlebury-Data-Science/HW-2).
 
 * Assigned Wed 10/5
