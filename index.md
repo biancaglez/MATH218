@@ -14,7 +14,7 @@ In reverse chronological order. A more detailed outline can be found [here](http
 
 <ul>
   {% for post in site.posts %}
-    {% assign current_date = post.date | date: "%m %-d %H" %}
+    {% assign current_date = post.date | date: "%m %d %H" %}
     {% if "10 7 07" <= current_date and current_date <= "10 10 12" %}
     <li>
       {{ post.date | date: "%a %b %-d" }} -  
@@ -30,7 +30,7 @@ In reverse chronological order. A more detailed outline can be found [here](http
 
 <ul>
   {% for post in site.posts %}
-    {% assign current_date = post.date | date: "%m %-d %H" %}
+    {% assign current_date = post.date | date: "%m %d %H" %}
     {% if "09 11 07" <= current_date and current_date <= "10 6 12" %}
     <li>
       {{ post.date | date: "%a %b %-d" }} -  
