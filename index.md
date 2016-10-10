@@ -10,6 +10,24 @@ layout: default
 In reverse chronological order. A more detailed outline can be found [here](https://docs.google.com/spreadsheets/d/1msrQOV0zFjc5VUamFhRltz8GhS-uF010_rfaSwtTVXU/edit?usp=sharing). The GitHub repository corresponding to these lectures can be found <a target="_blank" class="page-link" href="https://github.com/2016-09-Middlebury-Data-Science/Topics">here</a>.
 
 
+
+### 3. Dates and Times
+
+<ul>
+  {% for post in site.posts %}
+    {% assign current_date = post.date | date: "%m %d" %}
+    {% if "10 11" <= current_date and current_date <= "10 15" %}
+    <li>
+      {{ post.date | date: "%a %b %-d" }} -  
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>:
+      {{ post.subtitle }}
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>  
+
+
+
 ### 2. Regression
 
 <ul>
