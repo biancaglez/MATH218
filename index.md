@@ -14,8 +14,8 @@ In reverse chronological order. A more detailed outline can be found [here](http
 
 <ul>
   {% for post in site.posts %}
-    {% assign current_date = post.date | date: "%m %d %H" %}
-    {% if "10 7 07" <= current_date and current_date <= "10 10 12" %}
+    {% assign current_date = post.date | date: "%m %d" %}
+    {% if "10 06" <= current_date and current_date <= "10 10" %}
     <li>
       {{ post.date | date: "%a %b %-d" }} -  
       <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>:
@@ -23,15 +23,15 @@ In reverse chronological order. A more detailed outline can be found [here](http
     </li>
     {% endif %}
   {% endfor %}
-</ul> 
+</ul>  
 
 
 ### 1. Data Manipulation and Data Visualization
 
 <ul>
   {% for post in site.posts %}
-    {% assign current_date = post.date | date: "%m %d %H" %}
-    {% if "09 11 07" <= current_date and current_date <= "10 6 12" %}
+    {% assign current_date = post.date | date: "%m %d" %}
+    {% if "09 11" <= current_date and current_date <= "10 06" %}
     <li>
       {{ post.date | date: "%a %b %-d" }} -  
       <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>:
