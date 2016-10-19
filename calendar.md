@@ -54,6 +54,68 @@ https://calendar.google.com/calendar/ical/aqigocv44as1nknf281es4oh1o%40group.cal
 
 
 
+## Final Project
+
+* Key Dates:
+    + Proposal due: Monday Oct 31st in class
+    + Presentations: In-class from 2016/12/02 thru 2016/12/09
+    + Final report due: On GitHub & RPubs by Friday Dec 16th at 5pm
+* Final project details <a href = "{{ site.baseurl }}/assets/Final_Project/project.html" target = "_blank">here</a>
+* Master copy on GitHub to be forked is [here](https://github.com/2016-09-Middlebury-Data-Science/Final_Project)
+    + Fill in the `README.Rmd` file and Knit. This will create `README.md`, which will be the cover page for your repo
+    + Push/commit **all files** necessary to reproduce your final report
+
+
+
+#### Presentation Order
+
+~~~~
+library(dplyr)
+set.seed(76)
+order <- c("Alden", "Alex", "Amanda", "Andrea", 
+           "Bianca", "Brenda", "Connor", "Emily", 
+           "James", "Katherine", "Kyra", "Nina", 
+           "Shania", "Trisha", "Yuchen") %>% 
+  sample() %>% 
+  c("", .) %>% 
+  matrix(nrow=4) %>% 
+  data.frame()
+names(order) <- c("Fri 12/2", "Mon 12/5", "Wed 12/7", "Fri 12/9")
+knitr::kable(order)
+~~~~
+
+
+
+
+
+
+
+#### Past Examples
+
+* Previous instances of Data Science
+    + [Last semester at Midd](https://github.com/Middlebury-Data-Science/FinalProject/network/members)
+    + [Previous year at Reed](https://github.com/ReedCollegeMATH241)
+* They should all (in theory) be reproducible (if you need help, let me know)
+* To view project
+    1. Try to locate `.Rmd` and corresponding `.html` file of interest
+    1. For `.html` files -> click on them -> View Raw -> Append `http://htmlpreview.github.io/?` to the URL so that you can view a rendered html.
+* Ex: [Delaney Moran](https://github.com/DelaneyMoran/FinalProject)
+
+
+
+
+
+
+<br>
+
+***
+
+<br>
+
+
+
+
+
 ## Homework 3
 
 Homework 3 is posted
@@ -74,7 +136,13 @@ Homework 3 is posted
 
 ***
 
-<br>## Homework 2
+<br>
+
+
+
+
+
+## Homework 2
 
 Homework 2 is posted
 [here](https://github.com/2016-09-Middlebury-Data-Science/HW-2).
@@ -95,6 +163,8 @@ Homework 2 is posted
 ***
 
 <br>
+
+
 
 
 

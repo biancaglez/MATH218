@@ -43,7 +43,7 @@ in your report. Feel free to consult with me.
 
 ## Proposal
 
-Your proposal is due on Wednesday April 6th (after the break) at 11:15am, either
+Your proposal is to be submitted 
 in print or electronically.  Once you decide on a topic that interests you,
 think about what you would like to end up with as a final result without
 worrying about how to get there. Try to visualize what your end product will
@@ -74,7 +74,7 @@ incorporate. If you can, be specific about units, scale, etc.
     + Will it be a predictive model that forecasts future values?
 1. **Honor Code**: Indicate if any component of this project overlaps with work
 for another class/thesis. If this is the case, please speak to your 
-professor/advisor and have them email me their consent by Wednesday April 6th.
+professor/advisor and have them email me their consent by the due date of the proposal.
 
 ## Presentation
 
@@ -108,32 +108,19 @@ might also want to consider
       + [Slidy](http://rmarkdown.rstudio.com/slidy_presentation_format.html)
       + Beamer (LaTeX)
   * Google Presentations
-  * Non-linear presentation software like [Prezi](http://prezi.com/). 
-  
-Use your creativity! One thing you should *not* do is walk us through your
-calculations in RStudio. If your project has any interactive elements, please
-demonstrate them for us!  You will need to **submit your slides via email the
-before your presentation**. You will not be able to hook up your laptop to the
-computer.
+
 
 ### Advice {.unnumbered}
 
-There are many sources of advice for how to make a good presentation, but an
-excellent place to start is: <http://techspeaking.denison.edu/>.  Watch the
-videos on this site to identify some common mistakes. Here is some general
-advice:
 
 * Budget your time. You only have 12 minutes and we will be running a very tight
 schedule. Plan for 10 minutes to talk, and 2 minutes to answer questions.
 Rehearse your talk ahead of time several times in order to get a better feel for
-your timing. Note also that you may have a tendency to talk faster during your
-actual talk than you will during your rehearsal.
+your timing.
 * As a rule of thumb I use the one minute per slide rule.  
 * Don't write too much on each slide. You don't want people to have to read your
 slides, because if the audience is reading your slides, then they aren't
-listening to you. You want your slides to provide visual cues to the points that
-you are making, not substitute for your spoken words. Concentrate on graphical
-displays and bullet-pointed lists of ideas.
+listening to you. 
 * Put your problem in context. Remember that most of your audience will have
 little or no knowledge of your subject matter. The easiest way to lose people is
 to dive right into technical details that require prior domain knowledge. Spend
@@ -142,21 +129,13 @@ most basic aspects of your topic and present some motivation for what you are
 studying.
 * Speak loudly and clearly. Remember that you know more about your topic that
 anyone else in the room, so speak and act with confidence!
-* Tell a story It is unrealistic to expect that you can tell your audience
-everything that you know about your topic in 20 minutes. You should strive to
-convey the big ideas in a clear fashion, but not dwell on the details. Your talk
-will be successful if your audience is able to walk away with an understanding
-of what your research question was, how you addressed it, and what the
-implications of your findings are.
 
 
 ## Write-Up
 
 Your write-up has to be a reproducible R Markdown HTML document that when 
-printed is of length no more than 20 pages.  i.e. I should be able to recreate 
-your entire analysis with one click of the mouse. All relevant files will be due
-on GitHub on Tuesday 5/24 (last day of exam period) at 9am. I will post the
-project template to fork a few weeks prior.
+printed is of length no more than 15 pages.  i.e. I should be able to recreate 
+your entire analysis with one click of the mouse. 
 
 In your write-up, you should tell a data science audience about your project,
 why they should care about it, and what you have discovered. Your audience will
@@ -238,8 +217,7 @@ appealing!
 
 ## Overall
 
-Your term project will be evaluated based on similar criteria as the homework
-grading rubric, as well as:
+Your term project will be evaluated based:
 
 * **Originality/Interest**: Is the topic original, interesting, and substantial,
 or is it trite, pedantic, and trivial? How much creativity, initiative, and
@@ -290,23 +268,6 @@ sentences could you do it?
 * **Mastery**: Do the speakers appear to have full command of the material? Were
 there obvious gaps in their knowledge of the subject matter? Were they able to
 answer questions coherently?
-
-Note: You will be evaluated on the quality of your peer feedback.
-
-
-
-
-
-# Past Examples of Final Projects
-
-Examples of final projects from my Spring 2015 Reed College instance of this class
-are available [here](https://github.com/ReedCollegeMATH241). The most straightforward way to view the projects is to:
-
-* Click the link for a given project
-* Click on the "Download ZIP" button on the top right.
-* If that student did their job, the entire report should be completely reproducible!
-
-
 
 
 
