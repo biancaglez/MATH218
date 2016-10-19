@@ -54,7 +54,27 @@ https://calendar.google.com/calendar/ical/aqigocv44as1nknf281es4oh1o%40group.cal
 
 
 
-## Homework 2
+## Homework 3
+
+Homework 3 is posted
+[here](https://github.com/2016-09-Middlebury-Data-Science/HW-3).
+
+* Assigned Wed 10/19
+* Pre-submission due Wed 10/26
+* Submission due Wed 11/2 (everyone must submit this)
+* Library 105A Discussion and post-submission due Wed 11/9
+
+**Notes**:
+
+
+
+
+
+<br>
+
+***
+
+<br>## Homework 2
 
 Homework 2 is posted
 [here](https://github.com/2016-09-Middlebury-Data-Science/HW-2).
@@ -62,7 +82,7 @@ Homework 2 is posted
 * Assigned Wed 10/5
 * Pre-submission due Wed 10/12
 * Submission due Wed 10/19 (everyone must submit this)
-* Library 105A HW1 Discussion and post-submission due Wed 10/26
+* Library 105A Discussion and post-submission due Wed 10/26
 
 **Notes**:
 
@@ -88,7 +108,7 @@ Homework 1 is posted
 * Assigned Wed 9/21
 * Pre-submission due Wed 9/28
 * Submission due Wed 10/5 (everyone must submit this)
-* Library 105A HW1 Discussion and post-submission due Wed 10/12
+* Library 105A Discussion and post-submission due Wed 10/12
   
 **Notes**:
 
