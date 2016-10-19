@@ -71,7 +71,8 @@ https://calendar.google.com/calendar/ical/aqigocv44as1nknf281es4oh1o%40group.cal
 
 ~~~~
 library(dplyr)
-set.seed(76)
+# Katherine's favorite #
+set.seed(9)
 order <- c("Alden", "Alex", "Amanda", "Andrea", 
            "Bianca", "Brenda", "Connor", "Emily", 
            "James", "Katherine", "Kyra", "Nina", 
@@ -84,7 +85,12 @@ names(order) <- c("Fri 12/2", "Mon 12/5", "Wed 12/7", "Fri 12/9")
 knitr::kable(order)
 ~~~~
 
-
+|Fri 12/2 |Mon 12/5 |Wed 12/7 |Fri 12/9  |
+|:--------|:--------|:--------|:---------|
+|         |Shania   |Nina     |Connor    |
+|Andrea   |Bianca   |Kyra     |Emily     |
+|Alden    |Alex     |Brenda   |James     |
+|Amanda   |Yuchen   |Trisha   |Katherine |
 
 
 
