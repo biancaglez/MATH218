@@ -96,7 +96,7 @@ what you are saying is true. If your audience (who may very well be less
 knowledgeable about statistics than you are) cannot understand your results or
 their interpretations, then the technical merit of your project is irrelevant.
 
-During the last 4 lectures, exam week you will each give a 12 minute
+During the last 4 lectures, you will each give a 12 minute
 presentation of your work. Your goal should be to convey to your audience a
 clear understanding of your research topic, along with a basic understanding of
 your project, and how well it addresses the research question you posed. You
@@ -111,7 +111,7 @@ class should be able to answer:
 You should prepare electronic slides for your talk. PowerPoint/Keynote is fine, but you
 might also want to consider
 
-* RStudio tools: Markdown slides [ioslides](http://rmarkdown.rstudio.com/ioslides_presentation_format.html)
+* RStudio tools: R Markdown slides
 * Beamer (LaTeX)
 * Google Slides
 
