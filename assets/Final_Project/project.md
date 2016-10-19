@@ -100,14 +100,12 @@ class should be able to answer:
 1. What was your data like, and what techniques did you apply to it?
 1. What were your findings?
 
-You should prepare electronic slides for your talk. PowerPoint is fine, but you
+You should prepare electronic slides for your talk. PowerPoint/Keynote is fine, but you
 might also want to consider
 
-  * RStudio tools:
-      + Markdown slides [ioslides](http://rmarkdown.rstudio.com/ioslides_presentation_format.html)
-      + [Slidy](http://rmarkdown.rstudio.com/slidy_presentation_format.html)
-      + Beamer (LaTeX)
-  * Google Presentations
+* RStudio tools: Markdown slides [ioslides](http://rmarkdown.rstudio.com/ioslides_presentation_format.html)
+* Beamer (LaTeX)
+* Google Slides
 
 
 ### Advice {.unnumbered}
