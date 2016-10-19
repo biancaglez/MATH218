@@ -69,6 +69,15 @@ https://calendar.google.com/calendar/ical/aqigocv44as1nknf281es4oh1o%40group.cal
 
 #### Presentation Order
 
+|Fri 12/2 |Mon 12/5 |Wed 12/7 |Fri 12/9  |
+|:--------|:--------|:--------|:---------|
+|         |Shania   |Nina     |Connor    |
+|Andrea   |Bianca   |Kyra     |Emily     |
+|Alden    |Alex     |Brenda   |James     |
+|Amanda   |Yuchen   |Trisha   |Katherine |
+
+Source code:
+
 ~~~~
 library(dplyr)
 # Katherine's favorite #
@@ -85,12 +94,7 @@ names(order) <- c("Fri 12/2", "Mon 12/5", "Wed 12/7", "Fri 12/9")
 knitr::kable(order)
 ~~~~
 
-|Fri 12/2 |Mon 12/5 |Wed 12/7 |Fri 12/9  |
-|:--------|:--------|:--------|:---------|
-|         |Shania   |Nina     |Connor    |
-|Andrea   |Bianca   |Kyra     |Emily     |
-|Alden    |Alex     |Brenda   |James     |
-|Amanda   |Yuchen   |Trisha   |Katherine |
+
 
 
 
