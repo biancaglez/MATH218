@@ -76,7 +76,9 @@ https://calendar.google.com/calendar/ical/aqigocv44as1nknf281es4oh1o%40group.cal
 |Alden    |Alex     |Brenda   |James     |
 |Amanda   |Yuchen   |Trisha   |Katherine |
 
-Source code:
+<br>
+
+**Source code**:
 
 ~~~~
 library(dplyr)
