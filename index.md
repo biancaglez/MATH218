@@ -11,12 +11,30 @@ In reverse chronological order. A more detailed outline can be found [here](http
 
 
 
+### 4. Maps and Spatial Data
+
+<ul>
+  {% for post in site.posts %}
+    {% assign current_date = post.date | date: "%m %d" %}
+    {% if "10 23" <= current_date and current_date <= "10 24" %}
+    <li>
+      {{ post.date | date: "%a %b %-d" }} -  
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>:
+      {{ post.subtitle }}
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>  
+
+
+
+
 ### 3. Dates and Times
 
 <ul>
   {% for post in site.posts %}
     {% assign current_date = post.date | date: "%m %d" %}
-    {% if "10 11" <= current_date and current_date <= "10 21" %}
+    {% if "10 11" <= current_date and current_date <= "10 22" %}
     <li>
       {{ post.date | date: "%a %b %-d" }} -  
       <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>:
