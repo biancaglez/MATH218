@@ -127,6 +127,34 @@ knitr::kable(order)
 
 
 
+## Homework 4
+
+Homework 4 is posted
+[here](https://github.com/2016-09-Middlebury-Data-Science/HW-4).
+
+* Assigned Wed 11/02
+* Pre-submission due Wed 11/09
+* Submission due Wed 11/16 (everyone must submit this)
+* Library 105A Discussion and post-submission due Mon 11/28 (after break)
+
+**Notes**:
+
+
+
+
+
+
+
+<br>
+
+***
+
+<br>
+
+
+
+
+
 ## Homework 3
 
 Homework 3 is posted

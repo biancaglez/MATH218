@@ -10,13 +10,16 @@ layout: default
 In reverse chronological order. A more detailed outline can be found [here](https://docs.google.com/spreadsheets/d/1msrQOV0zFjc5VUamFhRltz8GhS-uF010_rfaSwtTVXU/edit?usp=sharing). The GitHub repository corresponding to these lectures can be found <a target="_blank" class="page-link" href="https://github.com/2016-09-Middlebury-Data-Science/Topics">here</a>.
 
 
+### 5. Text Data
+
+
 
 ### 4. Maps and Spatial Data
 
 <ul>
   {% for post in site.posts %}
     {% assign current_date = post.date | date: "%m %d" %}
-    {% if "10 23" <= current_date and current_date <= "10 31" %}
+    {% if "10 23" <= current_date and current_date <= "11 02" %}
     <li>
       {{ post.date | date: "%a %b %-d" }} -  
       <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>:
