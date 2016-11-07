@@ -12,6 +12,19 @@ In reverse chronological order. A more detailed outline can be found [here](http
 
 ### 5. Text Data
 
+<ul>
+  {% for post in site.posts %}
+    {% assign current_date = post.date | date: "%m %d" %}
+    {% if "11 06" <= current_date and current_date <= "11 09" %}
+    <li>
+      {{ post.date | date: "%a %b %-d" }} -  
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>:
+      {{ post.subtitle }}
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>  
+
 
 
 ### 4. Maps and Spatial Data
@@ -19,7 +32,7 @@ In reverse chronological order. A more detailed outline can be found [here](http
 <ul>
   {% for post in site.posts %}
     {% assign current_date = post.date | date: "%m %d" %}
-    {% if "10 23" <= current_date and current_date <= "11 07" %}
+    {% if "10 23" <= current_date and current_date <= "11 05" %}
     <li>
       {{ post.date | date: "%a %b %-d" }} -  
       <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>:
