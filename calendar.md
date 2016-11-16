@@ -155,6 +155,32 @@ Homework 4 is posted
 
 
 
+## Homework 5
+
+Homework 5 is posted
+[here](https://github.com/2016-09-Middlebury-Data-Science/HW-5).
+
+* Assigned Wed 11/16
+* Submission due Wed 11/30 (everyone must submit this)
+
+**Notes**:
+
+
+
+
+
+
+
+<br>
+
+***
+
+<br>
+
+
+
+
+
 ## Homework 3
 
 Homework 3 is posted
