@@ -5,32 +5,6 @@ permalink: /calendar/
 ---
 
 
-## Library 105A Discussion Presenters
-
-Here are the presenters for each HW; we'll determine HW-5 later. Please check
-the Google calendar below for exact dates of Library 105A discussions. Feel free
-to divy up questions amongst yourselves; if you don't specify a preference, I'll
-randomly allocate questions.
-
-|HW-1   |HW-2      |HW-3   |HW-4   |
-|:------|:---------|:------|:------|
-|Andrea |Brenda    |Nina   |James  |
-|Alden  |Alex      |Connor |Bianca |
-|Amanda |NA        |Yuchen |Shania |
-|Trisha |Katherine |Emily  |Kyra   |
-
-
-
-
-
-<br>
-
-***
-
-<br>
-
-
-
 
 
 ## Important Dates
@@ -67,7 +41,10 @@ https://calendar.google.com/calendar/ical/aqigocv44as1nknf281es4oh1o%40group.cal
 
 
 
-#### Presentation Order
+
+#### Presentations
+
+Click <a href = "https://docs.google.com/forms/d/e/1FAIpQLScXQJRmpRktnt7pHkOAFAMTIWQCncDHr5I5FvqHunrchVki9Q/viewform" target = "_blank">here</a> for the peer feedback form. Presentation schedule:
 
 |Fri 12/2 |Mon 12/5 |Wed 12/7 |Fri 12/9  |
 |:--------|:--------|:--------|:---------|
@@ -77,29 +54,7 @@ https://calendar.google.com/calendar/ical/aqigocv44as1nknf281es4oh1o%40group.cal
 |Amanda   |Yuchen   |Trisha   |Katherine |
 
 
-**Source code**:
-
-~~~~
-library(dplyr)
-# Katherine's favorite #
-set.seed(9)
-order <- c("Alden", "Alex", "Amanda", "Andrea", 
-           "Bianca", "Brenda", "Connor", "Emily", 
-           "James", "Katherine", "Kyra", "Nina", 
-           "Shania", "Trisha", "Yuchen") %>% 
-  sample() %>% 
-  c("", .) %>% 
-  matrix(nrow=4) %>% 
-  data.frame()
-names(order) <- c("Fri 12/2", "Mon 12/5", "Wed 12/7", "Fri 12/9")
-knitr::kable(order)
-~~~~
-
-
-
-
-
-
+<br>
 
 #### Past Examples
 
@@ -117,11 +72,77 @@ knitr::kable(order)
 
 
 
+
+
+
+
+
+<!--
+**Source code**:
+
+~~~~
+library(dplyr)
+# Katherine's favorite #
+set.seed(9)
+order <- c("Alden", "Alex", "Amanda", "Andrea", 
+           "Bianca", "Brenda", "Connor", "Emily", 
+           "James", "Katherine", "Kyra", "Nina", 
+           "Shania", "Trisha", "Yuchen") %>% 
+  sample() %>% 
+  c("", .) %>% 
+  matrix(nrow=4) %>% 
+  data.frame()
+names(order) <- c("Fri 12/2", "Mon 12/5", "Wed 12/7", "Fri 12/9")
+knitr::kable(order)
+~~~~
+-->
+
+
+
+
+
+
+
+
+
+
+
+
 <br>
 
 ***
 
 <br>
+
+
+
+
+
+
+
+## Library 105A Discussion Presenters
+
+Here are the presenters for each HW; we'll determine HW-5 later. Please check
+the Google calendar below for exact dates of Library 105A discussions. Feel free
+to divy up questions amongst yourselves; if you don't specify a preference, I'll
+randomly allocate questions.
+
+|HW-1   |HW-2      |HW-3   |HW-4   |
+|:------|:---------|:------|:------|
+|Andrea |Brenda    |Nina   |James  |
+|Alden  |Alex      |Connor |Bianca |
+|Amanda |NA        |Yuchen |Shania |
+|Trisha |Katherine |Emily  |Kyra   |
+
+
+
+
+<br>
+
+***
+
+<br>
+
 
 
 
