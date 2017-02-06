@@ -4,21 +4,19 @@ title: Syllabus
 permalink: /syllabus/
 ---
 
-## MATH 216: Fall 2016
+## MATH 218: 2017 Spring
 
 * **Instructor:** [Albert Y. Kim](https://rudeboybert.github.io/) - Assistant Professor of Statistics
 * **Email:** [aykim@middlebury.edu](aykim@middlebury.edu)
     + I will respond to emails within 24h, but not during weekends.
     + Please only email me with administrative and briefer questions as I prefer addressing more substantive questions in person.
 * **Class Location/Time:**
-    + MWF 9:05-9:55 in Warner 506.
-    + Davis Library 105A (downstairs on the right) on the following days: Wed 10/12, Wed 10/26, Wed 11/9, Mon 11/28.
+    + MWF 9:05-9:55 in Warner 507.
     + You do not need to inform me of absences. Please consult your peers for what you missed.
-* **Office Hours:** Warner 310 or the math lounge just outside. Feel free to come to the [MATH 116](https://rudeboybert.github.io/MATH116/) office hours as well, but those students get priority then. 
-    + M 1:00-2:30 and W 2:30-4:00
-    + MATH 116: M 2:30-4:00 and W 1:00-2:30
+* **Office Hours:** Warner 310 or the math lounge just outside. Note that office hours for 
+[MATH 116 Intro to Statistical & Data Sciences](https://rudeboybert.github.io/MATH116/) occur concurrently.
+    + M 1:00-4:00 and W 1:00-4:00
     + Or by appointment
-
 
 
 
