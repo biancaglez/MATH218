@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-<img src="./assets/figure/pipeline.png" alt="Drawing" style="width: 700px;" border="1"/>
+<img src="./assets/figure/StatisticalLearning.png" alt="Drawing" style="width: 700px;" border="1"/>
 
 # 2017 Spring Topic List
 
