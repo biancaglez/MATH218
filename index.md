@@ -2,14 +2,23 @@
 layout: default
 ---
 
+<img src="./assets/figure/StatisticalLearning.png" alt="Drawing" style="width: 600px;" border="1"/>
 
-<img src="./assets/figure/StatisticalLearning.png" alt="Drawing" style="width: 700px;" border="1"/>
-
-# 2017 Spring Topic List
-
-In reverse chronological order. A more detailed outline can be found [here](https://docs.google.com/spreadsheets/d/1msrQOV0zFjc5VUamFhRltz8GhS-uF010_rfaSwtTVXU/edit?usp=sharing). The GitHub repository corresponding to these lectures can be found <a target="_blank" class="page-link" href="https://github.com/2016-09-Middlebury-Data-Science/Topics">here</a>.
+# Lectures
 
 
+
+
+
+
+
+
+
+
+
+
+
+<!--
 ### 5. Text Data
 
 <ul>
@@ -92,3 +101,4 @@ In reverse chronological order. A more detailed outline can be found [here](http
     {% endif %}
   {% endfor %}
 </ul>  
+-->

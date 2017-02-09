@@ -7,15 +7,14 @@ permalink: /syllabus/
 ## MATH 218: 2017 Spring
 
 * **Instructor:** [Albert Y. Kim](https://rudeboybert.github.io/) - Assistant Professor of Statistics
-* **Email:** [aykim@middlebury.edu](aykim@middlebury.edu)
-    + I will respond to emails within 24h, but not during weekends.
-    + Please only email me with administrative and briefer questions as I prefer addressing more substantive questions in person.
+* **~~Email:~~** ~~[aykim@middlebury.edu](aykim@middlebury.edu)~~ **Slack team**: <a target="_blank" class="page-link" href="midd-stat-learning.slack.com">midd-stat-learning.slack.com</a>
+    + I will respond to ~~emails~~ Slack posts within 24h, but not during weekends.
+    + Please only ~~email~~ Slack post me with administrative and briefer questions as I prefer addressing more substantive questions in person.
 * **Class Location/Time:**
     + MWF 9:05-9:55 in Warner 507.
     + You do not need to inform me of absences. Please consult your peers for what you missed.
-* **Office Hours:** Warner 310 or the math lounge just outside. Note that office hours for 
-[MATH 116 Intro to Statistical & Data Sciences](https://rudeboybert.github.io/MATH116/) occur concurrently.
-    + M 1:00-4:00 and W 1:00-4:00
+* **Office Hours:** Warner 310 or the math lounge just outside. 
+    + M 1:00-4:00 and W 1:00-4:00 (concurrent with [MATH 116 office hours](https://rudeboybert.github.io/MATH116/))
     + Or by appointment
 
 
@@ -25,15 +24,13 @@ permalink: /syllabus/
 
 <!--#### Description-->
 
-In this course students will gain exposure to the entire data science pipeline: 
-forming a statistical question, collecting and cleaning data sets, performing 
-exploratory data analyses, identifying appropriate statistical techniques, and 
-communicating the results, all the while leaning heavily on open source 
-computational tools, in particular the R statistical software language. We will 
-focus on analyzing real, messy, and large data sets, requiring the use of 
-advanced data manipulation/wrangling and data visualization packages. Students 
-will be required to bring their own laptops as many lectures will involve 
-in-class computational activities.
+This course is an introduction to modern statistical, machine learning, and
+computational methods to analyze large and complex data sets that arise in a
+variety of fields, from biology to economics to astrophysics. The theoretical
+underpinnings of the most important modeling and predictive methods will be
+covered, including regression, classification, clustering, resampling, and
+tree-based methods. Student work will involve implementation of these concepts
+using open-source computational tools.
 
 <!--#### Objectives-->
 
@@ -41,17 +38,11 @@ in-class computational activities.
 
 
 
-## Topics
+## Topic Schedule
 
-Roughly speaking we will cover the following topics (a more detailed outline can be found
-[here](https://docs.google.com/spreadsheets/d/1msrQOV0zFjc5VUamFhRltz8GhS-uF010_rfaSwtTVXU/edit#gid=0)):
+Subject to change:
 
-1. Data manipulation and visualization
-1. Regression
-1. Dates and times
-1. Maps and spatial data
-1. Text data
-
+<iframe src="https://docs.google.com/spreadsheets/d/1Rr6Jk5x4G7nDpzaaAmryXpwaBtG6RAvGo4NvHrULSCU/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="780"></iframe>
 
 
 
@@ -60,8 +51,14 @@ Roughly speaking we will cover the following topics (a more detailed outline can
 
 #### 1) Textbook
 
-There is no textbook to purchase; as much as possible, we will rely on 
-open-source and freely available materials on the web.
+An Introduction to Statistical Learning with Applications in R (ISLR) by James,
+Witten, Hastie, and Tibshirani. A PDF of the text can be found on the book's
+<a target="_blank" class="page-link" href="http://www-bcf.usc.edu/~gareth/ISL/">homepage</a>.
+
+
+
+
+
 
 #### 2) Computing and Software
 
@@ -75,13 +72,13 @@ for all the software and accounts we will be using.
 
 ## Evaluation
 
-There are four components to your final grade: homeworks, quizzes, engagement,
+There are four components to your final grade: problem sets, 3 midterms, engagement,
 and the final project.
 
-#### 1) Homeworks 10%
+#### 1) Problem Sets 10%
 
-The five homeworks in this class should be viewed as low-stakes opportunities to 
-develop one's data science toolbox and receive feedback on the progress of one's
+The weekly problem sets in this class should be viewed as low-stakes opportunities to 
+develop one's machine learning toolbox and receive feedback on the progress of one's
 learning, instead of evaluative tools used by the instructor to assign grades. 
 To reinforce this thinking, each homework is worth only a nominal portion of the
 final grade. However, not making an honest effort on the homeworks will
@@ -93,35 +90,16 @@ must submit your own answers and not simple rewordings of another's work.
 Furthermore, **all collaborations must be explicitly acknowledged at the top of
 your submissions**.
 
-The typical homework workflow is:
-
-1. Homework assigned on a Wednesday.
-1. One week later: Pre-submission due.
-1. Two weeks later: Homework due. 
-1. Three weeks later: Post-submission due. Mini-presentations and group discussion in Library 105A.
-
-Click
-[here](https://docs.google.com/spreadsheets/d/1EVgkh3wgIWZCxzCKAEDie7f8YmKQ9FhYdKVIO4Fwm0E/edit#gid=0)
-for a visualization of this timetable. Since this is a college-writing course, instructor feedback on student work and writing
-is an essential component, thus
-
-* Everyone must submit work on the homework due date.
-* You must complete either the pre-submission or the post-submission, but not both. 
-That being said, feel free to complete both!
-* You must incorporate any feedback given for the earlier submission in the later submission.
 
 
+#### 2) 3 Midterms 45%
 
-#### 2) Quizzes 20%
+There will be 3 midterms:
 
-There will be a weekly quiz at the beginning of lecture on Mondays. The level of
-these quizzes will be such that they don't require extensive studying; if you 
-actively participate in class and are keeping up with the material, you will do
-fine. Notes:
+* In-Class:
+* Evening:
+* Finals week: TBD
 
-* It is your responsibility to be on time.
-* There will be no makeup quizzes.
-* The lowest two quiz scores will be dropped.
 
 
 #### 3) Engagement 10%
@@ -140,24 +118,38 @@ the homeworks being opportunities for practice and feedback, rather than as item
 to be graded on.
 
 
-#### 4) Final Project 60%
+#### 4) Final Project 35%
 
-Much of this course is a build up to the final project, which is a capstone
-experience synthesizing everything you've learned over the course of the
-semester. There are 3 components that sum to 60%:
-
-* Project proposal: Due Fri 10/28
-* Write-up 40%: Due on Fri 12/16 at 2pm
-* Oral presentation 15%: 10 minute presentations during the last 4 lectures with
-the presentation order determined at random a few weeks before.
-* Evaluation of final presentations 5%: You will be giving
-(anonymized) feedback on your peers' presentations, on which you'll be graded on the
-quality of your feedback.
-
+Much of this course is a build up to the final project, which is a capstone 
+experience synthesizing everything you've learned over the course of the 
+semester. You will be participating in a Kaggle (rhymes with haggle) competition
+<a target="_blank" class="page-link" href="https://www.kaggle.com/competitions">https://www.kaggle.com/competitions</a>.
 
 
 
 
 ## Academic Accommodations for Disabilities
 
-Students with documented disabilities who believe that they may need accommodations in this class are encouraged to contact me as early in the semester as possible to ensure that such accommodations are implemented in a timely fashion. Assistance is available to eligible students through Student Accessibility Services. Please contact Jodi Litchfield, the ADA coordinator, at [litchfie@middlebury.edu](litchfie@middlebury.edu) or 802.443.5936 for more information. All discussions will remain confidential.
+Students with documented disabilities who believe that they may need
+accommodations in this class are encouraged to contact me as early in the
+semester as possible to ensure that such accommodations are implemented in a
+timely fashion. Assistance is available to eligible students through Student
+Accessibility Services. Please contact Jodi Litchfield, the ADA coordinator, at
+[litchfie@middlebury.edu](litchfie@middlebury.edu) or 802.443.5936 for more
+information. All discussions will remain confidential.
+
+
+
+## Resources
+
+Your first stop for any help related to computing with data should be the book:
+[Getting used to R, RStudio, and R
+Markdown](https://rudeboybert.github.io/rbasics-book/index.html).
+
+* R: [Datacamp: Intro to R Course](https://www.datacamp.com/courses/free-introduction-to-r): 
+online platform for learning all dimensions of R
+* R Markdown:  [debugging sheet](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/edit): these steps solve about 85% of problems.
+* Data Science
+    + [The Elements of Data Analytic Style](https://leanpub.com/datastyle) by Leek
+    + [R for Data Science](http://r4ds.had.co.nz/) by Grolemund and Wickham
+* Git and GitHub: [Happy Git and GitHub for the useR](http://happygitwithr.com/)
