@@ -9,6 +9,7 @@ class. This should take between 60-90 minutes. If you get stuck, please speak to
 me after class or during office hours.
 
 
+
 ### Software
 
 Install the following software on your computer. **Even if you already have R &
@@ -39,8 +40,9 @@ VPN](http://mediawiki.middlebury.edu/wiki/LIS/Off-campus_Access).
 1. GitHub (all users) Go to [GitHub Education](https://education.github.com/discount_requests/new)
     + Request an "Individual Account" discount
     + For "How do you plan to use GitHub?" type in: For my Middlebury College
-    MATH 216 Introduction to Data Science course
+    MATH 218 Statistical Learning
     https://github.com/2016-09-Middlebury-Data-Science
+
 
 
 

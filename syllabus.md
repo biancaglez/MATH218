@@ -43,7 +43,7 @@ using open-source computational tools.
 
 Subject to change:
 
-<iframe src="https://docs.google.com/spreadsheets/d/1Rr6Jk5x4G7nDpzaaAmryXpwaBtG6RAvGo4NvHrULSCU/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="780"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/1Rr6Jk5x4G7nDpzaaAmryXpwaBtG6RAvGo4NvHrULSCU/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="790"></iframe>
 
 
 
@@ -75,28 +75,35 @@ and the final project.
 
 #### 1) Problem Sets 10%
 
-The weekly problem sets in this class should be viewed as low-stakes opportunities to 
-develop one's machine learning toolbox and receive feedback on the progress of one's
-learning, instead of evaluative tools used by the instructor to assign grades. 
-To reinforce this thinking, each homework is worth only a nominal portion of the
-final grade. However, not making an honest effort on the homeworks will
-ultimately hurt you for your (individual) final project.
+The weekly problem sets in this class should be viewed as low-stakes
+opportunities to develop one's machine learning toolbox and receive feedback on
+the progress of one's learning, instead of evaluative tools used by the
+instructor to assign grades. To reinforce this thinking, each homework is worth
+only a nominal portion of the final grade. However, not making an honest effort
+on the homeworks will ultimately hurt you for your (individual) final project.
 
-Collaboration on the homeworks is highly encouraged as in many situations
-learning is best done in groups, especially when it comes to coding. However you
-must submit your own answers and not simple rewordings of another's work.
-Furthermore, **all collaborations must be explicitly acknowledged at the top of
-your submissions**.
+Collaboration on the homeworks is highly encouraged as in many situations 
+learning is best done in groups. However you must submit your own answers and
+not simple rewordings of another's work. Furthermore, **all collaborations must
+be explicitly acknowledged at the top of your submissions**.
 
+* Assigned/due on Fridays.
+* Lowest two scores dropped.
+* No email submissions will be accepted; ask a classmate to print it for you.
+* No extensions for any problem sets will be granted. 
 
 
 #### 2) 3 Midterms 45%
 
-There will be 3 midterms:
+* Midterm dates: Wed 3/15 (in-class), Wed 4/19 (evening: location TBD), and during finals week.
+* There is no extra-credit work to improve midterm scores after the fact.
+* There will be no make-up nor rescheduled midterms, except in the following
+cases if documentation is provided:
+    + serious illness or death in the family.
+    + athletic commitments or religious obligations if and prior notice is
+    given. In such cases, rescheduled exams must be taken **before** the rest of
+    the class.
 
-* In-Class:
-* Evening:
-* Finals week: TBD
 
 
 
@@ -120,8 +127,12 @@ to be graded on.
 
 Much of this course is a build up to the final project, which is a capstone 
 experience synthesizing everything you've learned over the course of the 
-semester. You will be participating in a Kaggle (rhymes with haggle) competition
-<a target="_blank" class="page-link" href="https://www.kaggle.com/competitions">https://www.kaggle.com/competitions</a>.
+semester. You will be participating in a Kaggle (rhymes with haggle)
+competition: <a target="_blank" class="page-link"
+href="https://www.kaggle.com/competitions">https://www.kaggle.com/competitions</a>.
+
+
+
 
 
 
@@ -135,19 +146,3 @@ timely fashion. Assistance is available to eligible students through Student
 Accessibility Services. Please contact Jodi Litchfield, the ADA coordinator, at
 [litchfie@middlebury.edu](litchfie@middlebury.edu) or 802.443.5936 for more
 information. All discussions will remain confidential.
-
-
-
-## Resources
-
-Your first stop for any help related to computing with data should be the book:
-[Getting used to R, RStudio, and R
-Markdown](https://rudeboybert.github.io/rbasics-book/index.html).
-
-* R: [Datacamp: Intro to R Course](https://www.datacamp.com/courses/free-introduction-to-r): 
-online platform for learning all dimensions of R
-* R Markdown:  [debugging sheet](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/edit): these steps solve about 85% of problems.
-* Data Science
-    + [The Elements of Data Analytic Style](https://leanpub.com/datastyle) by Leek
-    + [R for Data Science](http://r4ds.had.co.nz/) by Grolemund and Wickham
-* Git and GitHub: [Happy Git and GitHub for the useR](http://happygitwithr.com/)
