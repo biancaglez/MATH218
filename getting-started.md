@@ -5,8 +5,8 @@ permalink: /getting_started/
 ---
 
 Please complete the following steps to get all software and accounts set-up for this 
-class. This should take between 60-90 minutes. **If anything doesn't work, please 
-speak to me after class or during office hours.**
+class. This should take between 60-90 minutes. If anything doesn't work, please 
+speak to me after class or during office hours.
 
 ## Software
 
