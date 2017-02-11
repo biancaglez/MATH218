@@ -17,6 +17,8 @@ date: "Last updated on `r Sys.Date()`"
 #       "--output=notes.html"
 #     ]
 output:
+  ioslides_presentation:
+    df_print: kable
   html_document:
     toc: true
     toc_float: true
@@ -27,8 +29,6 @@ output:
     pandoc_args: [
       "--output=notes.html"
     ]
-  ioslides_presentation:
-    df_print: kable
 ---
 
 <style>
@@ -42,7 +42,6 @@ slides > slide.backdrop {background: white;}
 knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 if(FALSE){
-  rmarkdown::render("slides.Rmd", output_format = "all")
   rmarkdown::render("slides.Rmd", output_format = c("html_document", "ioslides_presentation"))
 }
 ```
@@ -55,7 +54,8 @@ if(FALSE){
 
 ## What is statistical/machine learning?
 
-Oh shit whaddap
+yoyo
+
 
 ## Unchartered Territory
 
