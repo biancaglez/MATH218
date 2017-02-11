@@ -7,15 +7,16 @@ permalink: /syllabus/
 ## MATH 218: 2017 Spring
 
 * **Instructor:** [Albert Y. Kim](https://rudeboybert.github.io/) - Assistant Professor of Statistics
-* **~~Email:~~** ~~[aykim@middlebury.edu](aykim@middlebury.edu)~~ **Slack team**: <a target="_blank" class="page-link" href="midd-stat-learning.slack.com">midd-stat-learning.slack.com</a>
-    + I will respond to ~~emails~~ Slack posts within 24h, but not during weekends.
-    + Please only ~~email~~ Slack post me with administrative and briefer questions as I prefer addressing more substantive questions in person.
+* **~~Email:~~** ~~[aykim@middlebury.edu](aykim@middlebury.edu)~~ **Slack team**: <a target="_blank" class="page-link" href="https://midd-stat-learning.slack.com/">midd-stat-learning.slack.com</a>
+    + I will respond to ~~emails~~ Slack messages within 24h, but not during weekends.
+    + Please only ~~email~~ Slack message me with administrative and briefer questions as I prefer addressing more substantive questions in person.
 * **Class Location/Time:**
     + MWF 9:05-9:55 in Warner 507.
     + You do not need to inform me of absences. Please consult your peers for what you missed.
 * **Office Hours:** Warner 310 or the math lounge just outside. 
     + M 1:00-4:00 and W 1:00-4:00 (concurrent with [MATH 116 office hours](https://rudeboybert.github.io/MATH116/))
     + Or by appointment
+
 
 
 
@@ -47,6 +48,7 @@ Subject to change:
 
 
 
+
 ## Materials
 
 #### 1) Textbook
@@ -56,14 +58,10 @@ Witten, Hastie, and Tibshirani. A PDF of the text can be found on the book's
 <a target="_blank" class="page-link" href="http://www-bcf.usc.edu/~gareth/ISL/">homepage</a>.
 
 
-
-
-
-
 #### 2) Computing and Software
 
 We will chiefly be using R via the RStudio integrated development environment
-(IDE). Please see [Setting Up]({{ site.baseurl }}{% post_url 2016-09-12-getting-started %}) 
+(IDE). Please see [Getting Started]({{ site.baseurl }}/getting_started/) 
 for all the software and accounts we will be using.
 
 

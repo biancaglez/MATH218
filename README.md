@@ -1,6 +1,4 @@
-MATH 216
+MATH 218
 ================
 
-Course Webpage for Middlebury College MATH 216 Data Science: <https://rudeboybert.github.io/MATH216/>.
-
-The `_posts` folder contains the Markdown source code for all lecture pages
+Course Webpage for Middlebury College MATH 218 Statistical Learning: <https://rudeboybert.github.io/MATH218/>.

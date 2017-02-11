@@ -1,5 +1,5 @@
 ---
-title: "MATH 216"
+title: "MATH 218"
 output: github_document
 ---
 
@@ -7,6 +7,5 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Course Webpage for Middlebury College MATH 216 Data Science: <https://rudeboybert.github.io/MATH216/>. 
+Course Webpage for Middlebury College MATH 218 Statistical Learning: <https://rudeboybert.github.io/MATH218/>.
 
-The `_posts` folder contains the Markdown source code for all lecture pages

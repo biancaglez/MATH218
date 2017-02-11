@@ -6,7 +6,16 @@ layout: default
 
 # Lectures
 
+* Click <a target="_blank" class="page-link" href="{{ site.baseurl }}/slides.html">here</a> for a running slide deck.
+* Click <a target="_blank" class="page-link" href="{{ site.baseurl }}/notes.html">here</a> for the corresponding slides in HTML format.
+* Click <a target="_blank" class="page-link" href="{{ site.baseurl }}/slides.Rmd">here</a> for the `.Rmd` source code.
 
+
+## 1. Introduction
+
+* Lec01 - Mon 2/13
+    + What is statistical/machine learning?
+    + Computational toolbox
 
 
 
