@@ -6,10 +6,9 @@ layout: default
 
 # Lectures
 
-Lectures will be a combination of chalk talk and slides:
-
-* <a target="_blank" class="page-link" href="{{ site.baseurl }}/slides.html">Running slide deck</a>
-* <a target="_blank" class="page-link" href="{{ site.baseurl }}/notes.html">Corresponding HTML document</a>
+Lectures will be a combination of chalk talks and <a target="_blank" class="page-link" href="{{ site.baseurl }}/slides.html">a running slide deck</a>, the latter being also available in:
+  
+* <a target="_blank" class="page-link" href="{{ site.baseurl }}/notes.html">HTML format</a>
 * <a target="_blank" class="page-link" href="{{ site.baseurl }}/slides.Rmd">R Markdown `.Rmd` source code</a>
 
 

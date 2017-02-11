@@ -2,20 +2,6 @@
 title: "Statistical Learning"
 author: "Albert Y. Kim"
 date: "Last updated on `r Sys.Date()`"
-# output:
-#   ioslides_presentation:
-#     df_print: kable
-# output:
-#   html_document:
-#     toc: true
-#     toc_float: true
-#     toc_depth: 2
-#     theme: cosmo
-#     highlight: tango
-#     df_print: paged
-#     pandoc_args: [
-#       "--output=notes.html"
-#     ]
 output:
   ioslides_presentation:
     df_print: kable
@@ -41,8 +27,10 @@ slides > slide.backdrop {background: white;}
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
+library(ISLR)
 if(FALSE){
   rmarkdown::render("slides.Rmd", output_format = c("html_document", "ioslides_presentation"))
+  rmarkdown::render("slides.Rmd", output_format = c("html_document"))
 }
 ```
 
@@ -50,7 +38,7 @@ if(FALSE){
 
 
 
-# Lec01 - 2/13: 1. Introduction
+# Lec01 - Mon 2/13: Introduction
 
 ## What is statistical/machine learning?
 
