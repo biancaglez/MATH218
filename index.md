@@ -6,9 +6,11 @@ layout: default
 
 # Lectures
 
-* Click <a target="_blank" class="page-link" href="{{ site.baseurl }}/slides.html">here</a> for a running slide deck.
-* Click <a target="_blank" class="page-link" href="{{ site.baseurl }}/notes.html">here</a> for the corresponding slides in HTML format.
-* Click <a target="_blank" class="page-link" href="{{ site.baseurl }}/slides.Rmd">here</a> for the `.Rmd` source code.
+Lectures will be a combination of chalk talk and slides:
+
+* <a target="_blank" class="page-link" href="{{ site.baseurl }}/slides.html">Running slide deck</a>
+* <a target="_blank" class="page-link" href="{{ site.baseurl }}/notes.html">Corresponding HTML document</a>
+* <a target="_blank" class="page-link" href="{{ site.baseurl }}/slides.Rmd">R Markdown `.Rmd` source code</a>
 
 
 ## 1. Introduction
@@ -16,12 +18,6 @@ layout: default
 * Lec01 - Mon 2/13
     + What is statistical/machine learning?
     + Computational toolbox
-
-
-
-
-
-
 
 
 
