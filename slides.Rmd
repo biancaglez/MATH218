@@ -38,6 +38,19 @@ if(FALSE){
 
 
 
+<!----------------------------------------------------------------------------->
+# Lec02 - Wed 2/15: 
+
+
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
 # Lec01 - Mon 2/13: Introduction
 
 ## What is statistical/machine learning?
@@ -112,12 +125,6 @@ if(FALSE){
 Final Project: Kaggle (rhymes with haggle)
 [competition](https://www.kaggle.com/competitions).
     
-
-
-## Cornerstone of Course
-
-Final Project: Kaggle (rhymes with haggle)
-[competition](https://www.kaggle.com/competitions).
     
 
 
