@@ -111,6 +111,29 @@ if(FALSE){
 
 Final Project: Kaggle (rhymes with haggle)
 [competition](https://www.kaggle.com/competitions).
+    
+
+
+## Cornerstone of Course
+
+Final Project: Kaggle (rhymes with haggle)
+[competition](https://www.kaggle.com/competitions).
+    
+
+
+## Sampling
+
+<center><img src="assets/figure/target-population.jpg" alt="Drawing" style="width: 600px;"/></center>
+    
+
+
+## Resampling
+
+<center><img src="assets/figure/resample.jpg" alt="Drawing" style="width: 600px;"/></center>
+
+
+
+
 
 
 
