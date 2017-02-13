@@ -5,10 +5,11 @@ date: "Last updated on `r Sys.Date()`"
 output:
   ioslides_presentation:
     df_print: kable
+    incremental: true
   html_document:
     toc: true
     toc_float: true
-    toc_depth: 2
+    toc_depth: 1
     theme: cosmo
     highlight: tango
     df_print: paged
@@ -29,7 +30,7 @@ knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 library(ISLR)
 if(FALSE){
-  rmarkdown::render("slides.Rmd", output_format = c("html_document", "ioslides_presentation"))
+  #rmarkdown::render("slides.Rmd", output_format = c("html_document", "ioslides_presentation"))
   rmarkdown::render("slides.Rmd", output_format = c("html_document"))
 }
 ```
@@ -42,10 +43,71 @@ if(FALSE){
 
 ## What is statistical/machine learning?
 
-yoyo
+<center><img src="assets/figure/data_science_3.png" alt="Drawing" style="width: 400px;"/></center>
+
+
+
+## What is statistical/machine learning?
+
+* In Feb 2016, I agonized over title of course: "Statistical Learning" vs "Machine Learning"
+* In Summer 2016: Ben Baumer at Smith posed:
+* *"Instead of obsessing over Venn diagrams of what topics are within the domains of which disciplines, I ask instead..."*
+* *"... What if we blew up math, stats, CS, and all their legacies and started over? What would this field look like?"*
+* New moniker: Machine learning... taught from a statistician's perspective
+
+
+
+## Definitions
+
+* Arthur Samuel (1959): Machine learning is the subfield of computer science that gives computers the ability to learn without being explicitly programmed.
+* Me: Prediction
+
+
+
+## Examples:
+
+* [Self-Driving Vehicles](https://www.wired.com/2016/10/ubers-self-driving-truck-makes-first-delivery-50000-beers/)
+* Netflix recommendations
+* Simple linear regression
+
+
+
+## Background
+
+* In the past, lots and lots of mathmatical science pre-requisites: algorithms, probability, linear algebra, etc.
+* Brought to you from folks at Stanford in 2001: <center><img src="assets/figure/ESL.jpg" alt="Drawing" style="width: 200px;"/></center>
+
 
 
 ## Unchartered Territory
+
+* New model: flatter pre-requisite structure. That means we'll have a few digressions for probability, linear algebra, etc.
+* Brought to you from folks at Stanford (again) in 2013: <center><img src="assets/figure/ISLR.jpg" alt="Drawing" style="width: 200px;"/></center>
+
+
+
+## Unchartered Territory
+
+* Book is still much like beta version of software:
+     + New, exciting, and cutting edge but...
+     + Lots bugs
+* Battle tested with: <center><img src="assets/figure/mhusseinmidd_anon.png" alt="Drawing" style="width: 200px;"/></center>
+* Smith College SDS Initiative <https://github.com/SmithCollege-SDS/tidy-islr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
