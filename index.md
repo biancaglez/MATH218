@@ -11,10 +11,9 @@ Lectures will be a combination of chalk talks and <a target="_blank" class="page
 
 ## 1. Introduction
 
-* Lec01 - Mon 2/13
-    + [Getting Started]({{ site.baseurl }}/getting_started/)
+* Mon Feb 13 - Lec01
+    + Follow all steps in [Getting Started]({{ site.baseurl }}/getting_started/)
     + What is statistical/machine learning?
-    + Computational toolbox
 
 
 
