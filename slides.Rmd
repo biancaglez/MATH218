@@ -37,8 +37,6 @@ if(FALSE){
 
 
 
-
-
 # Lec01 - Mon 2/13: Introduction
 
 ## What is statistical/machine learning?
@@ -93,6 +91,26 @@ if(FALSE){
      + Lots bugs
 * Battle tested with: <center><img src="assets/figure/mhusseinmidd_anon.png" alt="Drawing" style="width: 200px;"/></center>
 * Smith College SDS Initiative <https://github.com/SmithCollege-SDS/tidy-islr>
+
+
+
+## Toolbox
+
+<center><img src="./assets/figure/tools.jpg" height="200px"/></center>
+
+* [R vs Python](https://www.google.com/search?q=r+vs+python). A hammer vs a screwdriver
+* Argument for R: Wickham's [Tidy tools manifesto](https://cran.r-project.org/web/packages/tidyverse/vignettes/manifesto.html)
+    + Reuse existing data structures: Consistency across packages e.g. `ggplot2`, `dplyr`, `modelr`
+    + Design for humans: Bottleneck in most data analysis is thinking time, not computing time. i.e. avoid **premature optimization**
+    
+
+
+## Cornerstone of Course
+
+Final Project: Kaggle (rhymes with haggle)
+[competition](https://www.kaggle.com/competitions).
+
+
 
 
 
