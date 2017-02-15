@@ -93,7 +93,7 @@
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">Last updated on 2017-02-13</p>
+            <p style="margin-top: 6px; margin-left: -2px;">Last updated on 2017-02-15</p>
           </hgroup>
   </slide>
 
@@ -104,9 +104,233 @@ h3{color: #3399ff;}
 slides > slide.backdrop {background: white;}
 </style>
 
+<style type="text/css">
+slides > slide:not(.nobackground):after {
+  content: '';
+}
+</style>
+
 <!----------------------------------------------------------------------------->
 
 <slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2>Lec02 - Wed 2/15:</h2></hgroup><article  id="lec02---wed-215">
+
+</article></slide><slide class=''><hgroup><h2>Toolbox</h2></hgroup><article  id="toolbox">
+
+<ol class = 'build'>
+<li><code>R</code>: <code>tidyverse</code> and the pipe operator <code>%&gt;%</code></li>
+<li>DataCamp</li>
+<li>Kaggle</li>
+</ol>
+
+</article></slide><slide class=''><hgroup><h2>Tool 1: <code>tidyverse</code></h2></hgroup><article  id="tool-1-tidyverse">
+
+<p><code>tidyverse</code> is a set of packages that work in harmony because they share common data representations and API design.</p>
+
+<pre class = 'prettyprint lang-r'>install.packages(&quot;tidyverse&quot;)
+library(tidyverse)</pre>
+
+<p>Read more on <a href='https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/' title=''>RStudio&#39;s Blog</a>.</p>
+
+</article></slide><slide class=''><hgroup><h2><code>tidyverse</code> Core Packages</h2></hgroup><article  id="tidyverse-core-packages">
+
+<p>These get loaded when you run <code>library(tidyverse)</code></p>
+
+<ul>
+<li><code>ggplot2</code> for data visualisation.</li>
+<li><code>dplyr</code> for data manipulation.</li>
+<li><code>tidyr</code> for data tidying.</li>
+<li><code>readr</code> for data import.</li>
+<li><code>purrr</code> for functional programming.</li>
+<li><code>tibble</code> for tibbles, a modern re-imagining of data frames.</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2><code>tidyverse</code> Non-Core Packages</h2></hgroup><article  id="tidyverse-non-core-packages">
+
+<p>These get installed with <code>tidyverse</code></p>
+
+<ul>
+<li><code>hms</code> for times.</li>
+<li><code>stringr</code> for strings.</li>
+<li><code>lubridate</code> for date/times.</li>
+<li><code>forcats</code> for factors.</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2><code>tidyverse</code> Data Import Packages</h2></hgroup><article  id="tidyverse-data-import-packages">
+
+<p>These get installed with <code>tidyverse</code></p>
+
+<ul>
+<li><code>DBI</code> for databases.</li>
+<li><code>haven</code> for SPSS, SAS and Stata files.</li>
+<li><code>httr</code> for web apis.</li>
+<li><code>jsonlite</code> for JSON.</li>
+<li><code>readxl</code> for .xls and .xlsx files.</li>
+<li><code>rvest</code> for web scraping.</li>
+<li><code>xml2</code> for XML.</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2><code>tidyverse</code> Modelling Packages</h2></hgroup><article  id="tidyverse-modelling-packages">
+
+<p>These get installed with <code>tidyverse</code></p>
+
+<ul>
+<li><code>modelr</code> for simple modelling within a pipeline</li>
+<li><code>broom</code> for turning models into tidy data</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Tool 2: DataCamp</h2></hgroup><article  id="tool-2-datacamp">
+
+<ul class = 'build'>
+<li>Browser-based interactive tool for learning R/python</li>
+<li>Interface is like RStudio: wrapper around R console</li>
+<li>You all have access to <a href='https://www.datacamp.com/courses/' title=''>ALL courses</a> for free for the semester!</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>DataCamp</h2></hgroup><article  id="datacamp">
+
+<p>If you are new to&#8230;</p>
+
+<ul class = 'build'>
+<li><code>ggplot2</code>: Package for Data Visualization, do Data Visualization with ggplot2 <a href='https://www.datacamp.com/courses/data-visualization-with-ggplot2-1' title=''>(Part 1)</a>, <a href='https://www.datacamp.com/courses/data-visualization-with-ggplot2-2' title=''>(Part 2)</a>, and <a href='https://www.datacamp.com/courses/data-visualization-with-ggplot2-part-3' title=''>(Part 3)</a></li>
+<li><code>dplyr</code>: Package for Data Manipulation, do <a href='https://www.datacamp.com/courses/dplyr-data-manipulation-r-tutorial' title=''>Data Manipulation in R with dplyr</a> and <a href='https://www.datacamp.com/courses/joining-data-in-r-with-dplyr' title=''>Joining Data in R with dplyr</a>.</li>
+<li>R Markdown: Creating reproducible reports do <a href='https://www.datacamp.com/courses/reporting-with-r-markdown' title=''>Reporting with R Markdown</a></li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Tool 3: Kaggle</h2></hgroup><article  id="tool-3-kaggle">
+
+<ul class = 'build'>
+<li>Baby&#39;s first Kaggle competition entry!</li>
+<li>Tutorial on their most popular competition for beginners <a href='https://www.kaggle.com/c/titanic' title=''>Titanic: Machine Learning from Disaster</a>.</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Titanic Data</h2></hgroup><article  id="titanic-data">
+
+<p>For \(i=1,\ldots,n\) passengers</p>
+
+<ul class = 'build'>
+<li>ID variable: <code>PassengerId</code></li>
+<li>Outcome variable \(y_i\): <code>Survived</code> (binary)</li>
+<li>10 Predictors/covariates \(\vec{X}_i\) i.e. information about the passenger: <code>Pclass</code>, <code>Name</code>, <code>Sex</code>, <code>Age</code>, <code>SibSp</code>, <code>Parch</code>, <code>Ticket</code>, <code>Fare</code>, <code>Cabin</code>, <code>Embarked</code>.</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Models for Predicting Survival:</h2></hgroup><article  id="models-for-predicting-survival">
+
+<p>Naïve models: Use no information about the passenger, i.e. no covariates</p>
+
+<ol class = 'build'>
+<li>Everyone dies: Predict
+
+<ul class = 'build'>
+<li><code>Survived == 0</code></li>
+</ul></li>
+<li>Everyone lives: Predict
+
+<ul class = 'build'>
+<li><code>Survived == 1</code></li>
+</ul></li>
+<li>Flip a weighted coin. Predict
+
+<ul class = 'build'>
+<li><code>Survived == 1</code> with probability \(p\)</li>
+<li><code>Survived == 0</code> with probability \(1-p\)</li>
+</ul></li>
+</ol>
+
+</article></slide><slide class=''><hgroup><h2>Models for Predicting Survival:</h2></hgroup><article  id="models-for-predicting-survival-1">
+
+<ul class = 'build'>
+<li>Instead, let&#39;s use some information about the passengers: <code>Sex</code>?</li>
+<li>Our model: Predict:
+
+<ul class = 'build'>
+<li><code>Survived == 1</code> if <code>Sex == &quot;female&quot;</code></li>
+<li><code>Survived == 0</code> if <code>Sex == &quot;male&quot;</code></li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Outline of Competition</h2></hgroup><article  id="outline-of-competition">
+
+<p>Chalk talk i.e. see your lecture notes.</p>
+
+</article></slide><slide class=''><hgroup><h2>Titanic Data</h2></hgroup><article  id="titanic-data-1">
+
+<p>Load CSV&#39;s into R:</p>
+
+<pre class = 'prettyprint lang-r'>gender_submission &lt;- readr::read_csv(&quot;assets/Titanic/gender_submission.csv&quot;)
+test &lt;- readr::read_csv(&quot;assets/Titanic/test.csv&quot;)
+train &lt;- readr::read_csv(&quot;assets/Titanic/train.csv&quot;)</pre>
+
+<ul class = 'build'>
+<li>You may need to change your directory path.</li>
+<li><code>readr::</code> just indicates the function is from the <code>readr</code> package. Use for disambiguation.</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Training Set</h2></hgroup><article  id="training-set">
+
+<p>The binary outcome varible <code>Survived</code> is included.</p>
+
+<pre class = 'prettyprint lang-r'>glimpse(train)</pre>
+
+<pre >## Observations: 891
+## Variables: 12
+## $ PassengerId &lt;int&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,...
+## $ Survived    &lt;int&gt; 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0,...
+## $ Pclass      &lt;int&gt; 3, 1, 3, 1, 3, 3, 1, 3, 3, 2, 3, 1, 3, 3, 3, 2, 3,...
+## $ Name        &lt;chr&gt; &quot;Braund, Mr. Owen Harris&quot;, &quot;Cumings, Mrs. John Bra...
+## $ Sex         &lt;chr&gt; &quot;male&quot;, &quot;female&quot;, &quot;female&quot;, &quot;female&quot;, &quot;male&quot;, &quot;mal...
+## $ Age         &lt;dbl&gt; 22, 38, 26, 35, 35, NA, 54, 2, 27, 14, 4, 58, 20, ...
+## $ SibSp       &lt;int&gt; 1, 1, 0, 1, 0, 0, 0, 3, 0, 1, 1, 0, 0, 1, 0, 0, 4,...
+## $ Parch       &lt;int&gt; 0, 0, 0, 0, 0, 0, 0, 1, 2, 0, 1, 0, 0, 5, 0, 0, 1,...
+## $ Ticket      &lt;chr&gt; &quot;A/5 21171&quot;, &quot;PC 17599&quot;, &quot;STON/O2. 3101282&quot;, &quot;1138...
+## $ Fare        &lt;dbl&gt; 7.2500, 71.2833, 7.9250, 53.1000, 8.0500, 8.4583, ...
+## $ Cabin       &lt;chr&gt; NA, &quot;C85&quot;, NA, &quot;C123&quot;, NA, NA, &quot;E46&quot;, NA, NA, NA, ...
+## $ Embarked    &lt;chr&gt; &quot;S&quot;, &quot;C&quot;, &quot;S&quot;, &quot;S&quot;, &quot;S&quot;, &quot;Q&quot;, &quot;S&quot;, &quot;S&quot;, &quot;S&quot;, &quot;C&quot;, ...</pre>
+
+</article></slide><slide class=''><hgroup><h2>Test Set</h2></hgroup><article  id="test-set">
+
+<p><code>Survived</code> is now <strong>NOT</strong> included. There are 418 rows (passengers) you need to predict.</p>
+
+<pre class = 'prettyprint lang-r'>glimpse(test)</pre>
+
+<pre >## Observations: 418
+## Variables: 11
+## $ PassengerId &lt;int&gt; 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, ...
+## $ Pclass      &lt;int&gt; 3, 3, 2, 3, 3, 3, 3, 2, 3, 3, 3, 1, 1, 2, 1, 2, 2,...
+## $ Name        &lt;chr&gt; &quot;Kelly, Mr. James&quot;, &quot;Wilkes, Mrs. James (Ellen Nee...
+## $ Sex         &lt;chr&gt; &quot;male&quot;, &quot;female&quot;, &quot;male&quot;, &quot;male&quot;, &quot;female&quot;, &quot;male&quot;...
+## $ Age         &lt;dbl&gt; 34.5, 47.0, 62.0, 27.0, 22.0, 14.0, 30.0, 26.0, 18...
+## $ SibSp       &lt;int&gt; 0, 1, 0, 0, 1, 0, 0, 1, 0, 2, 0, 0, 1, 1, 1, 1, 0,...
+## $ Parch       &lt;int&gt; 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0,...
+## $ Ticket      &lt;chr&gt; &quot;330911&quot;, &quot;363272&quot;, &quot;240276&quot;, &quot;315154&quot;, &quot;3101298&quot;,...
+## $ Fare        &lt;dbl&gt; 7.8292, 7.0000, 9.6875, 8.6625, 12.2875, 9.2250, 7...
+## $ Cabin       &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, &quot;B...
+## $ Embarked    &lt;chr&gt; &quot;Q&quot;, &quot;S&quot;, &quot;Q&quot;, &quot;S&quot;, &quot;S&quot;, &quot;S&quot;, &quot;Q&quot;, &quot;S&quot;, &quot;C&quot;, &quot;S&quot;, ...</pre>
+
+</article></slide><slide class=''><hgroup><h2>Submission Example</h2></hgroup><article  id="submission-example">
+
+<p>This is what you submit: 418 rows with</p>
+
+<ul>
+<li>the ID variable <code>PassengerId</code></li>
+<li>your <strong>predicted</strong> outcome variable <code>Survived</code></li>
+</ul>
+
+<pre class = 'prettyprint lang-r'>glimpse(gender_submission)</pre>
+
+<pre >## Observations: 418
+## Variables: 2
+## $ PassengerId &lt;int&gt; 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, ...
+## $ Survived    &lt;int&gt; 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0,...</pre>
+
+</article></slide><slide class=''><hgroup><h2>Submission Example</h2></hgroup><article  id="submission-example-1">
+
+<p>You can write to CSV via:</p>
+
+<pre class = 'prettyprint lang-r'>gender_submission %&gt;% readr::write_csv(&quot;assets/Titanic/submission.csv&quot;)</pre>
+
+</article></slide><slide class=''><hgroup><h2>Submission Example</h2></hgroup><article  id="submission-example-2">
+
+<p>After submitting to Kaggle, you can see your ranking.</p>
 
 <!----------------------------------------------------------------------------->
 
@@ -190,7 +414,7 @@ slides > slide.backdrop {background: white;}
 <li>Smith College SDS Initiative <a href='https://github.com/SmithCollege-SDS/tidy-islr' title=''>https://github.com/SmithCollege-SDS/tidy-islr</a></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Toolbox</h2></hgroup><article  id="toolbox">
+</article></slide><slide class=''><hgroup><h2>Toolbox</h2></hgroup><article  id="toolbox-1">
 
 <center>
 
