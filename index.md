@@ -11,6 +11,10 @@ Lectures will be a combination of chalk talks and <a target="_blank" class="page
 
 ## 1. Introduction
 
+* Wed Feb 15 - Lec02: Going over the toolbox
+  1. `R`: `tidyverse` and the pipe operator `%>%`
+  1. DataCamp
+  1. Kaggle
 * Mon Feb 13 - Lec01
     + Follow all steps in [Getting Started]({{ site.baseurl }}/getting_started/)
     + What is statistical/machine learning?
