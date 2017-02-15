@@ -25,8 +25,15 @@ h3{color: #3399ff;}
 slides > slide.backdrop {background: white;}
 </style>
 
+<style type="text/css">
+slides > slide:not(.nobackground):after {
+  content: '';
+}
+</style>
+
+
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(ISLR)
 if(FALSE){
@@ -40,6 +47,199 @@ if(FALSE){
 
 <!----------------------------------------------------------------------------->
 # Lec02 - Wed 2/15: 
+
+## Toolbox
+
+1. `R`: `tidyverse` and the pipe operator `%>%`
+1. DataCamp
+1. Kaggle
+
+
+
+## Tool 1: `tidyverse`
+
+`tidyverse` is a set of packages that work in harmony because they share common data representations and API design. 
+
+```{r, eval=FALSE}
+install.packages("tidyverse")
+library(tidyverse)
+```
+
+Read more on [RStudio's Blog](https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/).
+
+
+
+## `tidyverse` Core Packages
+
+These get loaded when you run `library(tidyverse)`
+
+> * `ggplot2` for data visualisation.
+> * `dplyr` for data manipulation.
+> * `tidyr` for data tidying.
+> * `readr` for data import.
+> * `purrr` for functional programming.
+> * `tibble` for tibbles, a modern re-imagining of data frames.
+
+
+
+## `tidyverse` Non-Core Packages
+
+These get installed with `tidyverse`
+
+> * `hms` for times.
+> * `stringr` for strings.
+> * `lubridate` for date/times.
+> * `forcats` for factors.
+
+
+
+## `tidyverse` Data Import Packages
+
+These get installed with `tidyverse`
+
+> * `DBI` for databases.
+> * `haven` for SPSS, SAS and Stata files.
+> * `httr` for web apis.
+> * `jsonlite` for JSON.
+> * `readxl` for .xls and .xlsx files.
+> * `rvest` for web scraping.
+> * `xml2` for XML.
+
+
+
+## `tidyverse` Modelling Packages
+
+These get installed with `tidyverse`
+
+> * `modelr` for simple modelling within a pipeline
+> * `broom` for turning models into tidy data
+
+
+
+## Tool 2: DataCamp
+
+* Browser-based interactive tool for learning R/python
+* Interface is like RStudio: wrapper around R console
+* You all have access to [ALL courses](https://www.datacamp.com/courses/) for free for the semester!
+
+
+
+## DataCamp 
+
+If you are new to...
+
+* `ggplot2`: Package for Data Visualization, do Data Visualization with ggplot2 [(Part 1)](https://www.datacamp.com/courses/data-visualization-with-ggplot2-1), [(Part 2)](https://www.datacamp.com/courses/data-visualization-with-ggplot2-2), and [(Part 3)](https://www.datacamp.com/courses/data-visualization-with-ggplot2-part-3)
+* `dplyr`: Package for Data Manipulation, do [Data Manipulation in R with dplyr](https://www.datacamp.com/courses/dplyr-data-manipulation-r-tutorial) and [Joining Data in R with dplyr](https://www.datacamp.com/courses/joining-data-in-r-with-dplyr).
+* R Markdown: Creating reproducible reports do [Reporting with R Markdown](https://www.datacamp.com/courses/reporting-with-r-markdown)
+
+
+
+## Tool 3: Kaggle
+
+* Baby's first Kaggle competition entry!
+* Tutorial on their most popular competition for beginners [Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic).
+
+
+
+## Titanic Data
+
+For $i=1,\ldots,n$ passengers
+
+* ID variable: `PassengerId`
+* Outcome variable $y_i$: `Survived` (binary)
+* 10 Predictors/covariates $\vec{X}_i$ i.e. information about the passenger: `Pclass`, `Name`, `Sex`, `Age`, `SibSp`, `Parch`, `Ticket`, `Fare`, `Cabin`, `Embarked`. 
+
+
+
+## Models for Predicting Survival:
+
+Naïve models: Use no information about the passenger, i.e. no covariates
+
+1. Everyone dies: Predict
+    + `Survived == 0`
+1. Everyone lives: Predict
+    + `Survived == 1`
+1. Flip a weighted coin. Predict
+    + `Survived == 1` with probability $p$
+    + `Survived == 0` with probability $1-p$
+
+
+## Models for Predicting Survival:
+
+* Instead, let's use some information about the passengers: `Sex`? 
+* Our model: Predict:
+    + `Survived == 1` if `Sex == "female"`
+    + `Survived == 0` if `Sex == "male"`
+
+
+
+## Outline of Competition
+
+Chalk talk i.e. see your lecture notes. 
+
+
+
+## Titanic Data
+
+Load CSV's into R:
+
+```{r, message=FALSE}
+gender_submission <- readr::read_csv("assets/Titanic/gender_submission.csv")
+test <- readr::read_csv("assets/Titanic/test.csv")
+train <- readr::read_csv("assets/Titanic/train.csv")
+```
+
+* You may need to change your directory path.
+* `readr::` just indicates the function is from the `readr` package. Use for disambiguation.
+
+
+
+## Training Set
+
+The binary outcome varible `Survived` is included.
+
+```{r}
+glimpse(train)
+```
+
+
+## Test Set
+
+`Survived` is now **NOT** included. There are 418 rows (passengers) you need to predict.
+
+```{r}
+glimpse(test)
+```
+
+
+## Submission Example
+
+This is what you submit: 418 rows with
+
+> * the ID variable `PassengerId`
+> * your **predicted** outcome variable `Survived`
+
+```{r}
+glimpse(gender_submission)
+```
+
+
+## Submission Example
+
+You can write to CSV via:
+
+```{r, eval=FALSE}
+gender_submission %>% readr::write_csv("assets/Titanic/submission.csv")
+```
+
+
+## Submission Example
+
+After submitting to Kaggle, you can see your ranking.
+
+
+
+
 
 
 

@@ -9,6 +9,25 @@ own answers and not simple rewordings of another's work. Furthermore, **all
 collaborations must be explicitly acknowledged at the top of your submissions**.
 
 
+### Problem Set 01
+
+* **Info:**
+    + Assigned Wed 2/15
+    + Due Fri 2/24 9am
+* **Learning Goals:**
+    + Getting familiar with Kaggle competition workflow
+    + Allow time for `tidyverse` newbies to get up to speed
+* **Notes**:
+    + Don't focus on memorizing anything for now, just complete the assignment.
+    + If you find yourself spinning your wheels, let me know.
+* **Homework:**
+    + `tidyverse` newbies: Do DataCamp classes listed in Lec02.
+    + Baby's first Kaggle competition: Titanic
+        + Create a model that predicts `Survival` other than ones we've seen.
+        + Submit the predictions CSV so that your ranking shows.
+        + Slack message me your Kaggle name so I can find you in the rankings.
+
+
 <!--
 <br>
 
