@@ -256,7 +256,8 @@ library(tidyverse)</pre>
 
 <p>Load CSV&#39;s into R:</p>
 
-<pre class = 'prettyprint lang-r'>gender_submission &lt;- readr::read_csv(&quot;assets/Titanic/gender_submission.csv&quot;)
+<pre class = 'prettyprint lang-r'>library(tidyverse)
+gender_submission &lt;- readr::read_csv(&quot;assets/Titanic/gender_submission.csv&quot;)
 test &lt;- readr::read_csv(&quot;assets/Titanic/test.csv&quot;)
 train &lt;- readr::read_csv(&quot;assets/Titanic/train.csv&quot;)</pre>
 

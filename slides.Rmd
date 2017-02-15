@@ -184,6 +184,7 @@ Chalk talk i.e. see your lecture notes.
 Load CSV's into R:
 
 ```{r, message=FALSE}
+library(tidyverse)
 gender_submission <- readr::read_csv("assets/Titanic/gender_submission.csv")
 test <- readr::read_csv("assets/Titanic/test.csv")
 train <- readr::read_csv("assets/Titanic/train.csv")
