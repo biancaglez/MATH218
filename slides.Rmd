@@ -4,7 +4,7 @@ author: "Albert Y. Kim"
 date: "Last updated on `r Sys.Date()`"
 output:
   ioslides_presentation:
-    df_print: kable
+    #df_print: kable
     incremental: true
   html_document:
     toc: true
@@ -12,7 +12,7 @@ output:
     toc_depth: 1
     theme: cosmo
     highlight: tango
-    df_print: paged
+    #df_print: paged
     pandoc_args: [
       "--output=notes.html"
     ]
@@ -34,14 +34,128 @@ slides > slide:not(.nobackground):after {
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-library(tidyverse)
-library(ISLR)
+set.seed(76)
 if(FALSE){
-  #rmarkdown::render("slides.Rmd", output_format = c("html_document", "ioslides_presentation"))
   rmarkdown::render("slides.Rmd", output_format = c("html_document"))
-  knitr::purl("slides.Rmd")
+  knitr::purl("slides.Rmd", documentation = 2)
 }
 ```
+
+
+
+<!----------------------------------------------------------------------------->
+# Lec03 - Mon 2/15:
+
+## Score
+
+> * We submitted the following model to Kaggle: Predict
+  `Survived <- ifelse(Sex == "female, 1, 0)`
+> * We got a [score](https://www.kaggle.com/c/titanic/leaderboard) (in this case "Categorization Accuracy" AKA proportion correct) of 0.76555.
+
+$$Score = \frac{1}{n}\sum_{i=1}^{n}I(y_i = \widehat{y}_i)$$
+where
+
+> * $I(y_i = \widehat{y}_i) = 1$ if $y_i = \widehat{y}_i$
+> * $I(y_i = \widehat{y}_i) = 0$ if $y_i \neq \widehat{y}_i$
+
+
+## Titanic Data
+
+* Kaggle split the original complete passenger data into
+    + `train` data (891 rows): used by you to train model
+    + `test` data (418 rows): used by Kaggle to evaluate/score/validate model
+* However, the [Evaluation](https://www.kaggle.com/c/titanic#evaluation) indicates they further randomly split into
+    + 50% (209 rows): used by Kaggle compute your leaderboard score
+    + 50% (209 rows): used by Kaggle **only at the end** to determine the ultimate winner
+* This was done to prevent "overfitting" to the leaderboard: i.e. trying to game the leaderboard
+
+
+
+## Question of the Day
+
+* Kaggle limits to 10 entries per day i.e. 10 score computations
+* What if we want to train models and compute scores for ourselves more often?
+* However, we need true outcomes $y_i$ to compute the score, which `test` doesn't have
+
+
+
+## Solution
+
+* Create `pseudo-train` and `pseudo-test` sets via **resampling** from `train` 
+* Compute pseudo-scores by applying your model to `pseudo-test`
+
+
+
+## Resampling
+
+<center><img src="assets/figure/resample.jpg" alt="Drawing" style="width: 600px;"/></center>
+
+
+
+## Example:
+
+Create disjoint `pseudo_train` and `pseudo_test` data sets using `dplyr::anti_join` 
+
+```{r, message=FALSE}
+library(tidyverse)
+# You may need to change your directory path:
+train <- readr::read_csv("assets/Titanic/train.csv")
+
+pseudo_train <- train %>% 
+  sample_frac(0.8)
+pseudo_test <- train %>% 
+  anti_join(pseudo_train, by="PassengerId")
+```
+
+See RStudio Menu Bar -> Help -> Cheatsheets -> Data Manipulation.
+
+
+
+## Resampling
+
+Compute your pseudo-score
+
+```{r, message=FALSE}
+pseudo_test %>% 
+  # Create new column of predictions:
+  mutate(Survived_predicted = ifelse(Sex == "female", 1, 0)) %>% 
+  # Compute score:
+  summarize(Score = mean(Survived == Survived_predicted))
+```
+
+Compare this to Kaggle score of 0.76555. Why are they different?
+
+
+
+## Resampling
+
+> * They are different b/c of sampling variability. Both at sampling and resampling stages!
+> * Let's repeat the above 10 times and get 10 pseudo-scores:
+
+```{r, message=FALSE, echo=FALSE}
+simulated_accuracy <- rep(0, 10)
+for(i in 1:length(simulated_accuracy)){
+  pseudo_train <- train %>% 
+    sample_frac(0.8)
+  pseudo_test <- train %>% 
+    anti_join(pseudo_train, by="PassengerId")
+  
+  simulated_accuracy[i] <- pseudo_test %>% 
+    mutate(Survived_predicted = as.numeric(Sex == "female")) %>% 
+    summarize(Score = mean(Survived == Survived_predicted)) %>% 
+    .[["Score"]]
+}
+simulated_accuracy %>% round(3)
+```
+
+In this case, we have variability due to the resampling. The average of the 10 scores is `r simulated_accuracy %>% mean() %>% round(3)`
+
+
+
+
+
+
+
 
 
 

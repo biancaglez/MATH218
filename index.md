@@ -11,10 +11,12 @@ Lectures will be a combination of chalk talks and <a target="_blank" class="page
 
 ## 1. Introduction
 
+* Mon Feb 20 - Lec03: Intro to Cross-Validation
+    1. Resampling to mimic the creation of `train` (to train model) and `test` (to evaluate/score/validate model)
 * Wed Feb 15 - Lec02: Going over the toolbox
-  1. `R`: `tidyverse` and the pipe operator `%>%`
-  1. DataCamp
-  1. Kaggle
+    1. `R`: `tidyverse` and the pipe operator `%>%`=
+    1. DataCamp
+    1. Kaggle: Supervised learning paradigm as embodied in Kaggle competitions.
 * Mon Feb 13 - Lec01
     + Follow all steps in [Getting Started]({{ site.baseurl }}/getting_started/)
     + What is statistical/machine learning?
