@@ -6,7 +6,15 @@ layout: default
 
 # Lectures
 
-Lectures will be a combination of chalk talks and <a target="_blank" class="page-link" href="{{ site.baseurl }}/slides.html">a running slide deck</a>, the latter being also available in <a target="_blank" class="page-link" href="{{ site.baseurl }}/notes.html">HTML format</a>.
+Lectures will be a combination of chalk talks and <a target="_blank" class="page-link" href="{{ site.baseurl }}/slides.html">a running slide deck</a>, the latter being also available in
+
+* <a target="_blank" class="page-link" href="{{ site.baseurl }}/notes.html">HTML</a> format
+* <a target="_blank" class="page-link" href="https://github.com/rudeboybert/MATH218/blob/gh-pages/slides.Rmd">R Markdown format</a>: Click on "Raw" button and save to `.Rmd` format
+* <a target="_blank" class="page-link" href="https://github.com/rudeboybert/MATH218/blob/gh-pages/slides.R">R source code format</a> 
+
+
+
+
 
 
 ## 1. Introduction
