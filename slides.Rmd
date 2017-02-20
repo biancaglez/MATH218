@@ -44,7 +44,23 @@ if(FALSE){
 
 
 <!----------------------------------------------------------------------------->
-# Lec03 - Mon 2/20:
+# **Lec04 - Wed 2/22**: Intro to Cross-Validation
+
+## Cross-Validation
+
+This is only an introduction for now
+
+
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+# **Lec03 - Mon 2/20**: Resampling for Prediction
 
 ## Score
 
@@ -92,7 +108,7 @@ where
 
 
 
-## Example:
+## Example
 
 Create disjoint `pseudo_train` and `pseudo_test` data sets using `dplyr::anti_join` 
 
@@ -160,7 +176,7 @@ In this case, we have variability due to the resampling. The average of the 10 s
 
 
 <!----------------------------------------------------------------------------->
-# Lec02 - Wed 2/15: 
+# **Lec02 - Wed 2/15**: Toolbox
 
 ## Toolbox
 
@@ -366,7 +382,7 @@ After submitting to Kaggle, you can see your ranking.
 
 
 <!----------------------------------------------------------------------------->
-# Lec01 - Mon 2/13: Introduction
+# **Lec01 - Mon 2/13**: Introduction
 
 ## What is statistical/machine learning?
 

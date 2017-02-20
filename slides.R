@@ -44,7 +44,23 @@ if(FALSE){
 #' 
 #' 
 #' <!----------------------------------------------------------------------------->
-#' # Lec03 - Mon 2/20:
+#' # **Lec04 - Wed 2/22**: Intro to Cross-Validation
+#' 
+#' ## Cross-Validation
+#' 
+#' This is only an introduction for now
+#' 
+#' 
+#' 
+#' 
+#' 
+#' 
+#' 
+#' 
+#' 
+#' 
+#' <!----------------------------------------------------------------------------->
+#' # **Lec03 - Mon 2/20**: Resampling for Prediction
 #' 
 #' ## Score
 #' 
@@ -92,7 +108,7 @@ if(FALSE){
 #' 
 #' 
 #' 
-#' ## Example:
+#' ## Example
 #' 
 #' Create disjoint `pseudo_train` and `pseudo_test` data sets using `dplyr::anti_join` 
 #' 
@@ -160,7 +176,7 @@ simulated_accuracy %>% round(3)
 #' 
 #' 
 #' <!----------------------------------------------------------------------------->
-#' # Lec02 - Wed 2/15: 
+#' # **Lec02 - Wed 2/15**: Toolbox
 #' 
 #' ## Toolbox
 #' 
@@ -366,7 +382,7 @@ glimpse(gender_submission)
 #' 
 #' 
 #' <!----------------------------------------------------------------------------->
-#' # Lec01 - Mon 2/13: Introduction
+#' # **Lec01 - Mon 2/13**: Introduction
 #' 
 #' ## What is statistical/machine learning?
 #' 
