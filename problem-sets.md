@@ -20,6 +20,7 @@ collaborations must be explicitly acknowledged at the top of your submissions**.
 * **Notes**:
     + Don't focus on memorizing anything for now, just complete the assignment.
     + If you find yourself spinning your wheels, let me know.
+    + **New**: Kaggle is very finicky about the submission format. If you're having trouble, see <a target="_blank" class="page-link" href="{{ site.baseurl }}/assets/Titanic/kaggle.R">`kaggle.R`</a> for a discussion.
 * **Homework:**
     + `tidyverse` newbies: Do DataCamp classes listed in Lec02.
     + Baby's first Kaggle competition: Titanic
