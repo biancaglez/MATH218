@@ -46,10 +46,25 @@ if(FALSE){
 #' <!----------------------------------------------------------------------------->
 #' # **Lec04 - Wed 2/22**: Intro to Cross-Validation
 #' 
-#' ## Cross-Validation
+#' ## Validation Set
 #' 
-#' This is only an introduction for now
+#' Fig 5.1 p.177
 #' 
+#' <center><img src="assets/figure/validation_set.png" alt="Drawing" style="width: 600px;"/></center>
+#' 
+#' 
+#' ## LOOCV
+#' 
+#' Fig 5.3 p.179: Leave-One-Out Cross-Validation
+#' 
+#' <center><img src="assets/figure/LOOCV.png" alt="Drawing" style="width: 600px;"/></center>
+#' 
+#' 
+#' ## k-Fold CV
+#' 
+#' Fig 5.5 p.181: $k=5$ Fold CV
+#' 
+#' <center><img src="assets/figure/k-fold-CV.png" alt="Drawing" style="width: 600px;"/></center>
 #' 
 #' 
 #' 
