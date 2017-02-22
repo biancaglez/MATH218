@@ -67,6 +67,27 @@ if(FALSE){
 #' <center><img src="assets/figure/k-fold-CV.png" alt="Drawing" style="width: 600px;"/></center>
 #' 
 #' 
+#' ## Course for Next Few Lectures
+#' 
+#' Formalize what we mean by:
+#' 
+#' * **Model**: Relates predictors to outcomes. $Y = f(\vec{X})$. Chapter [2, 2.1.3]
+#' * **Score**: We want to minimize the mean squared error. Chapter 2.2
+#' 
+#' 
+#' ## Example: Data
+#' 
+#' Fig 2.2 p.17:
+#' 
+#' <img src="assets/figure/data.png" alt="Drawing" style="width: 400px;"/>
+#' 
+#' 
+#' ## Example: Model
+#' 
+#' Fig 2.2 p.17:
+#' 
+#' <img src="assets/figure/model.png" alt="Drawing" style="width: 800px;"/>
+#' 
 #' 
 #' 
 #' 
