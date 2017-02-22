@@ -44,11 +44,11 @@ if(FALSE){
 
 
 <!----------------------------------------------------------------------------->
-# **Lec04 - Wed 2/22**: Intro to Cross-Validation
+# **Lec04 - Wed 2/22**: Intro to Cross-Validation 
 
 ## Validation Set
 
-Fig 5.1 p.177
+Fig 5.1 p.177:
 
 <center><img src="assets/figure/validation_set.png" alt="Drawing" style="width: 600px;"/></center>
 
