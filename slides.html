@@ -93,7 +93,7 @@
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">Last updated on 2017-02-23</p>
+            <p style="margin-top: 6px; margin-left: -2px;">Last updated on 2017-02-24</p>
           </hgroup>
   </slide>
 
@@ -113,6 +113,43 @@ slides > slide:not(.nobackground):after {
 <!----------------------------------------------------------------------------->
 
 <slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2><strong>Lec05 - Fri 2/24</strong>: Regression</h2></hgroup><article  id="lec05---fri-224-regression">
+
+</article></slide><slide class=''><hgroup><h2>Names</h2></hgroup><article  id="names">
+
+<p>Compare:</p>
+
+<ul>
+<li>Col Archibald Gracie IV</li>
+<li>Patrick O&#39;Keefe</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Example 1 Regression for Explanation</h2></hgroup><article  id="example-1-regression-for-explanation">
+
+<p>From biology/medicine. Let</p>
+
+<ul>
+<li>\(Y\) = Blood-pressure</li>
+<li>\(X\) = Dosage of blood-pressure medicine (in ml)</li>
+<li>\(Y = \beta_0 + \beta_1 X\)</li>
+</ul>
+
+<ul class = 'build'>
+<li><strong>Intepretation of \(\beta_1\)</strong>: For each additional ml increase in dosage, there is an on average (associated) effect of \(\beta_1\) units on blood-pressure.</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Example 2 Regression for Explanation</h2></hgroup><article  id="example-2-regression-for-explanation">
+
+<p>From economics/sociology. Let</p>
+
+<ul>
+<li>\(Y\) = Annual income</li>
+<li>\(X\) = # of years of schooling</li>
+<li>\(Y = \beta_0 + \beta_1 X\)</li>
+</ul>
+
+<ul class = 'build'>
+<li><strong>Intepretation of \(\beta_1\)</strong>: For each additional year of schooling, there is an on average (associated) effect of \(\beta_1\) dollars on annual income.</li>
+</ul>
 
 <!----------------------------------------------------------------------------->
 
@@ -256,7 +293,7 @@ pseudo_test &lt;- train %&gt;%
 <pre >## # A tibble: 1 × 1
 ##       Score
 ##       &lt;dbl&gt;
-## 1 0.8089888</pre>
+## 1 0.7865169</pre>
 
 <p>Compare this to Kaggle score of 0.76555. Why are they different?</p>
 
@@ -267,9 +304,9 @@ pseudo_test &lt;- train %&gt;%
 <li>Let&#39;s repeat the above 10 times and get 10 pseudo-scores:</li>
 </ul>
 
-<pre >##  [1] 0.787 0.775 0.837 0.803 0.792 0.826 0.787 0.781 0.809 0.781</pre>
+<pre >##  [1] 0.764 0.820 0.787 0.809 0.770 0.781 0.837 0.747 0.781 0.719</pre>
 
-<p>In this case, we have variability due to the resampling. The average of the 10 scores is 0.798</p>
+<p>In this case, we have variability due to the resampling. The average of the 10 scores is 0.781</p>
 
 <!----------------------------------------------------------------------------->
 

@@ -244,7 +244,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Statistical Learning</h1>
 <h4 class="author"><em>Albert Y. Kim</em></h4>
-<h4 class="date"><em>Last updated on 2017-02-23</em></h4>
+<h4 class="date"><em>Last updated on 2017-02-24</em></h4>
 
 </div>
 
@@ -263,7 +263,45 @@ slides > slide:not(.nobackground):after {
 <!----------------------------------------------------------------------------->
 <div id="lec05---fri-224-regression" class="section level1">
 <h1><strong>Lec05 - Fri 2/24</strong>: Regression</h1>
+<div id="names" class="section level2">
+<h2>Names</h2>
+<p>Compare:</p>
+<blockquote>
+<ul>
+<li>Col Archibald Gracie IV</li>
+<li>Patrick O’Keefe</li>
+</ul>
+</blockquote>
+</div>
+<div id="example-1-regression-for-explanation" class="section level2">
+<h2>Example 1 Regression for Explanation</h2>
+<p>From biology/medicine. Let</p>
+<blockquote>
+<ul>
+<li><span class="math inline">\(Y\)</span> = Blood-pressure</li>
+<li><span class="math inline">\(X\)</span> = Dosage of blood-pressure medicine (in ml)</li>
+<li><span class="math inline">\(Y = \beta_0 + \beta_1 X\)</span></li>
+</ul>
+</blockquote>
+<ul>
+<li><strong>Intepretation of <span class="math inline">\(\beta_1\)</span></strong>: For each additional ml increase in dosage, there is an on average (associated) effect of <span class="math inline">\(\beta_1\)</span> units on blood-pressure.</li>
+</ul>
+</div>
+<div id="example-2-regression-for-explanation" class="section level2">
+<h2>Example 2 Regression for Explanation</h2>
+<p>From economics/sociology. Let</p>
+<blockquote>
+<ul>
+<li><span class="math inline">\(Y\)</span> = Annual income</li>
+<li><span class="math inline">\(X\)</span> = # of years of schooling</li>
+<li><span class="math inline">\(Y = \beta_0 + \beta_1 X\)</span></li>
+</ul>
+</blockquote>
+<ul>
+<li><strong>Intepretation of <span class="math inline">\(\beta_1\)</span></strong>: For each additional year of schooling, there is an on average (associated) effect of <span class="math inline">\(\beta_1\)</span> dollars on annual income.</li>
+</ul>
 <!----------------------------------------------------------------------------->
+</div>
 </div>
 <div id="lec04---wed-222-intro-to-cross-validation" class="section level1">
 <h1><strong>Lec04 - Wed 2/22</strong>: Intro to Cross-Validation</h1>
@@ -387,7 +425,7 @@ pseudo_test &lt;-<span class="st"> </span>train %&gt;%<span class="st"> </span>
 <pre><code>## # A tibble: 1 × 1
 ##       Score
 ##       &lt;dbl&gt;
-## 1 0.7865169</code></pre>
+## 1 0.8089888</code></pre>
 <p>Compare this to Kaggle score of 0.76555. Why are they different?</p>
 </div>
 <div id="resampling-2" class="section level2">
@@ -398,8 +436,8 @@ pseudo_test &lt;-<span class="st"> </span>train %&gt;%<span class="st"> </span>
 <li>Let’s repeat the above 10 times and get 10 pseudo-scores:</li>
 </ul>
 </blockquote>
-<pre><code>##  [1] 0.764 0.820 0.787 0.809 0.770 0.781 0.837 0.747 0.781 0.719</code></pre>
-<p>In this case, we have variability due to the resampling. The average of the 10 scores is 0.781</p>
+<pre><code>##  [1] 0.787 0.775 0.837 0.803 0.792 0.826 0.787 0.781 0.809 0.781</code></pre>
+<p>In this case, we have variability due to the resampling. The average of the 10 scores is 0.798</p>
 <!----------------------------------------------------------------------------->
 </div>
 </div>

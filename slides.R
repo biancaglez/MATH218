@@ -46,6 +46,38 @@ if(FALSE){
 #' <!----------------------------------------------------------------------------->
 #' # **Lec05 - Fri 2/24**: Regression
 #' 
+#' ## Names
+#' 
+#' Compare:
+#' 
+#' > * Col Archibald Gracie IV
+#' > * Patrick O'Keefe
+#' 
+#' 
+#' ## Example 1 Regression for Explanation
+#' 
+#' From biology/medicine. Let
+#' 
+#' > * $Y$ = Blood-pressure
+#' > * $X$ = Dosage of blood-pressure medicine (in ml)
+#' > * $Y = \beta_0 + \beta_1 X$
+#' 
+#' * **Intepretation of $\beta_1$**: For each additional ml increase in dosage, there is an on average (associated) effect of $\beta_1$ units on blood-pressure.
+#' 
+#' 
+#' ## Example 2 Regression for Explanation
+#' 
+#' From economics/sociology. Let
+#' 
+#' > * $Y$ = Annual income
+#' > * $X$ = # of years of schooling
+#' > * $Y = \beta_0 + \beta_1 X$
+#' 
+#' * **Intepretation of $\beta_1$**: For each additional year of schooling, there is an on average (associated) effect of $\beta_1$ dollars on annual income.
+#' 
+#' 
+#' 
+#' 
 #' 
 #' 
 #' 

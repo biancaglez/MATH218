@@ -9,6 +9,25 @@ own answers and not simple rewordings of another's work. Furthermore, **all
 collaborations must be explicitly acknowledged at the top of your submissions**.
 
 
+### Problem Set 02 (Incomplete)
+
+* **Info:**
+    + Assigned by Fri 2/15 5pm
+    + Two-stage homework
+        + Stage 1: Due Wed 3/1 9am
+        + Stage 2: Due Fri
+    + Standby for submission format
+* **Learning Goals:**
+    + (Tentative): Code Review! What's done in practice.
+    + Implement cross-validation from scratch, preferably entirely with `dplyr` for data manipulation.
+* **Notes**:
+* **Homework:** Using the `train` data from Kaggle Titanic, see if you can get a pseudo-score by running
+    + LOOCV
+    + k=5 Fold CV
+
+        
+
+
 ### Problem Set 01
 
 * **Info:**
@@ -20,13 +39,20 @@ collaborations must be explicitly acknowledged at the top of your submissions**.
 * **Notes**:
     + Don't focus on memorizing anything for now, just complete the assignment.
     + If you find yourself spinning your wheels, let me know.
-    + **New**: Kaggle is very finicky about the submission format. If you're having trouble, see <a target="_blank" class="page-link" href="https://github.com/rudeboybert/MATH218/blob/gh-pages/assets/Titanic/kaggle.R">`kaggle.R`</a> for a discussion.
 * **Homework:**
     + `tidyverse` newbies: Do DataCamp classes listed in Lec02.
     + Baby's first Kaggle competition: Titanic
         + Create a model that predicts `Survival` other than ones we've seen.
         + Submit the predictions CSV so that your ranking shows.
         + Slack message me your Kaggle name so I can find you in the rankings.
+* **Discussion:**
+    + I don't actually care what your score was, this was about process.
+    + Kaggle is very finicky about the submission format:
+        * Number of rows and columns have to match exactly
+        * Variable names have to match exactly
+        * There can't be missing values (`NA`s) in your predictions for `Survived`
+        * **Tricky**: `Survived` has to be integers and not doubles i.e. `1` and not `1.0`
+        * See <a target="_blank" class="page-link" href="https://github.com/rudeboybert/MATH218/blob/gh-pages/assets/Titanic/kaggle.R">`kaggle.R`</a> for example code.
 
 
 <!--
