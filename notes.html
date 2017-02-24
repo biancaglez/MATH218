@@ -244,7 +244,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Statistical Learning</h1>
 <h4 class="author"><em>Albert Y. Kim</em></h4>
-<h4 class="date"><em>Last updated on 2017-02-22</em></h4>
+<h4 class="date"><em>Last updated on 2017-02-23</em></h4>
 
 </div>
 
@@ -261,6 +261,10 @@ slides > slide:not(.nobackground):after {
 }
 </style>
 <!----------------------------------------------------------------------------->
+<div id="lec05---fri-224-regression" class="section level1">
+<h1><strong>Lec05 - Fri 2/24</strong>: Regression</h1>
+<!----------------------------------------------------------------------------->
+</div>
 <div id="lec04---wed-222-intro-to-cross-validation" class="section level1">
 <h1><strong>Lec04 - Wed 2/22</strong>: Intro to Cross-Validation</h1>
 <div id="validation-set" class="section level2">
@@ -383,7 +387,7 @@ pseudo_test &lt;-<span class="st"> </span>train %&gt;%<span class="st"> </span>
 <pre><code>## # A tibble: 1 × 1
 ##       Score
 ##       &lt;dbl&gt;
-## 1 0.8089888</code></pre>
+## 1 0.7865169</code></pre>
 <p>Compare this to Kaggle score of 0.76555. Why are they different?</p>
 </div>
 <div id="resampling-2" class="section level2">
@@ -394,8 +398,8 @@ pseudo_test &lt;-<span class="st"> </span>train %&gt;%<span class="st"> </span>
 <li>Let’s repeat the above 10 times and get 10 pseudo-scores:</li>
 </ul>
 </blockquote>
-<pre><code>##  [1] 0.787 0.775 0.837 0.803 0.792 0.826 0.787 0.781 0.809 0.781</code></pre>
-<p>In this case, we have variability due to the resampling. The average of the 10 scores is 0.798</p>
+<pre><code>##  [1] 0.764 0.820 0.787 0.809 0.770 0.781 0.837 0.747 0.781 0.719</code></pre>
+<p>In this case, we have variability due to the resampling. The average of the 10 scores is 0.781</p>
 <!----------------------------------------------------------------------------->
 </div>
 </div>

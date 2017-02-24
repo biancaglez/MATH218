@@ -93,7 +93,7 @@
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">Last updated on 2017-02-22</p>
+            <p style="margin-top: 6px; margin-left: -2px;">Last updated on 2017-02-23</p>
           </hgroup>
   </slide>
 
@@ -112,7 +112,11 @@ slides > slide:not(.nobackground):after {
 
 <!----------------------------------------------------------------------------->
 
-<slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2><strong>Lec04 - Wed 2/22</strong>: Intro to Cross-Validation</h2></hgroup><article  id="lec04---wed-222-intro-to-cross-validation">
+<slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2><strong>Lec05 - Fri 2/24</strong>: Regression</h2></hgroup><article  id="lec05---fri-224-regression">
+
+<!----------------------------------------------------------------------------->
+
+</article></slide><slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2><strong>Lec04 - Wed 2/22</strong>: Intro to Cross-Validation</h2></hgroup><article  id="lec04---wed-222-intro-to-cross-validation">
 
 </article></slide><slide class=''><hgroup><h2>Validation Set</h2></hgroup><article  id="validation-set">
 
@@ -252,7 +256,7 @@ pseudo_test &lt;- train %&gt;%
 <pre >## # A tibble: 1 × 1
 ##       Score
 ##       &lt;dbl&gt;
-## 1 0.7865169</pre>
+## 1 0.8089888</pre>
 
 <p>Compare this to Kaggle score of 0.76555. Why are they different?</p>
 
@@ -263,9 +267,9 @@ pseudo_test &lt;- train %&gt;%
 <li>Let&#39;s repeat the above 10 times and get 10 pseudo-scores:</li>
 </ul>
 
-<pre >##  [1] 0.764 0.820 0.787 0.809 0.770 0.781 0.837 0.747 0.781 0.719</pre>
+<pre >##  [1] 0.787 0.775 0.837 0.803 0.792 0.826 0.787 0.781 0.809 0.781</pre>
 
-<p>In this case, we have variability due to the resampling. The average of the 10 scores is 0.781</p>
+<p>In this case, we have variability due to the resampling. The average of the 10 scores is 0.798</p>
 
 <!----------------------------------------------------------------------------->
 

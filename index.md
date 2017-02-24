@@ -19,6 +19,7 @@ Lectures will be a combination of chalk talks and <a target="_blank" class="page
 
 ## 1. Introduction
 
+* **Lec05 - Fri 2/24**: Regression
 * **Lec04 - Wed 2/22**: Intro to Cross-Validation
 * **Lec03 - Mon 2/20**: Resampling for Prediction
     1. Resampling to mimic the creation of `train` (to train model) and `test` (to evaluate/score/validate model)
