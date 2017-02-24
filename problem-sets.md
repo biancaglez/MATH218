@@ -12,19 +12,26 @@ collaborations must be explicitly acknowledged at the top of your submissions**.
 ### Problem Set 02 (Incomplete)
 
 * **Info:**
-    + Assigned by Fri 2/15 5pm
-    + Two-stage homework
-        + Stage 1: Due Wed 3/1 9am
-        + Stage 2: Due Fri
-    + Standby for submission format
+    + *Code portion*: Assigned Fri 2/24. To be submitted ~~by Wed 3/1 9am~~ on Fri 3/3 at the beginning of lecture (standby for submission format).
+    + *Code review*: Assigned Fri 3/3. Due by Mon 3/6 9:05am
 * **Learning Goals:**
-    + (Tentative): Code Review! What's done in practice.
-    + Implement cross-validation from scratch, preferably entirely with `dplyr` for data manipulation.
+    + Implement cross-validation from scratch. Later we'll use existing R packages.
+    + `dplyr` newbies: perform your first substantive data manipulation!
+    + <a target="_blank" class="page-link" href="https://smartbear.com/learn/code-review/what-is-code-review/">Code review</a> to critique each other's code! What's done in practice!
 * **Notes**:
-* **Homework:** Using the `train` data from Kaggle Titanic, see if you can get a pseudo-score by running
-    + LOOCV
-    + k=5 Fold CV
-
+    + Please feel free to work collaboratively!
+* **Homework:**
+    1. *Code portion*:
+        + Using the `train.csv` data from the Kaggle Titanic competititon and for the gender survival model, compute what I called the "pseudo-scores": estimates of the Kaggle "score" of 76.555%. Do this via both
+            1. leave-one-out cross-validation
+            1. k=5 Fold cross-validation.
+        + Save your work in a file called `PS02_FirstName_LastName.R`. Ex: in my case `PS02_Albert_Kim.R`. Have this ready to submit at the beginning of lecture on Fri 3/3.
+        + In this same `.R` file, answer the following question in a commented section: *We saw that Kaggle takes the test data (418 rows), only reports your score on the leaderboard based on half of these data, and declares the winner based on the other half which is withholded until the very end of the competition. Not only that, Kaggle does not tell you how they split the 418 rows. Say Kaggle didn't do this and reported your score on the leaderboard based on the entire test data (418 rows). Write 2-3 sentences outlining a strategy of how you could exploit the information given by the leaderboard to get a perfect score of 100%.*
+    1. *Code review*: 
+        + Read the following document on code review <a target="_blank" class="page-link" href="https://smartbear.com/learn/code-review/best-practices-for-peer-code-review/">practices</a>.
+        + On Fri 3/3 after you've submitted your code, I will assign code review groups.
+        + More details then.
+        
         
 
 
