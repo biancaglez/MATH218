@@ -44,6 +44,33 @@ if(FALSE){
 #' 
 #' 
 #' <!----------------------------------------------------------------------------->
+#' # **Lec06 - Mon 2/27**: Regression Part II
+#' 
+#' ## `broom` Package
+#' 
+#' As per the <a target="_blank" class="page-link"
+#' href="https://cran.r-project.org/web/packages/tidyverse/vignettes/manifesto.html">tidy
+#' tools manifesto</a>, we introduce the `broom` package:
+#' 
+#' * <a target="_blank" class="page-link"
+#' href="ftp://cran.r-project.org/pub/R/web/packages/broom/vignettes/broom.html">broom: let's tidy up a bit</a>
+#' * <a target="_blank" class="page-link"
+#' href="https://github.com/tidyverse/broom">GitHub source code</a>
+#' 
+#' 
+#' 
+#' 
+#' 
+#' 
+#' 
+#' 
+#' 
+#' 
+#' 
+#' 
+#' 
+#' 
+#' <!----------------------------------------------------------------------------->
 #' # **Lec05 - Fri 2/24**: Regression
 #' 
 #' ## Names
