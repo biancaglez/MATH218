@@ -46,6 +46,17 @@ if(FALSE){
 <!----------------------------------------------------------------------------->
 # **Lec06 - Mon 2/27**: Regression Part II
 
+## Regression in R
+
+Today we do the following to a simple linear regression in R
+
+1. Fit the model $\widehat{f}$
+1. Explore the fit
+1. Use the fitted model to make predictions
+
+
+
+
 ## `broom` Package
 
 As per the <a target="_blank" class="page-link"

@@ -263,6 +263,15 @@ slides > slide:not(.nobackground):after {
 <!----------------------------------------------------------------------------->
 <div id="lec06---mon-227-regression-part-ii" class="section level1">
 <h1><strong>Lec06 - Mon 2/27</strong>: Regression Part II</h1>
+<div id="regression-in-r" class="section level2">
+<h2>Regression in R</h2>
+<p>Today we do the following to a simple linear regression in R</p>
+<ol style="list-style-type: decimal">
+<li>Fit the model <span class="math inline">\(\widehat{f}\)</span></li>
+<li>Explore the fit</li>
+<li>Use the fitted model to make predictions</li>
+</ol>
+</div>
 <div id="broom-package" class="section level2">
 <h2><code>broom</code> Package</h2>
 <p>As per the <a target="_blank" class="page-link" href="https://cran.r-project.org/web/packages/tidyverse/vignettes/manifesto.html">tidy tools manifesto</a>, we introduce the <code>broom</code> package:</p>
@@ -434,10 +443,6 @@ pseudo_test &lt;-<span class="st"> </span>train %&gt;%<span class="st"> </span>
 <span class="st">  </span><span class="kw">mutate</span>(<span class="dt">Survived_predicted =</span> <span class="kw">ifelse</span>(Sex ==<span class="st"> &quot;female&quot;</span>, <span class="dv">1</span>, <span class="dv">0</span>)) %&gt;%<span class="st"> </span>
 <span class="st">  </span><span class="co"># Compute score:</span>
 <span class="st">  </span><span class="kw">summarize</span>(<span class="dt">Score =</span> <span class="kw">mean</span>(Survived ==<span class="st"> </span>Survived_predicted))</code></pre></div>
-<pre><code>## # A tibble: 1 × 1
-##       Score
-##       &lt;dbl&gt;
-## 1 0.8089888</code></pre>
 <p>Compare this to Kaggle score of 0.76555. Why are they different?</p>
 </div>
 <div id="resampling-2" class="section level2">
@@ -448,7 +453,6 @@ pseudo_test &lt;-<span class="st"> </span>train %&gt;%<span class="st"> </span>
 <li>Let’s repeat the above 10 times and get 10 pseudo-scores:</li>
 </ul>
 </blockquote>
-<pre><code>##  [1] 0.787 0.775 0.837 0.803 0.792 0.826 0.787 0.781 0.809 0.781</code></pre>
 <p>In this case, we have variability due to the resampling. The average of the 10 scores is 0.798</p>
 <!----------------------------------------------------------------------------->
 </div>
@@ -604,38 +608,11 @@ train &lt;-<span class="st"> </span>readr::<span class="kw">read_csv</span>(<spa
 <h2>Training Set</h2>
 <p>The binary outcome varible <code>Survived</code> is included.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">glimpse</span>(train)</code></pre></div>
-<pre><code>## Observations: 891
-## Variables: 12
-## $ PassengerId &lt;int&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,...
-## $ Survived    &lt;int&gt; 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0,...
-## $ Pclass      &lt;int&gt; 3, 1, 3, 1, 3, 3, 1, 3, 3, 2, 3, 1, 3, 3, 3, 2, 3,...
-## $ Name        &lt;chr&gt; &quot;Braund, Mr. Owen Harris&quot;, &quot;Cumings, Mrs. John Bra...
-## $ Sex         &lt;chr&gt; &quot;male&quot;, &quot;female&quot;, &quot;female&quot;, &quot;female&quot;, &quot;male&quot;, &quot;mal...
-## $ Age         &lt;dbl&gt; 22, 38, 26, 35, 35, NA, 54, 2, 27, 14, 4, 58, 20, ...
-## $ SibSp       &lt;int&gt; 1, 1, 0, 1, 0, 0, 0, 3, 0, 1, 1, 0, 0, 1, 0, 0, 4,...
-## $ Parch       &lt;int&gt; 0, 0, 0, 0, 0, 0, 0, 1, 2, 0, 1, 0, 0, 5, 0, 0, 1,...
-## $ Ticket      &lt;chr&gt; &quot;A/5 21171&quot;, &quot;PC 17599&quot;, &quot;STON/O2. 3101282&quot;, &quot;1138...
-## $ Fare        &lt;dbl&gt; 7.2500, 71.2833, 7.9250, 53.1000, 8.0500, 8.4583, ...
-## $ Cabin       &lt;chr&gt; NA, &quot;C85&quot;, NA, &quot;C123&quot;, NA, NA, &quot;E46&quot;, NA, NA, NA, ...
-## $ Embarked    &lt;chr&gt; &quot;S&quot;, &quot;C&quot;, &quot;S&quot;, &quot;S&quot;, &quot;S&quot;, &quot;Q&quot;, &quot;S&quot;, &quot;S&quot;, &quot;S&quot;, &quot;C&quot;, ...</code></pre>
 </div>
 <div id="test-set" class="section level2">
 <h2>Test Set</h2>
 <p><code>Survived</code> is now <strong>NOT</strong> included. There are 418 rows (passengers) you need to predict.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">glimpse</span>(test)</code></pre></div>
-<pre><code>## Observations: 418
-## Variables: 11
-## $ PassengerId &lt;int&gt; 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, ...
-## $ Pclass      &lt;int&gt; 3, 3, 2, 3, 3, 3, 3, 2, 3, 3, 3, 1, 1, 2, 1, 2, 2,...
-## $ Name        &lt;chr&gt; &quot;Kelly, Mr. James&quot;, &quot;Wilkes, Mrs. James (Ellen Nee...
-## $ Sex         &lt;chr&gt; &quot;male&quot;, &quot;female&quot;, &quot;male&quot;, &quot;male&quot;, &quot;female&quot;, &quot;male&quot;...
-## $ Age         &lt;dbl&gt; 34.5, 47.0, 62.0, 27.0, 22.0, 14.0, 30.0, 26.0, 18...
-## $ SibSp       &lt;int&gt; 0, 1, 0, 0, 1, 0, 0, 1, 0, 2, 0, 0, 1, 1, 1, 1, 0,...
-## $ Parch       &lt;int&gt; 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0,...
-## $ Ticket      &lt;chr&gt; &quot;330911&quot;, &quot;363272&quot;, &quot;240276&quot;, &quot;315154&quot;, &quot;3101298&quot;,...
-## $ Fare        &lt;dbl&gt; 7.8292, 7.0000, 9.6875, 8.6625, 12.2875, 9.2250, 7...
-## $ Cabin       &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, &quot;B...
-## $ Embarked    &lt;chr&gt; &quot;Q&quot;, &quot;S&quot;, &quot;Q&quot;, &quot;S&quot;, &quot;S&quot;, &quot;S&quot;, &quot;Q&quot;, &quot;S&quot;, &quot;C&quot;, &quot;S&quot;, ...</code></pre>
 </div>
 <div id="submission-example" class="section level2">
 <h2>Submission Example</h2>
@@ -647,10 +624,6 @@ train &lt;-<span class="st"> </span>readr::<span class="kw">read_csv</span>(<spa
 </ul>
 </blockquote>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">glimpse</span>(gender_submission)</code></pre></div>
-<pre><code>## Observations: 418
-## Variables: 2
-## $ PassengerId &lt;int&gt; 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, ...
-## $ Survived    &lt;int&gt; 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0,...</code></pre>
 </div>
 <div id="submission-example-1" class="section level2">
 <h2>Submission Example</h2>
