@@ -33,13 +33,23 @@
 #' 
 #' 
 ## ----setup, include=FALSE------------------------------------------------
-## knitr::opts_chunk$set(echo = TRUE)
-## set.seed(76)
-## if(FALSE){
-##   rmarkdown::render("slides.Rmd", output_format = c("html_document"))
-##   knitr::purl("slides.Rmd", documentation = 2)
-## }
+knitr::opts_chunk$set(echo = TRUE)
+set.seed(76)
+if(FALSE){
+  rmarkdown::render("slides.Rmd", output_format = c("html_document"))
+  knitr::purl("slides.Rmd", documentation = 2)
+}
 
+#' 
+#' 
+#' 
+#' <!----------------------------------------------------------------------------->
+#' # **Lec07 - Wed 3/1**: Regression Part III
+#' 
+#' 
+#' 
+#' 
+#' 
 #' 
 #' 
 #' 
@@ -55,8 +65,6 @@
 #' 1. Use the fitted model to make predictions
 #' 
 #' 
-#' 
-#' 
 #' ## `broom` Package
 #' 
 #' As per the <a target="_blank" class="page-link"
@@ -67,10 +75,6 @@
 #' href="ftp://cran.r-project.org/pub/R/web/packages/broom/vignettes/broom.html">broom: let's tidy up a bit</a>
 #' * <a target="_blank" class="page-link"
 #' href="https://github.com/tidyverse/broom">GitHub source code</a>
-#' 
-#' 
-#' 
-#' 
 #' 
 #' 
 #' 
@@ -232,14 +236,14 @@
 #' Create disjoint `pseudo_train` and `pseudo_test` data sets using `dplyr::anti_join` 
 #' 
 ## ---- message=FALSE------------------------------------------------------
-## library(tidyverse)
-## # You may need to change your directory path:
-## train <- readr::read_csv("assets/Titanic/train.csv")
-## 
-## pseudo_train <- train %>%
-##   sample_frac(0.8)
-## pseudo_test <- train %>%
-##   anti_join(pseudo_train, by="PassengerId")
+library(tidyverse)
+# You may need to change your directory path:
+train <- readr::read_csv("assets/Titanic/train.csv")
+
+pseudo_train <- train %>% 
+  sample_frac(0.8)
+pseudo_test <- train %>% 
+  anti_join(pseudo_train, by="PassengerId")
 
 #' 
 #' See RStudio Menu Bar -> Help -> Cheatsheets -> Data Manipulation.
@@ -251,11 +255,11 @@
 #' Compute your pseudo-score
 #' 
 ## ---- message=FALSE------------------------------------------------------
-## pseudo_test %>%
-##   # Create new column of predictions:
-##   mutate(Survived_predicted = ifelse(Sex == "female", 1, 0)) %>%
-##   # Compute score:
-##   summarize(Score = mean(Survived == Survived_predicted))
+pseudo_test %>% 
+  # Create new column of predictions:
+  mutate(Survived_predicted = ifelse(Sex == "female", 1, 0)) %>% 
+  # Compute score:
+  summarize(Score = mean(Survived == Survived_predicted))
 
 #' 
 #' Compare this to Kaggle score of 0.76555. Why are they different?
@@ -268,19 +272,19 @@
 #' > * Let's repeat the above 10 times and get 10 pseudo-scores:
 #' 
 ## ---- message=FALSE, echo=FALSE------------------------------------------
-## simulated_accuracy <- rep(0, 10)
-## for(i in 1:length(simulated_accuracy)){
-##   pseudo_train <- train %>%
-##     sample_frac(0.8)
-##   pseudo_test <- train %>%
-##     anti_join(pseudo_train, by="PassengerId")
-## 
-##   simulated_accuracy[i] <- pseudo_test %>%
-##     mutate(Survived_predicted = as.numeric(Sex == "female")) %>%
-##     summarize(Score = mean(Survived == Survived_predicted)) %>%
-##     .[["Score"]]
-## }
-## simulated_accuracy %>% round(3)
+simulated_accuracy <- rep(0, 10)
+for(i in 1:length(simulated_accuracy)){
+  pseudo_train <- train %>% 
+    sample_frac(0.8)
+  pseudo_test <- train %>% 
+    anti_join(pseudo_train, by="PassengerId")
+  
+  simulated_accuracy[i] <- pseudo_test %>% 
+    mutate(Survived_predicted = as.numeric(Sex == "female")) %>% 
+    summarize(Score = mean(Survived == Survived_predicted)) %>% 
+    .[["Score"]]
+}
+simulated_accuracy %>% round(3)
 
 #' 
 #' In this case, we have variability due to the resampling. The average of the 10 scores is `r simulated_accuracy %>% mean() %>% round(3)`
@@ -433,10 +437,10 @@
 #' Load CSV's into R:
 #' 
 ## ---- message=FALSE------------------------------------------------------
-## library(tidyverse)
-## gender_submission <- readr::read_csv("assets/Titanic/gender_submission.csv")
-## test <- readr::read_csv("assets/Titanic/test.csv")
-## train <- readr::read_csv("assets/Titanic/train.csv")
+library(tidyverse)
+gender_submission <- readr::read_csv("assets/Titanic/gender_submission.csv")
+test <- readr::read_csv("assets/Titanic/test.csv")
+train <- readr::read_csv("assets/Titanic/train.csv")
 
 #' 
 #' * You may need to change your directory path.
@@ -449,7 +453,7 @@
 #' The binary outcome varible `Survived` is included.
 #' 
 ## ------------------------------------------------------------------------
-## glimpse(train)
+glimpse(train)
 
 #' 
 #' 
@@ -458,7 +462,7 @@
 #' `Survived` is now **NOT** included. There are 418 rows (passengers) you need to predict.
 #' 
 ## ------------------------------------------------------------------------
-## glimpse(test)
+glimpse(test)
 
 #' 
 #' 
@@ -470,7 +474,7 @@
 #' > * your **predicted** outcome variable `Survived`
 #' 
 ## ------------------------------------------------------------------------
-## glimpse(gender_submission)
+glimpse(gender_submission)
 
 #' 
 #' 

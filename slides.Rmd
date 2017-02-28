@@ -44,6 +44,16 @@ if(FALSE){
 
 
 <!----------------------------------------------------------------------------->
+# **Lec07 - Wed 3/1**: Regression Part III
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
 # **Lec06 - Mon 2/27**: Regression Part II
 
 ## Regression in R
@@ -53,8 +63,6 @@ Today we do the following to a simple linear regression in R
 1. Fit the model $\widehat{f}$
 1. Explore the fit
 1. Use the fitted model to make predictions
-
-
 
 
 ## `broom` Package
@@ -67,10 +75,6 @@ tools manifesto</a>, we introduce the `broom` package:
 href="ftp://cran.r-project.org/pub/R/web/packages/broom/vignettes/broom.html">broom: let's tidy up a bit</a>
 * <a target="_blank" class="page-link"
 href="https://github.com/tidyverse/broom">GitHub source code</a>
-
-
-
-
 
 
 

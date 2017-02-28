@@ -17,6 +17,7 @@ Lectures will be a combination of chalk talks and <a target="_blank" class="page
 
 ## 2. Continuous Outcome Models
 
+* **Lec07 - Wed 3/1**: Regression Part III
 * **Lec06 - Mon 2/27**: Regression Part II
     + Go over <a href="{{ site.baseurl }}/assets/Chapter3_Lab.Rmd" target="_blank">`Chapter3_Lab.Rmd`</a>, everything up to and including the exercises at the end of 3.6.2.
 * **Lec05 - Fri 2/24**: Regression

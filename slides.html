@@ -112,7 +112,11 @@ slides > slide:not(.nobackground):after {
 
 <!----------------------------------------------------------------------------->
 
-<slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2><strong>Lec06 - Mon 2/27</strong>: Regression Part II</h2></hgroup><article  id="lec06---mon-227-regression-part-ii">
+<slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2><strong>Lec07 - Wed 3/1</strong>: Regression Part III</h2></hgroup><article  id="lec07---wed-31-regression-part-iii">
+
+<!----------------------------------------------------------------------------->
+
+</article></slide><slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2><strong>Lec06 - Mon 2/27</strong>: Regression Part II</h2></hgroup><article  id="lec06---mon-227-regression-part-ii">
 
 </article></slide><slide class=''><hgroup><h2>Regression in R</h2></hgroup><article  id="regression-in-r">
 
@@ -319,7 +323,7 @@ pseudo_test &lt;- train %&gt;%
 <pre >## # A tibble: 1 × 1
 ##       Score
 ##       &lt;dbl&gt;
-## 1 0.7865169</pre>
+## 1 0.8089888</pre>
 
 <p>Compare this to Kaggle score of 0.76555. Why are they different?</p>
 
@@ -330,9 +334,9 @@ pseudo_test &lt;- train %&gt;%
 <li>Let&#39;s repeat the above 10 times and get 10 pseudo-scores:</li>
 </ul>
 
-<pre >##  [1] 0.764 0.820 0.787 0.809 0.770 0.781 0.837 0.747 0.781 0.719</pre>
+<pre >##  [1] 0.787 0.775 0.837 0.803 0.792 0.826 0.787 0.781 0.809 0.781</pre>
 
-<p>In this case, we have variability due to the resampling. The average of the 10 scores is 0.781</p>
+<p>In this case, we have variability due to the resampling. The average of the 10 scores is 0.798</p>
 
 <!----------------------------------------------------------------------------->
 
