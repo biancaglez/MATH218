@@ -9,7 +9,7 @@ own answers and not simple rewordings of another's work. Furthermore, **all
 collaborations must be explicitly acknowledged at the top of your submissions**.
 
 
-### Problem Set 02 (Incomplete)
+### Problem Set 02
 
 * **Info:**
     + *Code portion*: Assigned Fri 2/24. To be submitted ~~by Wed 3/1 9am~~ on Fri 3/3 at the beginning of lecture (standby for submission format).
