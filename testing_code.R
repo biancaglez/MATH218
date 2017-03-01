@@ -6,6 +6,34 @@ library(tidyverse)
 
 
 
+library(modelr)
+cv1 <- crossv_kfold(Boston, 5)
+
+
+i <- 1
+
+mod <- lm(medv~lstat+crim+zn+indus+chas+nox+rm+age+dis+tax+ptratio+black, data=Boston)
+rmse(mod, Boston)
+
+k <-10
+library(purrr)
+mod <- lm(medv~lstat+crim+zn+indus+chas+nox+rm+age+dis+tax+ptratio+black, data=Boston)
+cv2 <- crossv_mc(Boston, k)
+models <- map(cv2$train, ~ lm(medv~lstat+crim+zn+indus+chas+nox+rm+age+dis+tax+ptratio+black, data=.))
+errs <- map2_dbl(models, cv2$test, rmse)
+rmse(mod, Boston); mean(errs)
+
+
+mod <- lm(medv~lstat, data=Boston)
+rmse(mod, Boston)
+cv2 <- crossv_mc(Boston, k)
+models <- map(cv2$train, ~ lm(medv~lstat, data=.))
+errs <- map2_dbl(models, cv2$test, rmse)
+rmse(mod, Boston); mean(errs)
+
+
+
+
 library(plotly)
 mtcars$am <- as.factor(mtcars$am)
 

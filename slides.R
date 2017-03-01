@@ -33,7 +33,7 @@
 #' 
 #' 
 ## ----setup, include=FALSE------------------------------------------------
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE)
 set.seed(76)
 if(FALSE){
   rmarkdown::render("slides.Rmd", output_format = c("html_document"))
@@ -45,6 +45,67 @@ if(FALSE){
 #' 
 #' <!----------------------------------------------------------------------------->
 #' # **Lec07 - Wed 3/1**: Regression Part III
+#' 
+#' ## Recall
+#' 
+## ---- echo=FALSE, eval=TRUE----------------------------------------------
+# Load packages:
+library(tidyverse)
+library(MASS)
+library(ISLR)
+library(broom)
+
+ggplot(Boston, aes(x=lstat, y=medv)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  labs(x="% of households with low SES", y="Median House Value", title="Boston Neighborhood House Prices")
+
+#' 
+#' 
+#' ## Solutions
+#' 
+#' To `Chapter3_Lab.Rmd` from last lecture (better viewed from HTML document):
+#' 
+## ---- echo=TRUE, eval=FALSE----------------------------------------------
+## # Load packages:
+## library(tidyverse)
+## library(MASS)
+## library(ISLR)
+## library(broom)
+## 
+## # Fit model. Boston would be the training data in a Kaggle competition.
+## # i.e. we have the outcome variable median house value
+## model_SL <- lm(medv~lstat, data=Boston)
+## 
+## # new_values would be the test data in a Kaggle competition
+## # i.e. we don't have the outcome variable
+## new_values <- data_frame(lstat=c(5,10,15))
+## 
+## # This is the MSE using the Boston training data:
+## augment(model_SL) %>%
+##   summarise(MSE=mean((medv-.fitted)^2))
+## # Or equivalently
+## augment(model_SL) %>%
+##   summarise(MSE=mean((.resid)^2))
+## 
+## # This value does not exist, b/c we don't have the real y, so we can't compute
+## # the residuals:
+## augment(model_SL, newdata = new_values) %>%
+##   summarise(MSE=mean((.resid)^2))
+
+#' 
+#' 
+#' ## Full Model
+#' 
+## ---- echo=TRUE, eval=FALSE----------------------------------------------
+## # Fit model
+## model_full <- lm(medv~lstat+crim+zn+indus+chas+nox+rm+age+dis+tax+ptratio+black, data=Boston)
+## 
+## # This is the MSE using the Boston training data:
+## # Or equivalently
+## augment(model_full) %>%
+##   summarise(MSE=mean((.resid)^2))
+
 #' 
 #' 
 #' 
