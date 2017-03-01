@@ -99,11 +99,32 @@ ggplot(Boston, aes(x=lstat, y=medv)) +
 #' 
 ## ---- echo=TRUE, eval=FALSE----------------------------------------------
 ## # Fit model
-## model_full <- lm(medv~lstat+crim+zn+indus+chas+nox+rm+age+dis+tax+ptratio+black, data=Boston)
+## model_full <- lm(medv~crim+zn+indus+chas+nox+rm+age+dis+rad+tax+ptratio+black+lstat, data=Boston)
+## # See coefficients
+## tidy(model_full)
 ## 
 ## # This is the MSE using the Boston training data:
 ## # Or equivalently
 ## augment(model_full) %>%
+##   summarise(MSE=mean((.resid)^2))
+
+#' 
+#' 
+#' ## Polynomial Model
+#' 
+## ---- echo=TRUE, eval=FALSE----------------------------------------------
+## # Fit model
+## model_polynomial <-
+##   lm(medv~
+##        crim+zn+indus+chas+nox+rm+age+dis+rad+tax+ptratio+black+lstat+
+##        I(crim^2)+I(zn^2)+I(indus^2)+I(chas^2)+I(nox^2)+I(rm^2)+I(age^2)+I(dis^2)+I(rad^2)+I(tax^2)+I(ptratio^2)+I(black^2)+I(lstat^2),
+##      data=Boston)
+## # See coefficients
+## tidy(model_polynomial)
+## 
+## # This is the MSE using the Boston training data:
+## # Or equivalently
+## augment(model_polynomial) %>%
 ##   summarise(MSE=mean((.resid)^2))
 
 #' 

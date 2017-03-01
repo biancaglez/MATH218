@@ -299,11 +299,29 @@ new_values &lt;-<span class="st"> </span><span class="kw">data_frame</span>(<spa
 <div id="full-model" class="section level2">
 <h2>Full Model</h2>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Fit model </span>
-model_full &lt;-<span class="st"> </span><span class="kw">lm</span>(medv~lstat+crim+zn+indus+chas+nox+rm+age+dis+tax+ptratio+black, <span class="dt">data=</span>Boston)
+model_full &lt;-<span class="st"> </span><span class="kw">lm</span>(medv~crim+zn+indus+chas+nox+rm+age+dis+rad+tax+ptratio+black+lstat, <span class="dt">data=</span>Boston)
+<span class="co"># See coefficients</span>
+<span class="kw">tidy</span>(model_full)
 
 <span class="co"># This is the MSE using the Boston training data:</span>
 <span class="co"># Or equivalently</span>
 <span class="kw">augment</span>(model_full) %&gt;%<span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">MSE=</span><span class="kw">mean</span>((.resid)^<span class="dv">2</span>))</code></pre></div>
+</div>
+<div id="polynomial-model" class="section level2">
+<h2>Polynomial Model</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Fit model </span>
+model_polynomial &lt;-<span class="st"> </span>
+<span class="st">  </span><span class="kw">lm</span>(medv~
+<span class="st">       </span>crim+zn+indus+chas+nox+rm+age+dis+rad+tax+ptratio+black+lstat+
+<span class="st">       </span><span class="kw">I</span>(crim^<span class="dv">2</span>)+<span class="kw">I</span>(zn^<span class="dv">2</span>)+<span class="kw">I</span>(indus^<span class="dv">2</span>)+<span class="kw">I</span>(chas^<span class="dv">2</span>)+<span class="kw">I</span>(nox^<span class="dv">2</span>)+<span class="kw">I</span>(rm^<span class="dv">2</span>)+<span class="kw">I</span>(age^<span class="dv">2</span>)+<span class="kw">I</span>(dis^<span class="dv">2</span>)+<span class="kw">I</span>(rad^<span class="dv">2</span>)+<span class="kw">I</span>(tax^<span class="dv">2</span>)+<span class="kw">I</span>(ptratio^<span class="dv">2</span>)+<span class="kw">I</span>(black^<span class="dv">2</span>)+<span class="kw">I</span>(lstat^<span class="dv">2</span>), 
+     <span class="dt">data=</span>Boston)
+<span class="co"># See coefficients</span>
+<span class="kw">tidy</span>(model_polynomial)
+
+<span class="co"># This is the MSE using the Boston training data:</span>
+<span class="co"># Or equivalently</span>
+<span class="kw">augment</span>(model_polynomial) %&gt;%<span class="st"> </span>
 <span class="st">  </span><span class="kw">summarise</span>(<span class="dt">MSE=</span><span class="kw">mean</span>((.resid)^<span class="dv">2</span>))</code></pre></div>
 <!----------------------------------------------------------------------------->
 </div>

@@ -120,7 +120,7 @@ slides > slide:not(.nobackground):after {
 
 </article></slide><slide class=''><hgroup><h2>Solutions</h2></hgroup><article  id="solutions">
 
-<p>To <code>Chapter3_Lab.Rmd</code> from last lecture:</p>
+<p>To <code>Chapter3_Lab.Rmd</code> from last lecture (better viewed from HTML document):</p>
 
 <pre class = 'prettyprint lang-r'># Load packages:
 library(tidyverse)
@@ -151,11 +151,29 @@ augment(model_SL, newdata = new_values) %&gt;%
 </article></slide><slide class=''><hgroup><h2>Full Model</h2></hgroup><article  id="full-model">
 
 <pre class = 'prettyprint lang-r'># Fit model 
-model_full &lt;- lm(medv~lstat+crim+zn+indus+chas+nox+rm+age+dis+tax+ptratio+black, data=Boston)
+model_full &lt;- lm(medv~crim+zn+indus+chas+nox+rm+age+dis+rad+tax+ptratio+black+lstat, data=Boston)
+# See coefficients
+tidy(model_full)
 
 # This is the MSE using the Boston training data:
 # Or equivalently
 augment(model_full) %&gt;% 
+  summarise(MSE=mean((.resid)^2))</pre>
+
+</article></slide><slide class=''><hgroup><h2>Polynomial Model</h2></hgroup><article  id="polynomial-model">
+
+<pre class = 'prettyprint lang-r'># Fit model 
+model_polynomial &lt;- 
+  lm(medv~
+       crim+zn+indus+chas+nox+rm+age+dis+rad+tax+ptratio+black+lstat+
+       I(crim^2)+I(zn^2)+I(indus^2)+I(chas^2)+I(nox^2)+I(rm^2)+I(age^2)+I(dis^2)+I(rad^2)+I(tax^2)+I(ptratio^2)+I(black^2)+I(lstat^2), 
+     data=Boston)
+# See coefficients
+tidy(model_polynomial)
+
+# This is the MSE using the Boston training data:
+# Or equivalently
+augment(model_polynomial) %&gt;% 
   summarise(MSE=mean((.resid)^2))</pre>
 
 <!----------------------------------------------------------------------------->
