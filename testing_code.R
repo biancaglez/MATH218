@@ -5,6 +5,67 @@ library(tidyverse)
 
 
 
+values <- smooth.spline(mtcars$wt, mtcars$mpg, df=4) %>%
+  augment()
+
+ggplot(data=values) +
+  geom_point(aes(x=x, y=y)) +
+  geom_line()
+
+ggplot(values, aes(x, y)) +
+  geom_point() +
+  geom_line(aes(y=.fitted))
+
+
+
+library(tidyverse)
+library(broom)
+n <- 400
+example <- data_frame(
+  x = 0:(n-1)/(n-1),
+  f = 0.2*x^11*(10*(1-x))^6+10*(10*x)^3*(1-x)^10,
+  epsilon = rnorm(n, 0, sd = 2),
+  y = f + epsilon
+)
+
+ggplot(example, aes(x=x)) +
+  geom_line(aes(y=f), col="red") +
+  geom_point(aes(y=y))
+
+model_spline <- smooth.spline(example$x, example$y)
+model_spline
+
+example_augmented <- model_spline %>%
+  augment()
+View(example_augmented)
+
+
+ggplot(example_augmented, aes(x=x)) +
+  geom_point(aes(y=y)) +
+  geom_line(aes(y=f), col="red") +
+  geom_line(aes(y=.fitted), col="blue")
+
+
+
+
+
+
+
+
+
+
+library(splines)
+model <- lm(y~ns(x,3), data=example)
+model_augment <- model %>% augment()
+
+gather_predictions
+
+smoothspline_aug <- mtcars %>%
+  bootstrap(100) %>%
+  do(augment(smooth.spline(.$wt, .$mpg, df=4), .))
+ggplot(smoothspline_aug, aes(wt, mpg)) + geom_point() +
+  geom_line(aes(y=.fitted, group=replicate), alpha=.2)
+
 
 library(modelr)
 cv1 <- crossv_kfold(Boston, 5)
