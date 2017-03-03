@@ -32,6 +32,7 @@ slides > slide:not(.nobackground):after {
 </style>
 
 
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE)
 set.seed(76)
@@ -76,9 +77,8 @@ ggplot(data=NULL, aes(x=x)) +
 
 ## What does `df` do?
 
-> * See <a target="_blank" class="page-link" href="https://www.nhl.com">handout</a>
-> * If you're curious, source <a target="_blank" class="page-link" href="https://www.nhl.com">source code</a>.
-
+> * See <a target="_blank" class="page-link" href="https://rudeboybert.github.io/MATH218/assets/splines.pdf">handout</a>.
+> * If you're curious, source <a target="_blank" class="page-link" href="https://github.com/rudeboybert/MATH218/blob/gh-pages/assets/intro_splines_2.R">source code</a>.
 
 
 

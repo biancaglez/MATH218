@@ -32,6 +32,7 @@
 #' </style>
 #' 
 #' 
+#' 
 ## ----setup, include=FALSE------------------------------------------------
 knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE)
 set.seed(76)
@@ -74,12 +75,10 @@ if(FALSE){
 
 #' 
 #' 
+#' ## What does `df` do?
 #' 
-## ---- eval=FALSE, echo=FALSE---------------------------------------------
-## # Try out 4 different values of df
-## 
-
-#' 
+#' > * See <a target="_blank" class="page-link" href="https://rudeboybert.github.io/MATH218/assets/splines.pdf">handout</a>.
+#' > * If you're curious, source <a target="_blank" class="page-link" href="https://github.com/rudeboybert/MATH218/blob/gh-pages/assets/intro_splines_2.R">source code</a>.
 #' 
 #' 
 #' 
