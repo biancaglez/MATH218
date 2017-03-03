@@ -74,12 +74,10 @@ ggplot(data=NULL, aes(x=x)) +
 ```
 
 
-## 
+## What does `df` do?
 
-```{r, eval=FALSE, echo=FALSE}
-# Try out 4 different values of df
-
-```
+> * See <a target="_blank" class="page-link" href="https://www.nhl.com">handout</a>
+> * If you're curious, source <a target="_blank" class="page-link" href="https://www.nhl.com">source code</a>.
 
 
 
