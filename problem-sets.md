@@ -29,9 +29,11 @@ collaborations must be explicitly acknowledged at the top of your submissions**.
         + In this same `.R` file, answer the following question in a commented section: *We saw that Kaggle takes the test data (418 rows), only reports your score on the leaderboard based on half of these data, and declares the winner based on the other half which is withholded until the very end of the competition. Not only that, Kaggle does not tell you how they split the 418 rows. Say Kaggle didn't do this and reported your score on the leaderboard based on the entire test data (418 rows). Write 2-3 sentences outlining a strategy of how you could exploit the information given by the leaderboard to get a perfect score of 100%.*
     1. *Code review*: 
         + Read the following document on code review <a target="_blank" class="page-link" href="https://smartbear.com/learn/code-review/best-practices-for-peer-code-review/">practices</a>.
-        + On Fri 3/3 after you've submitted your code, I will assign code review groups.
-        + More details then.
+        + Groups below
+        + Pick out only the top 3 points you'd like to point out/give feedback on
+        + Exchange feedback in whatever format in a Direct Message group on Slack
 * **Example Solutions:** <a target="_blank" class="page-link" href="https://github.com/rudeboybert/MATH218/blob/gh-pages/assets/PS02_solutions.R">`PS02_solutions.R`</a>. Please note there are many ways of completing this assignment.
+
       
 ```
 # Code to determine code review pairs
@@ -42,11 +44,34 @@ class <- c("Aayam Poudel", "Alexander Pastora", "Alfred Hurley", "Ben Czekanski"
 "Otto Nagengast", "Phil Hoxie", "Rebecca Conover", "Ryan Rizzo", "Shannia Fu",
 "Sierra Moen", "Tina Chen", "Xiaoli Jin")
 
-set.seed(76)
+set.seed(3)
 sample(class) %>%
   matrix(ncol=2)
 ```
-        
+
+| Code Reviewer A               | Code Reviewer B        |
+|:----------------|:-------------------------------------|
+|Bianca Gonzalez  |Ryan Rizzo + Will Ernst                           | 
+|Rebecca Conover  |Tina Chen                             | 
+|Elias Van Sickle |Sierra Moen                           | 
+|Connor McCormick |Malik Gomez                           | 
+|Kyra Gray        |Aayam Poudel                          | 
+|Kelsey Hoekstra  |Xiaoli Jin                            | 
+|Alfred Hurley    |Otto Nagengast                        | 
+|Brenda Li        |Alexander Pastora                     | 
+|Emily Miller     |Marcos Antonio de Souza Barrozo Filho | 
+|Nina Sonneborn   |Ben Czekanski                         | 
+|David Valentin   |Phil Hoxie                            | 
+|Shannia Fu       |Jewel Chen                            |       
+
+
+
+
+<br>
+
+***
+
+<br>
 
 
 ### Problem Set 01
