@@ -244,7 +244,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Statistical Learning</h1>
 <h4 class="author"><em>Albert Y. Kim</em></h4>
-<h4 class="date"><em>Last updated on 2017-03-01</em></h4>
+<h4 class="date"><em>Last updated on 2017-03-03</em></h4>
 
 </div>
 
@@ -261,6 +261,34 @@ slides > slide:not(.nobackground):after {
 }
 </style>
 <!----------------------------------------------------------------------------->
+<div id="lec08---fri-33" class="section level1">
+<h1><strong>Lec08 - Fri 3/3</strong>:</h1>
+<div id="intro_splines.r-solutions" class="section level2">
+<h2><code>intro_splines.R</code> Solutions</h2>
+<p>Copy this to the end of <code>intro_splines.R</code>:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># SOLUTIONS:</span>
+<span class="co"># 1. Note: Anything define in the ggplot() command trickles down to all the sub</span>
+<span class="co"># geoms. If you want to use data/aes() specific to only one particular geom,</span>
+<span class="co"># you define it inside:</span>
+<span class="kw">ggplot</span>(<span class="dt">data=</span><span class="ot">NULL</span>, <span class="kw">aes</span>(<span class="dt">x=</span>x)) +
+<span class="st">  </span><span class="co"># What we're given - the obs y:</span>
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">data=</span>real_life_augmented, <span class="kw">aes</span>(<span class="dt">y=</span>y)) +
+<span class="st">  </span><span class="co"># What we won't typically know, but here we pretend to - the f(x) i.e. the signal:</span>
+<span class="st">  </span><span class="kw">geom_line</span>(<span class="dt">data=</span>simulated, <span class="kw">aes</span>(<span class="dt">y=</span>f), <span class="dt">col=</span><span class="st">&quot;red&quot;</span>, <span class="dt">size=</span><span class="dv">1</span>) +
+<span class="st">  </span><span class="co"># Our guess at f(x), i.e. f_hat(x) - our fitted/predicted values:</span>
+<span class="st">  </span><span class="kw">geom_line</span>(<span class="dt">data=</span>real_life_augmented, <span class="kw">aes</span>(<span class="dt">y=</span>.fitted), <span class="dt">col=</span><span class="st">&quot;blue&quot;</span>, <span class="dt">size=</span><span class="dv">1</span>)
+
+<span class="co"># 2. Let's toy around with df. In particular df=2, 10, 50, 99</span>
+real_life_augmented &lt;-<span class="st"> </span><span class="kw">smooth.spline</span>(real_life$x, real_life$y, <span class="dt">df=</span><span class="dv">50</span>) %&gt;%
+<span class="st">  </span><span class="kw">augment</span>() %&gt;%
+<span class="st">  </span><span class="kw">tbl_df</span>()
+<span class="kw">ggplot</span>(<span class="dt">data=</span><span class="ot">NULL</span>, <span class="kw">aes</span>(<span class="dt">x=</span>x)) +
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">data=</span>real_life_augmented, <span class="kw">aes</span>(<span class="dt">y=</span>y)) +
+<span class="st">  </span><span class="kw">geom_line</span>(<span class="dt">data=</span>real_life_augmented, <span class="kw">aes</span>(<span class="dt">y=</span>.fitted), <span class="dt">col=</span><span class="st">&quot;blue&quot;</span>, <span class="dt">size=</span><span class="dv">1</span>) +
+<span class="st">  </span><span class="kw">geom_line</span>(<span class="dt">data=</span>simulated, <span class="kw">aes</span>(<span class="dt">y=</span>f), <span class="dt">col=</span><span class="st">&quot;red&quot;</span>, <span class="dt">size=</span><span class="dv">1</span>)</code></pre></div>
+<!----------------------------------------------------------------------------->
+</div>
+</div>
 <div id="lec07---wed-31-regression-part-iii" class="section level1">
 <h1><strong>Lec07 - Wed 3/1</strong>: Regression Part III</h1>
 <div id="recall" class="section level2">

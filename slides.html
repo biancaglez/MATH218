@@ -93,7 +93,7 @@
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">Last updated on 2017-03-01</p>
+            <p style="margin-top: 6px; margin-left: -2px;">Last updated on 2017-03-03</p>
           </hgroup>
   </slide>
 
@@ -112,7 +112,36 @@ slides > slide:not(.nobackground):after {
 
 <!----------------------------------------------------------------------------->
 
-<slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2><strong>Lec07 - Wed 3/1</strong>: Regression Part III</h2></hgroup><article  id="lec07---wed-31-regression-part-iii">
+<slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2><strong>Lec08 - Fri 3/3</strong>:</h2></hgroup><article  id="lec08---fri-33">
+
+</article></slide><slide class=''><hgroup><h2>Intro to Splines</h2></hgroup><article  id="intro-to-splines">
+
+<p>Copy this to the end of <code>intro_splines.R</code></p>
+
+<pre class = 'prettyprint lang-r'># SOLUTIONS:
+# 1. Note: Anything define in the ggplot() command trickles down to all the sub
+# geoms. If you want to use data/aes() specific to only one particular geom,
+# you define it inside:
+ggplot(data=NULL, aes(x=x)) +
+  # What we&#39;re given - the obs y:
+  geom_point(data=real_life_augmented, aes(y=y)) +
+  # What we won&#39;t typically know, but here we pretend to - the f(x) i.e. the signal:
+  geom_line(data=simulated, aes(y=f), col=&quot;red&quot;, size=1) +
+  # Our guess at f(x), i.e. f_hat(x) - our fitted/predicted values:
+  geom_line(data=real_life_augmented, aes(y=.fitted), col=&quot;blue&quot;, size=1)
+
+# 2. Let&#39;s toy around with df. In particular df=2, 10, 50, 99
+real_life_augmented &lt;- smooth.spline(real_life$x, real_life$y, df=50) %&gt;%
+  augment() %&gt;%
+  tbl_df()
+ggplot(data=NULL, aes(x=x)) +
+  geom_point(data=real_life_augmented, aes(y=y)) +
+  geom_line(data=real_life_augmented, aes(y=.fitted), col=&quot;blue&quot;, size=1) +
+  geom_line(data=simulated, aes(y=f), col=&quot;red&quot;, size=1)</pre>
+
+<!----------------------------------------------------------------------------->
+
+</article></slide><slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2><strong>Lec07 - Wed 3/1</strong>: Regression Part III</h2></hgroup><article  id="lec07---wed-31-regression-part-iii">
 
 </article></slide><slide class=''><hgroup><h2>Recall</h2></hgroup><article  id="recall">
 

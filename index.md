@@ -9,14 +9,14 @@ layout: default
 Lectures will be a combination of chalk talks and <a target="_blank" class="page-link" href="{{ site.baseurl }}/slides.html">a running slide deck</a>, the latter being also available in
 
 * <a target="_blank" class="page-link" href="{{ site.baseurl }}/notes.html">HTML</a> format
-* <a target="_blank" class="page-link" href="https://github.com/rudeboybert/MATH218/blob/gh-pages/slides.Rmd">R Markdown format</a>: Click on "Raw" button and save to `.Rmd` format
-* <a target="_blank" class="page-link" href="https://github.com/rudeboybert/MATH218/blob/gh-pages/slides.R">R source code format</a> 
+* <a target="_blank" class="page-link" href="https://github.com/rudeboybert/MATH218/blob/gh-pages/slides.Rmd">R Markdown format</a> (click on "Raw" button and save to `.Rmd` format) and <a target="_blank" class="page-link" href="https://github.com/rudeboybert/MATH218/blob/gh-pages/slides.R">R source code format</a>.
 
 
 
 
 ## 2. Continuous Outcome Models
 
+* **Lec08 - Fri 3/3**:
 * **Lec07 - Wed 3/1**: Regression Part III
     + Go over <a href="{{ site.baseurl }}/assets/intro_splines.R" target="_blank">`intro_splines.R`</a>.
 * **Lec06 - Mon 2/27**: Regression Part II

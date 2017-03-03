@@ -44,6 +44,49 @@ if(FALSE){
 
 
 <!----------------------------------------------------------------------------->
+# **Lec08 - Fri 3/3**:
+
+## `intro_splines.R` Solutions
+
+Copy this to the end of `intro_splines.R`:
+
+```{r, eval=FALSE}
+# SOLUTIONS:
+# 1. Note: Anything define in the ggplot() command trickles down to all the sub
+# geoms. If you want to use data/aes() specific to only one particular geom,
+# you define it inside:
+ggplot(data=NULL, aes(x=x)) +
+  # What we're given - the obs y:
+  geom_point(data=real_life_augmented, aes(y=y)) +
+  # What we won't typically know, but here we pretend to - the f(x) i.e. the signal:
+  geom_line(data=simulated, aes(y=f), col="red", size=1) +
+  # Our guess at f(x), i.e. f_hat(x) - our fitted/predicted values:
+  geom_line(data=real_life_augmented, aes(y=.fitted), col="blue", size=1)
+
+# 2. Let's toy around with df. In particular df=2, 10, 50, 99
+real_life_augmented <- smooth.spline(real_life$x, real_life$y, df=50) %>%
+  augment() %>%
+  tbl_df()
+ggplot(data=NULL, aes(x=x)) +
+  geom_point(data=real_life_augmented, aes(y=y)) +
+  geom_line(data=real_life_augmented, aes(y=.fitted), col="blue", size=1) +
+  geom_line(data=simulated, aes(y=f), col="red", size=1)
+```
+
+
+## 
+
+```{r, eval=FALSE, echo=FALSE}
+# Try out 4 different values of df
+
+```
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
 # **Lec07 - Wed 3/1**: Regression Part III
 
 ## Recall
