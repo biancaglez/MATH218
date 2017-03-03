@@ -37,6 +37,8 @@ for(i in 1:n_folds){
   # -is overly trivial i.e. there is nothing really to train/fit
   # -the fitted model doesn't change from fold to fold
   # Later, we'll use a
+  model <- FitModel(y~x, data=pseudo_train)
+
 
   # 3. Get fitted/predicted values y-hat for the pseudo_test data using the
   # model from above
@@ -45,6 +47,7 @@ for(i in 1:n_folds){
   # Later, we'll use a function that looks like: predict(model)
   pseudo_test <- pseudo_test %>%
     mutate(Predictions = ifelse(Sex == "female", 1, 0))
+  predictions <- predict(model, newdata=pseudo_test)
 
   # 4. Compute your score on the pseudo_test data
   #
@@ -59,11 +62,3 @@ for(i in 1:n_folds){
 }
 scores
 mean(scores)
-
-
-# Fit/train model step
-model <- FitModel(y~x, data=pseudo_train)
-predictions <- predict(model, newdata=pseudo_test)
-
-
-

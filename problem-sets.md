@@ -31,7 +31,21 @@ collaborations must be explicitly acknowledged at the top of your submissions**.
         + Read the following document on code review <a target="_blank" class="page-link" href="https://smartbear.com/learn/code-review/best-practices-for-peer-code-review/">practices</a>.
         + On Fri 3/3 after you've submitted your code, I will assign code review groups.
         + More details then.
-        
+* **Example Solutions:** <a target="_blank" class="page-link" href="https://github.com/rudeboybert/MATH218/blob/gh-pages/assets/PS02_solutions.R">`PS02_solutions.R`</a>. Please note there are many ways of completing this assignment.
+      
+```
+# Code to determine code review pairs
+class <- c("Aayam Poudel", "Alexander Pastora", "Alfred Hurley", "Ben Czekanski",
+"Bianca Gonzalez", "Brenda Li", "Connor McCormick", "David Valentin",
+"Elias Van Sickle", "Emily Miller", "Jewel Chen", "Kelsey Hoekstra",
+"Kyra Gray", "Malik Gomez", "Marcos Antonio de Souza Barrozo Filho", "Nina Sonneborn",
+"Otto Nagengast", "Phil Hoxie", "Rebecca Conover", "Ryan Rizzo", "Shannia Fu",
+"Sierra Moen", "Tina Chen", "Xiaoli Jin")
+
+set.seed(76)
+sample(class) %>%
+  matrix(ncol=2)
+```
         
 
 

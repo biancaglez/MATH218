@@ -5,6 +5,31 @@ library(tidyverse)
 
 
 
+class <- c("Aayam Poudel", "Alexander Pastora", "Alfred Hurley", "Ben Czekanski",
+"Bianca Gonzalez", "Brenda Li", "Connor McCormick", "David Valentin",
+"Elias Van Sickle", "Emily Miller", "Jewel Chen", "Kelsey Hoekstra",
+"Kyra Gray", "Malik Gomez", "Marcos Antonio de Souza Barrozo Filho", "Nina Sonneborn",
+"Otto Nagengast", "Phil Hoxie", "Rebecca Conover", "Ryan Rizzo", "Shannia Fu",
+"Sierra Moen", "Tina Chen", "Xiaoli Jin")
+
+library(broom)
+set.seed(76)
+sample(class) %>%
+  matrix(ncol=2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 values <- smooth.spline(mtcars$wt, mtcars$mpg, df=4) %>%
   augment()
 
