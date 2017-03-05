@@ -19,7 +19,7 @@ Lectures will be a combination of chalk talks and <a target="_blank" class="page
 * **Lec09 - Mon 3/5**: Splines
 * **Lec08 - Fri 3/3**: Pseudocode for Cross-Validation
 * **Lec07 - Wed 3/1**: Regression Part III
-    + Go over <a href="{{ site.baseurl }}/assets/intro_splines.R" target="_blank">`intro_splines.R`</a>.
+    + Go over <a href="{{ site.baseurl }}/assets/splines/intro_splines.R" target="_blank">`intro_splines.R`</a>.
 * **Lec06 - Mon 2/27**: Regression Part II
     + Go over <a href="{{ site.baseurl }}/assets/Chapter3_Lab.Rmd" target="_blank">`Chapter3_Lab.Rmd`</a>, everything up to and including the exercises at the end of 3.6.2.
 * **Lec05 - Fri 2/24**: Regression

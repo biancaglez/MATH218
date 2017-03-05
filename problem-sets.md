@@ -14,7 +14,9 @@ collaborations must be explicitly acknowledged at the top of your submissions**.
 * **Info:**
     + *Code portion*: Assigned Sun 3/5. To be submitted on Fri 3/10 9:05am.
     + *Code review*: Assigned Fri 3/10. Due by Mon 3/13 9:05am.
-    + *Ethics*: Listen to <a target="_blank" class="page-link" href="http://www.econtalk.org/archives/2016/10/cathy_oneil_on_1.html">Econ Talk podcast interview</a> (time 1h11m) of <a target="_blank" class="page-link" href="https://mathbabe.org/">Cathy O'Neil</a>, author of <a target="_blank" class="page-link" href="https://weaponsofmathdestructionbook.com/">Weapons of Math Destruction</a>.
+    + *Ethics*:
+        1. Listen to <a target="_blank" class="page-link" href="http://www.econtalk.org/archives/2016/10/cathy_oneil_on_1.html">Econ Talk podcast interview</a> (time 1h11m) of <a target="_blank" class="page-link" href="https://mathbabe.org/">Cathy O'Neil</a>, author of <a target="_blank" class="page-link" href="https://weaponsofmathdestructionbook.com/">Weapons of Math Destruction</a>.
+        1. Answer these:
 * **Learning Goals:**
     + Train our first substantive model.
 * **Notes**:
@@ -57,7 +59,7 @@ collaborations must be explicitly acknowledged at the top of your submissions**.
         + Pick out only the top 3 points you'd like to point out/give feedback on
         + Create a Slack direct message with your code review partner **and the instructor "albert"**.
         + Exchange feedback in whatever format you like
-* **Example Solutions:** <a target="_blank" class="page-link" href="https://github.com/rudeboybert/MATH218/blob/gh-pages/assets/PS02_solutions.R">`PS02_solutions.R`</a>. Please note there are many ways of completing this assignment.
+* **Example Solutions:** <a target="_blank" class="page-link" href="https://github.com/rudeboybert/MATH218/blob/gh-pages/assets/PS/PS02_solutions.R">`PS02_solutions.R`</a>. Please note there are many ways of completing this assignment.
 
 | Code Reviewer A               | Code Reviewer B        |
 |:----------------|:-------------------------------------|
