@@ -11,6 +11,8 @@ collaborations must be explicitly acknowledged at the top of your submissions**.
 
 ### Problem Set 03
 
+**Not yet complete; please wait until lecture on Monday**
+
 * **Info:**
     + *Code portion*: Assigned Sun 3/5. To be submitted on Fri 3/10 9:05am.
     + *Code review*: Assigned Fri 3/10. Due by Mon 3/13 9:05am.
