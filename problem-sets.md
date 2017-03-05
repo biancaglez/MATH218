@@ -9,6 +9,31 @@ own answers and not simple rewordings of another's work. Furthermore, **all
 collaborations must be explicitly acknowledged at the top of your submissions**.
 
 
+### Problem Set 03
+
+* **Info:**
+    + *Code portion*: Assigned Sun 3/5. To be submitted on Fri 3/10 9:05am.
+    + *Code review*: Assigned Fri 3/10. Due by Mon 3/13 9:05am.
+    + *Ethics*: Listen to <a target="_blank" class="page-link" href="http://www.econtalk.org/archives/2016/10/cathy_oneil_on_1.html">Econ Talk podcast interview</a> (time 1h11m) of <a target="_blank" class="page-link" href="https://mathbabe.org/">Cathy O'Neil</a>, author of <a target="_blank" class="page-link" href="https://weaponsofmathdestructionbook.com/">Weapons of Math Destruction</a>.
+* **Learning Goals:**
+    + Train our first substantive model.
+* **Notes**:
+* **Homework:** Coming up..
+
+
+
+
+
+<br>
+
+***
+
+<br>
+
+
+
+
+
 ### Problem Set 02
 
 * **Info:**
@@ -27,31 +52,16 @@ collaborations must be explicitly acknowledged at the top of your submissions**.
             1. k=5 Fold cross-validation.
         + Save your work in a file called `PS02_FirstName_LastName.R`. Ex: in my case `PS02_Albert_Kim.R`. Have this ready to submit at the beginning of lecture on Fri 3/3.
         + In this same `.R` file, answer the following question in a commented section: *We saw that Kaggle takes the test data (418 rows), only reports your score on the leaderboard based on half of these data, and declares the winner based on the other half which is withholded until the very end of the competition. Not only that, Kaggle does not tell you how they split the 418 rows. Say Kaggle didn't do this and reported your score on the leaderboard based on the entire test data (418 rows). Write 2-3 sentences outlining a strategy of how you could exploit the information given by the leaderboard to get a perfect score of 100%.*
-    1. *Code review*: 
-        + Read the following document on code review <a target="_blank" class="page-link" href="https://smartbear.com/learn/code-review/best-practices-for-peer-code-review/">practices</a>.
-        + Groups below
+    1. *Code review*: See groups below
+        + Read the following document on code review <a target="_blank" class="page-link" href="https://smartbear.com/learn/code-review/best-practices-for-peer-code-review/">practices</a> at least once.
         + Pick out only the top 3 points you'd like to point out/give feedback on
-        + Exchange feedback in whatever format in a Direct Message group on Slack
+        + Create a Slack direct message with your code review partner **and the instructor "albert"**.
+        + Exchange feedback in whatever format you like
 * **Example Solutions:** <a target="_blank" class="page-link" href="https://github.com/rudeboybert/MATH218/blob/gh-pages/assets/PS02_solutions.R">`PS02_solutions.R`</a>. Please note there are many ways of completing this assignment.
-
-      
-```
-# Code to determine code review pairs
-class <- c("Aayam Poudel", "Alexander Pastora", "Alfred Hurley", "Ben Czekanski",
-"Bianca Gonzalez", "Brenda Li", "Connor McCormick", "David Valentin",
-"Elias Van Sickle", "Emily Miller", "Jewel Chen", "Kelsey Hoekstra",
-"Kyra Gray", "Malik Gomez", "Marcos Antonio de Souza Barrozo Filho", "Nina Sonneborn",
-"Otto Nagengast", "Phil Hoxie", "Rebecca Conover", "Ryan Rizzo", "Shannia Fu",
-"Sierra Moen", "Tina Chen", "Xiaoli Jin")
-
-set.seed(3)
-sample(class) %>%
-  matrix(ncol=2)
-```
 
 | Code Reviewer A               | Code Reviewer B        |
 |:----------------|:-------------------------------------|
-|Bianca Gonzalez  |Ryan Rizzo + Will Ernst                           | 
+|Bianca Gonzalez  |Ryan Rizzo + Will Ernst               | 
 |Rebecca Conover  |Tina Chen                             | 
 |Elias Van Sickle |Sierra Moen                           | 
 |Connor McCormick |Malik Gomez                           | 
@@ -64,6 +74,21 @@ sample(class) %>%
 |David Valentin   |Phil Hoxie                            | 
 |Shannia Fu       |Jewel Chen                            |       
 
+<!--
+# Code to determine code review pairs
+class <- c("Aayam Poudel", "Alexander Pastora", "Alfred Hurley", "Ben Czekanski",
+"Bianca Gonzalez", "Brenda Li", "Connor McCormick", "David Valentin",
+"Elias Van Sickle", "Emily Miller", "Jewel Chen", "Kelsey Hoekstra",
+"Kyra Gray", "Malik Gomez", "Marcos Antonio de Souza Barrozo Filho", "Nina Sonneborn",
+"Otto Nagengast", "Phil Hoxie", "Rebecca Conover", "Ryan Rizzo", "Shannia Fu",
+"Sierra Moen", "Tina Chen", "Xiaoli Jin")
+
+set.seed(3)
+sample(class) %>%
+  matrix(ncol=2)
+-->
+
+
 
 
 
@@ -72,6 +97,9 @@ sample(class) %>%
 ***
 
 <br>
+
+
+
 
 
 ### Problem Set 01
@@ -99,6 +127,43 @@ sample(class) %>%
         * There can't be missing values (`NA`s) in your predictions for `Survived`
         * **Tricky**: `Survived` has to be integers and not doubles i.e. `1` and not `1.0`
         * See <a target="_blank" class="page-link" href="https://github.com/rudeboybert/MATH218/blob/gh-pages/assets/Titanic/kaggle.R">`kaggle.R`</a> for example code.
+
+
+
+
+
+<br>
+
+***
+
+<br>
+
+
+
+
+
+### Code Review Instructions
+
+* 
+
+
+
+```
+class <- c("Aayam Poudel", "Alexander Pastora", "Alfred Hurley", "Ben Czekanski",
+"Bianca Gonzalez", "Brenda Li", "Connor McCormick", "David Valentin",
+"Elias Van Sickle", "Emily Miller", "Jewel Chen", "Kelsey Hoekstra",
+"Kyra Gray", "Malik Gomez", "Marcos Antonio de Souza Barrozo Filho", "Nina Sonneborn",
+"Otto Nagengast", "Phil Hoxie", "Rebecca Conover", "Ryan Rizzo", "Shannia Fu",
+"Sierra Moen", "Tina Chen", "Xiaoli Jin", "Will Ernst", NA)
+
+set.seed(3)
+sample(class) %>%
+  matrix(ncol=2) %>% 
+  as_data_frame() %>% 
+  rename(`Code Reviewer A` = V1, `Code Reviewer B` = V2) %>% 
+  knitr::kable()
+```
+
 
 
 <!--

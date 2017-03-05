@@ -244,7 +244,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Statistical Learning</h1>
 <h4 class="author"><em>Albert Y. Kim</em></h4>
-<h4 class="date"><em>Last updated on 2017-03-03</em></h4>
+<h4 class="date"><em>Last updated on 2017-03-05</em></h4>
 
 </div>
 
@@ -261,8 +261,16 @@ slides > slide:not(.nobackground):after {
 }
 </style>
 <!----------------------------------------------------------------------------->
-<div id="lec08---fri-33" class="section level1">
-<h1><strong>Lec08 - Fri 3/3</strong>:</h1>
+<div id="lec09---mon-35-splines" class="section level1">
+<h1><strong>Lec09 - Mon 3/5</strong>: Splines</h1>
+<div id="what-are-splines" class="section level2">
+<h2>What are splines?</h2>
+<p>Piecewise polynomials with smoothness constraints.</p>
+<!----------------------------------------------------------------------------->
+</div>
+</div>
+<div id="lec08---fri-33-pseudocode-for-cross-validation" class="section level1">
+<h1><strong>Lec08 - Fri 3/3</strong>: Pseudocode for Cross-Validation</h1>
 <div id="intro_splines.r-solutions" class="section level2">
 <h2><code>intro_splines.R</code> Solutions</h2>
 <p>Copy this to the end of <code>intro_splines.R</code>:</p>
@@ -548,7 +556,7 @@ pseudo_test &lt;-<span class="st"> </span>train %&gt;%<span class="st"> </span>
 <pre><code>## # A tibble: 1 × 1
 ##       Score
 ##       &lt;dbl&gt;
-## 1 0.8089888</code></pre>
+## 1 0.7865169</code></pre>
 <p>Compare this to Kaggle score of 0.76555. Why are they different?</p>
 </div>
 <div id="resampling-2" class="section level2">
@@ -559,8 +567,8 @@ pseudo_test &lt;-<span class="st"> </span>train %&gt;%<span class="st"> </span>
 <li>Let’s repeat the above 10 times and get 10 pseudo-scores:</li>
 </ul>
 </blockquote>
-<pre><code>##  [1] 0.787 0.775 0.837 0.803 0.792 0.826 0.787 0.781 0.809 0.781</code></pre>
-<p>In this case, we have variability due to the resampling. The average of the 10 scores is 0.798</p>
+<pre><code>##  [1] 0.781 0.770 0.792 0.770 0.775 0.787 0.831 0.781 0.798 0.753</code></pre>
+<p>In this case, we have variability due to the resampling. The average of the 10 scores is 0.784</p>
 <!----------------------------------------------------------------------------->
 </div>
 </div>

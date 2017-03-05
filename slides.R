@@ -43,9 +43,21 @@ if(FALSE){
 
 #' 
 #' 
+#' <!----------------------------------------------------------------------------->
+#' # **Lec09 - Mon 3/5**: Splines
+#' 
+#' ## What are splines?
+#' 
+#' Piecewise polynomials with smoothness constraints.
+#' 
+#' 
+#' 
+#' 
+#' 
+#' 
 #' 
 #' <!----------------------------------------------------------------------------->
-#' # **Lec08 - Fri 3/3**:
+#' # **Lec08 - Fri 3/3**: Pseudocode for Cross-Validation
 #' 
 #' ## `intro_splines.R` Solutions
 #' 
