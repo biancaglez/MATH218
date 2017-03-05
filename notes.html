@@ -273,7 +273,7 @@ slides > slide:not(.nobackground):after {
 <h1><strong>Lec08 - Fri 3/3</strong>: Pseudocode for Cross-Validation</h1>
 <div id="intro_splines.r-solutions" class="section level2">
 <h2><code>intro_splines.R</code> Solutions</h2>
-<p>Copy this to the end of <code>intro_splines.R</code>:</p>
+<p>Copy this at the end of <code>intro_splines.R</code> from previous lecture:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># SOLUTIONS:</span>
 <span class="co"># 1. Note: Anything define in the ggplot() command trickles down to all the sub</span>
 <span class="co"># geoms. If you want to use data/aes() specific to only one particular geom,</span>
@@ -300,7 +300,7 @@ real_life_augmented &lt;-<span class="st"> </span><span class="kw">smooth.spline
 <blockquote>
 <ul>
 <li>See <a target="_blank" class="page-link" href="https://rudeboybert.github.io/MATH218/assets/splines.pdf">handout</a>.</li>
-<li>If you’re curious, source <a target="_blank" class="page-link" href="https://github.com/rudeboybert/MATH218/blob/gh-pages/assets/intro_splines_2.R">source code</a>.</li>
+<li>If you’re curious, see <a target="_blank" class="page-link" href="https://github.com/rudeboybert/MATH218/blob/gh-pages/assets/intro_splines_2.R">source code</a>.</li>
 </ul>
 </blockquote>
 <!----------------------------------------------------------------------------->
@@ -556,7 +556,7 @@ pseudo_test &lt;-<span class="st"> </span>train %&gt;%<span class="st"> </span>
 <pre><code>## # A tibble: 1 × 1
 ##       Score
 ##       &lt;dbl&gt;
-## 1 0.7865169</code></pre>
+## 1 0.8089888</code></pre>
 <p>Compare this to Kaggle score of 0.76555. Why are they different?</p>
 </div>
 <div id="resampling-2" class="section level2">
@@ -567,8 +567,8 @@ pseudo_test &lt;-<span class="st"> </span>train %&gt;%<span class="st"> </span>
 <li>Let’s repeat the above 10 times and get 10 pseudo-scores:</li>
 </ul>
 </blockquote>
-<pre><code>##  [1] 0.781 0.770 0.792 0.770 0.775 0.787 0.831 0.781 0.798 0.753</code></pre>
-<p>In this case, we have variability due to the resampling. The average of the 10 scores is 0.784</p>
+<pre><code>##  [1] 0.787 0.775 0.837 0.803 0.792 0.826 0.787 0.781 0.809 0.781</code></pre>
+<p>In this case, we have variability due to the resampling. The average of the 10 scores is 0.798</p>
 <!----------------------------------------------------------------------------->
 </div>
 </div>

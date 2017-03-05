@@ -61,7 +61,7 @@ if(FALSE){
 #' 
 #' ## `intro_splines.R` Solutions
 #' 
-#' Copy this to the end of `intro_splines.R`:
+#' Copy this at the end of `intro_splines.R` from previous lecture:
 #' 
 ## ---- eval=FALSE---------------------------------------------------------
 ## # SOLUTIONS:
@@ -90,7 +90,7 @@ if(FALSE){
 #' ## What does `df` do?
 #' 
 #' > * See <a target="_blank" class="page-link" href="https://rudeboybert.github.io/MATH218/assets/splines.pdf">handout</a>.
-#' > * If you're curious, source <a target="_blank" class="page-link" href="https://github.com/rudeboybert/MATH218/blob/gh-pages/assets/intro_splines_2.R">source code</a>.
+#' > * If you're curious, see <a target="_blank" class="page-link" href="https://github.com/rudeboybert/MATH218/blob/gh-pages/assets/intro_splines_2.R">source code</a>.
 #' 
 #' 
 #' 
