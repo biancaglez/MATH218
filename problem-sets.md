@@ -16,11 +16,21 @@ collaborations must be explicitly acknowledged at the top of your submissions**.
     + *Code review*: Assigned Fri 3/10. Due by Mon 3/13 9:05am.
     + *Ethics*:
         1. Listen to <a target="_blank" class="page-link" href="http://www.econtalk.org/archives/2016/10/cathy_oneil_on_1.html">Econ Talk podcast interview</a> (time 1h11m) of <a target="_blank" class="page-link" href="https://mathbabe.org/">Cathy O'Neil</a>, author of <a target="_blank" class="page-link" href="https://weaponsofmathdestructionbook.com/">Weapons of Math Destruction</a>.
-        1. Answer these:
+        1. Have an answer for these discussion questions:
 * **Learning Goals:**
-    + Train our first substantive model.
-* **Notes**:
-* **Homework:** Coming up..
+    + Baby's first true model fitting experience!
+    + However we keep things simple in that there is only one true predictor **and** you'll  know it exactly.
+* **Homework:** <a target="_blank" class="page-link" href="https://github.com/rudeboybert/MATH218/tree/gh-pages/assets/PS/PS03">Data!!!</a> If you've never downloaded a CSV off GitHub, ask the person next to you. Chances are they'll know!
+    + Fit any model you like!
+    + You will be submitting three files on Friday at 9:05am:
+        1. `PS03_FirstName_LastName.R` with your model code + MSE on the training data
+        1. `PS03_submission_FirstName_LastName.csv` with your predictions
+        1. `PS03_discussion_FirstName_LastName.txt` with your discussion points. Text files only please!
+* **Notes:** Think
+    + What is an appropriate "score" criteria in this situation.
+    + I will give you a score only **after** you submit your problem set on Friday. What can you do until then?
+
+
 
 
 
@@ -45,8 +55,6 @@ collaborations must be explicitly acknowledged at the top of your submissions**.
     + Implement cross-validation from scratch. Later we'll use existing R packages.
     + `dplyr` newbies: perform your first substantive data manipulation!
     + <a target="_blank" class="page-link" href="https://smartbear.com/learn/code-review/what-is-code-review/">Code review</a> to critique each other's code! What's done in practice!
-* **Notes**:
-    + Please feel free to work collaboratively!
 * **Homework:**
     1. *Code portion*:
         + Using the `train.csv` data from the Kaggle Titanic competititon and for the gender survival model, compute what I called the "pseudo-scores": estimates of the Kaggle "score" of 76.555%. Do this via both
@@ -59,6 +67,8 @@ collaborations must be explicitly acknowledged at the top of your submissions**.
         + Pick out only the top 3 points you'd like to point out/give feedback on
         + Create a Slack direct message with your code review partner **and the instructor "albert"**.
         + Exchange feedback in whatever format you like
+* **Notes**:
+    + Please feel free to work collaboratively!
 * **Example Solutions:** <a target="_blank" class="page-link" href="https://github.com/rudeboybert/MATH218/blob/gh-pages/assets/PS/PS02_solutions.R">`PS02_solutions.R`</a>. Please note there are many ways of completing this assignment.
 
 | Code Reviewer A               | Code Reviewer B        |
@@ -112,15 +122,15 @@ sample(class) %>%
 * **Learning Goals:**
     + Getting familiar with Kaggle competition workflow
     + Allow time for `tidyverse` newbies to get up to speed
-* **Notes**:
-    + Don't focus on memorizing anything for now, just complete the assignment.
-    + If you find yourself spinning your wheels, let me know.
 * **Homework:**
     + `tidyverse` newbies: Do DataCamp classes listed in Lec02.
     + Baby's first Kaggle competition: Titanic
         + Create a model that predicts `Survival` other than ones we've seen.
         + Submit the predictions CSV so that your ranking shows.
         + Slack message me your Kaggle name so I can find you in the rankings.
+* **Notes**:
+    + Don't focus on memorizing anything for now, just complete the assignment.
+    + If you find yourself spinning your wheels, let me know.
 * **Discussion:**
     + I don't actually care what your score was, this was about process.
     + Kaggle is very finicky about the submission format:
@@ -145,9 +155,6 @@ sample(class) %>%
 
 
 ### Code Review Instructions
-
-* 
-
 
 
 ```
